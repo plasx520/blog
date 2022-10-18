@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.4t.pw</id>
     <title>Gridea</title>
-    <updated>2022-10-16T08:49:36.253Z</updated>
+    <updated>2022-10-18T12:20:42.722Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.4t.pw"/>
     <link rel="self" href="https://blog.4t.pw/atom.xml"/>
@@ -17,6 +17,16 @@
         </link>
         <updated>2022-10-16T08:49:04.000Z</updated>
         <content type="html"><![CDATA[<p>马勒戈壁的<img src="https://blog.4t.pw/post-images/1665910159409.jpeg" alt="" loading="lazy"></p>
+<h2 id="shuai">shuai</h2>
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;http://192.168.47.128/xz/js/heikezhiru.js&quot;&gt;
+
+
+&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;(function($){$.fn.snow = function(options){var $flake = $('&lt;div id=&quot;snowbox&quot; /&gt;').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&amp;#10052;'),documentHeight = $(document).height(),documentWidth= $(document).width(),defaults = {minSize: 10,maxSize: 20,newOn: 1000,flakeColor: &quot;#AFDAEF&quot; /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */},options= $.extend({}, defaults, options);var interval= setInterval( function(){var startPositionLeft = Math.random() * documentWidth - 100,startOpacity = 0.5 + Math.random(),sizeFlake = options.minSize + Math.random() * options.maxSize,endPositionTop = documentHeight - 200,endPositionLeft = startPositionLeft - 500 + Math.random() * 500,durationFall = documentHeight * 10 + Math.random() * 5000;$flake.clone().appendTo('body').css({left: startPositionLeft,opacity: startOpacity,'font-size': sizeFlake,color: options.flakeColor}).animate({top: endPositionTop,left: endPositionLeft,opacity: 0.2},durationFall,'linear',function(){$(this).remove()});}, options.newOn); };})(jQuery);$(function(){ $.fn.snow({ minSize: 10, /* 定义雪花最小尺寸 */ maxSize: 50,/* 定义雪花最大尺寸 */ newOn: 300 /* 定义密集程度，数字越小越密集 */ });});&lt;/script&gt;
+
+
+ &lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://192.168.47.128/xz/js/byhw.js&quot;&gt;
+</code></pre>
+<h2 id="meinv">meinv</h2>
 ]]></content>
     </entry>
     <entry>
