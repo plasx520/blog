@@ -8,9 +8,9 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>Hello Gridea | 怕冷爱上雪</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1666170821646">
-<link rel="stylesheet" href="/media/css/gemini.css">
+<title>Hello Gridea | Gridea</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1666318624571">
+<link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
   href="//fonts.loli.net/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
@@ -18,9 +18,6 @@
 
 <link href="/media/hljs/styles/default.css"
   rel="stylesheet">
-
-<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-<link href="https://cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet" />
 
 <link rel="stylesheet" href="/styles/main.css">
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -46,14 +43,150 @@
 
   <meta name="description" content="Hello Gridea" />
   <meta name="keywords" content="Gridea" />
-  <style type="text/css">
+<!--网站加载动画开始-->
+<style>
+#loading-box .loading-left-bg,
+#loading-box .loading-right-bg {
+  position: fixed;
+  z-index: 10000;
+  width: 50%;
+  height: 100%;
+  background-color: #1eabd0;
+  transition: all 0.5s;
+}
+
+#loading-box .loading-right-bg {
+  right: 0;
+}
+
+#loading-box>.spinner-box {
+  position: fixed;
+  z-index: 10001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#loading-box .spinner-box .configure-border-1 {
+  position: absolute;
+  padding: 3px;
+  width: 115px;
+  height: 115px;
+  background: #ffab91;
+  animation: configure-clockwise 3s ease-in-out 0s infinite alternate;
+}
+
+#loading-box .spinner-box .configure-border-2 {
+  left: -115px;
+  padding: 3px;
+  width: 115px;
+  height: 115px;
+  background: rgb(63, 249, 220);
+  transform: rotate(45deg);
+  animation: configure-xclockwise 3s ease-in-out 0s infinite alternate;
+}
+
+#loading-box .spinner-box .loading-word {
+  position: absolute;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+#loading-box .spinner-box .configure-core {
+  width: 100%;
+  height: 100%;
+  background-color: #37474f;
+}
+
+div.loaded div.loading-left-bg {
+  transform: translate(-100%, 0);
+}
+
+div.loaded div.loading-right-bg {
+  transform: translate(100%, 0);
+}
+
+div.loaded div.spinner-box {
+  display: none !important;
+}
+
+@keyframes configure-clockwise {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes configure-xclockwise {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  25% {
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    transform: rotate(-135deg);
+  }
+
+  75% {
+    transform: rotate(-225deg);
+  }
+
+  100% {
+    transform: rotate(-315deg);
+  }
+}
+</style>
+
+<div id="loading-box">
+    <div class="loading-left-bg"></div>
+    <div class="loading-right-bg"></div>
+    <div class="spinner-box">
+      <div class="configure-border-1">
+        <div class="configure-core"></div>
+      </div>
+      <div class="configure-border-2">
+        <div class="configure-core"></div>
+      </div>
+      <div class="loading-word">拼命加载中...</div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+      document.body.style.overflow = 'auto';
+      document.getElementById('loading-box').classList.add("loaded")
+    })
+</script>
+
+<!--滚动条滑块-->
+<style type="text/css">
 ::-webkit-scrollbar-thumb { /*滚动条滑块*/
-    background-color: #1E90FF; /*滑块颜色*/
-    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent); /*滑块样式*/
+    background-color: #00000087; /*滑块颜色*/
+    background-image: -webkit-linear-gradient(67deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent); /*滑块样式*/
     border-radius: 5px; /*设置圆角*/
 }
 ::-webkit-scrollbar-track { /*滚动条滑槽*/
-    background-color: #FFFACD; /*滑槽颜色*/
+    background-color: #008ea5; /*滑槽颜色*/
     border-radius: 5px; /*设置圆角*/
 }
 ::-webkit-scrollbar { /*滚动条大小*/
@@ -61,9 +194,35 @@
     height: 8px; /*横向滚动条的高度*/
 }
 </style>
+<!--防止扒代码-->
+<script>((function() {var callbacks = [],timeLimit = 50,open = false;setInterval(loop, 1);return {addListener: function(fn) {callbacks.push(fn);},cancleListenr: function(fn) {callbacks = callbacks.filter(function(v) {return v !== fn;});}}
+function loop() {var startTime = new Date();debugger;if (new Date() - startTime > timeLimit) {if (!open) {callbacks.forEach(function(fn) {fn.call(null);});}open = true;window.stop();alert('哒咩哒咩!大佬别扒人家裤裤惹QAQ！');document.body.innerHTML = "";} else {open = false;}}})()).addListener(function() {window.location.reload();});</script>
 
-  <!-- 复制弹窗提示开始 -->
+
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>document.onkeydown = document.onkeyup = document.onkeypress = function(event) {
+    var e = event || window.event || arguments.callee.caller.arguments[0];
+    if (e && (e.keyCode == 123)) {
+      e.keyCode = 0;
+      e.returnValue = false;
+        swal({
+        title: "丫麦滴！不要酱紫。",
+        text: '大佬别扒人家裤裤惹QAQ！',
+        buttons: false,
+        closeOnClickOutside: false,
+        icon: "/hx.jpg",
+        timer: 9000,
+    });
+      return (false);
+    }
+}
+$(document).keydown(function(e){
+  if( e.ctrlKey  == true && e.keyCode == 83 ){
+    console.log('ctrl+s');
+    return false;
+  }
+});</script>
+<!-- 复制弹窗提示开始 -->
 <script>
   window.onload = function(){
     document.body.oncopy = function() {
@@ -78,16 +237,14 @@
     };
   }
 </script>
-<!-- 复制弹窗提示结束 -->
-
-
+<!-- 复制弹窗提示结束 -->								   
 </head>
 
 <body>
   <div class="head-top-line"></div>
   <div class="header-box">
     
-<div class="gemini">
+<div class="pisces">
   <header class="header  ">
     <div class="blog-header box-shadow-wrapper bg-color " id="header">
       <div class="nav-toggle" id="nav_toggle">
@@ -101,12 +258,12 @@
         <div class="site-title">
           
             <a href="/" class="brand">
-              <span>怕冷爱上雪</span>
+              <span>Gridea</span>
             </a>  
           
         </div>
         
-          <p class="subtitle">我是晋天杰呀</p>
+          <p class="subtitle">精于心，简于形</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -141,14 +298,6 @@
             
             
               
-                <li class="nav-item ">
-                  <a href="/friends" target="_self">
-                    
-                      <i class="fa fa-address-book"></i>友链
-                    
-                  </a>
-                </li>
-              
             
             <li class="nav-item ">
               
@@ -173,6 +322,14 @@
             </li>
           
           
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友链
+                  
+                </a>
+              </li>
             
           
           
@@ -213,7 +370,7 @@
   <div class="main-continer">
     
     <div
-      class="section-layout gemini ">
+      class="section-layout pisces ">
       <div class="section-layout-wrapper">
         
 
@@ -228,7 +385,7 @@
           </div>
         </div>
       
-      <div class="sidebar-body gemini" id="sidebar_body">
+      <div class="sidebar-body pisces" id="sidebar_body">
         
           
             <div class="post-side-meta" id="post_side_meta">
@@ -236,57 +393,27 @@
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name">怕冷爱上雪</p>
-    
-    <div class="site-description right-motion">
-      
-        <p id="binft">我是阿爸\n爸爸是我</p>
-      
-    </div>
+    <p class="site-author-name">我是谁</p>
     
   </div>
   <div class="sidebar-item side-item-stat right-motion">
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">7</span>
+        <span class="site-item-stat-count">1</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">1</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
   </div>
   
     
-      <div class="sidebar-item">
-        <span class="site-item-rss">
-            <i class="fa fa-rss"></i>
-            <a href="https://blog.4t.pw/atom.xml" target="_blank">RSS</a>
-        </span>
-      </div>
-    
   
-  
-    <div class="sidebar-item sidebar-item-social">
-      <div class="social-item">
-        
-          
-            <a href="https://yeming.site/post/1JA_OJlig/#%E9%BC%A0%E6%A0%87">
-              <i class="fa fa-globe" title="44"></i>
-            </a>
-          
-            <a href="https://wzx.js.cool/">
-              <i class="fa fa-globe" title="55"></i>
-            </a>
-          
-        
-        
-      </div>
-    </div>
   
 
 
@@ -571,13 +698,12 @@
 </script>
         <div class="section-box box-shadow-wrapper">
           <div class="section bg-color post post-page">
-		  <div class="post-body">
+			<div class="post-body">
               
               
               <img src="/post-images/hello-gridea.png" />
                 
-            </div>
-
+            </div>	
             <section class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://blog.4t.pw/post/hello-gridea/"> Hello Gridea </a>
@@ -595,7 +721,7 @@
       <i class="fa fa-folder-o"></i>
       <span class="pc-show language" data-lan="category-in">标签:</span>
        
-      <a href="https://blog.4t.pw/tag/qj_61_BCI/">
+      <a href="https://blog.4t.pw/tag/zIE_DFtpO/">
         <span>Gridea</span>
       </a>
        
@@ -625,8 +751,7 @@
 
             <div class="post-body next-md-body" id="post_body">
               <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...<br>
-😔😔😔😔😔😔😔😔😔😔😔😔😔😔<img src="https://blog.4t.pw/post-images/1665903441214.jpeg" alt="" loading="lazy"></p>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 <!-- more -->
 <p><a href="https://github.com/getgridea/gridea">Github</a><br>
 <a href="https://gridea.dev/">Gridea 主页</a><br>
@@ -648,7 +773,6 @@
 <p>😘 Enjoy~</p>
 
             </div>
-			<div>
 <br/> 
   <div style="text-align:center;color: #999;font-size:14px;">---------- 本文到此结束 <i class="fa fa-paw"></i> 感谢您的阅读 ----------</div>
 <br/>
@@ -663,7 +787,7 @@
   <ul class="post-copyright">
     <li class="post-copyright-author">
       <strong class="language" data-lan="author">本文作者：</strong>
-      怕冷爱上雪
+      我是谁
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
@@ -676,15 +800,11 @@
   </ul>
   <div class="tags">
     
-      <a href="https://blog.4t.pw/tag/qj_61_BCI/"><i class="fa fa-tag"></i> Gridea</a>
+      <a href="https://blog.4t.pw/tag/zIE_DFtpO/"><i class="fa fa-tag"></i> Gridea</a>
     
   </div>
   <div class="nav">
     <div class="nav-prev">
-      
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="11222" href="https://blog.4t.pw/post/11222/">11222</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="11222" href="https://blog.4t.pw/post/11222/">上一篇</a>
       
     </div>
     <div class="nav-next">
@@ -710,7 +830,7 @@
     <span id="busuanzi_container_site_uv">访客数:<span id="busuanzi_value_site_uv"></span> 人</span>
 
     <script>
-      BirthDay = new Date('1993.06.18');
+      BirthDay = new Date('');
       if (BirthDay.getTime()) {
         function runTime() {
           str = "";
@@ -738,14 +858,13 @@
         document.querySelector('.footer').removeChild(document.querySelector('#runTimeBox'));
       }
     </script>
-
     <div class="poweredby">
       Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
     </div>
   </footer>
   
     
-        <div class="gemini back-to-top" id="back_to_top">
+        <div class="pisces back-to-top" id="back_to_top">
           <i class="fa fa-arrow-up"></i>
           
             <span class="scrollpercent"> <span id="back_to_top_text">0</span>% </span>
@@ -755,11 +874,554 @@
           
             
               <div class="bg-img">
-                <img src="\media\images\custom-bgImg.jpeg" />
+                <img src="\media\images\custom-bgImg.png" />
               </div>
               
                 
                   
+                    
+<link rel="stylesheet" href="/media/live2d/css/live2d.css" />
+<div class="box-scale">
+  <div id="landlord" style="left: 1px;bottom: 1px;"
+    data-key="">
+    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
+    
+
+      <div class="message" style="opacity:0"></div>
+      <div class="live_talk_input_body">
+        <div class="live_talk_input_name_body">
+          <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off"
+            placeholder="你的名字" />
+        </div>
+        <div class="live_talk_input_text_body">
+          <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off"
+            placeholder="要和我聊什么呀？" />
+          <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+        </div>
+      </div>
+      <input name="live_talk" id="live_talk" value="1" type="hidden" />
+      <div class="live_ico_box">
+        <div class="live_ico_item type_info" id="showInfoBtn"></div>
+        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
+        
+        <div class="live_ico_item type_music" id="musicButton"></div>
+        
+        <div class="live_ico_item type_youdu" id="youduButton"></div>
+        <div class="live_ico_item type_quit" id="hideButton"></div>
+        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
+        <input id="duType" value="douqilai" type="hidden">
+        
+        <input name="live2dBGM" value="https://mp3.jiuku.9ku.com/upload/128/2017/08/03/863848.mp3" type="hidden">
+        
+      </div>
+    
+  </div>
+</div>
+<div id="open_live2d">召唤看板娘</div>
+<script>
+  var message_Path = 'https://cdn.jsdelivr.net/gh/hsxyhao/live2d.github.io@master/';
+  let landlord = document.querySelector('#landlord');
+  var apiKey = landlord.dataset.key;
+</script>
+<script type="text/javascript" src="/media/live2d/js/live2d.js"></script>
+<script>
+	var home_Path = document.location.protocol + '//' + window.document.location.hostname + ":" + window.document.location.port + '/';
+	var userAgent = window.navigator.userAgent.toLowerCase();
+	var norunAI = ["android", "iphone", "ipod", "ipad", "windows phone", "mqqbrowser", "msie", "trident/7.0"];
+	var norunFlag = false;
+
+	for (var i = 0; i < norunAI.length; i++) {
+		if (userAgent.indexOf(norunAI[i]) > -1) {
+			norunFlag = true;
+			break;
+		}
+	}
+
+	if (!window.WebGLRenderingContext) {
+		norunFlag = true;
+	}
+
+	if (!norunFlag) {
+		var hitFlag = false;
+		var AIFadeFlag = false;
+		var liveTlakTimer = null;
+		var sleepTimer_ = null;
+		var AITalkFlag = false;
+		var talkNum = 0;
+		(function () {
+			function renderTip(template, context) {
+				var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g;
+				return template.replace(tokenReg, function (word, slash1, token, slash2) {
+					if (slash1 || slash2) {
+						return word.replace('\\', '');
+					}
+					var variables = token.replace(/\s/g, '').split('.');
+					var currentObject = context;
+					var i, length, variable;
+					for (i = 0, length = variables.length; i < length; ++i) {
+						variable = variables[i];
+						currentObject = currentObject[variable];
+						if (currentObject === undefined || currentObject === null) return '';
+					}
+					return currentObject;
+				});
+			}
+
+			String.prototype.renderTip = function (context) {
+				return renderTip(this, context);
+			};
+
+			var re = /x/;
+			re.toString = function () {
+				showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000);
+				return '';
+			};
+
+			$(document).on('copy', function () {
+				showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
+			});
+
+			function initTips() {
+				$.ajax({
+					cache: true,
+					url: message_Path + 'message.json',
+					dataType: "json",
+					success: function (result) {
+						$.each(result.mouseover, function (index, tips) {
+							$(tips.selector).mouseover(function () {
+								var text = tips.text;
+								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
+								text = text.renderTip({ text: $(this).text() });
+								showMessage(text, 3000);
+								talkValTimer();
+								clearInterval(liveTlakTimer);
+								liveTlakTimer = null;
+							});
+							$(tips.selector).mouseout(function () {
+								showHitokoto();
+								if (liveTlakTimer == null) {
+									liveTlakTimer = window.setInterval(function () {
+										showHitokoto();
+									}, 15000);
+								};
+							});
+						});
+						$.each(result.click, function (index, tips) {
+							$(tips.selector).click(function () {
+								if (hitFlag) {
+									return false
+								}
+								hitFlag = true;
+								setTimeout(function () {
+									hitFlag = false;
+								}, 8000);
+								var text = tips.text;
+								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
+								text = text.renderTip({ text: $(this).text() });
+								showMessage(text, 3000);
+							});
+							clearInterval(liveTlakTimer);
+							liveTlakTimer = null;
+							if (liveTlakTimer == null) {
+								liveTlakTimer = window.setInterval(function () {
+									showHitokoto();
+								}, 15000);
+							};
+						});
+					}
+				});
+			}
+			initTips();
+
+			var text;
+			if (document.referrer !== '') {
+				var referrer = document.createElement('a');
+				referrer.href = document.referrer;
+				text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
+				var domain = referrer.hostname.split('.')[1];
+				if (domain == 'baidu') {
+					text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				} else if (domain == 'so') {
+					text = '嗨！ 来自 360搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				} else if (domain == 'google') {
+					text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				}
+			} else {
+				if (window.location.href == home_Path) { //主页URL判断，需要斜杠结尾
+					var now = (new Date()).getHours();
+					if (now > 23 || now <= 5) {
+						text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？';
+					} else if (now > 5 && now <= 7) {
+						text = '早上好！一日之计在于晨，美好的一天就要开始了！';
+					} else if (now > 7 && now <= 11) {
+						text = '上午好！工作顺利嘛，不要久坐，多起来走动走动哦！';
+					} else if (now > 11 && now <= 14) {
+						text = '中午了，工作了一个上午，现在是午餐时间！';
+					} else if (now > 14 && now <= 17) {
+						text = '午后很容易犯困呢，今天的运动目标完成了吗？';
+					} else if (now > 17 && now <= 19) {
+						text = '傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~~';
+					} else if (now > 19 && now <= 21) {
+						text = '晚上好，今天过得怎么样？';
+					} else if (now > 21 && now <= 23) {
+						text = '已经这么晚了呀，早点休息吧，晚安~~';
+					} else {
+						text = '嗨~ 快来逗我玩吧！';
+					}
+				} else {
+					text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				}
+			}
+			showMessage(text, 12000);
+		})();
+
+		liveTlakTimer = setInterval(function () {
+			showHitokoto();
+		}, 15000);
+
+		function showHitokoto() {
+			if (sessionStorage.getItem("Sleepy") !== "1") {
+				if (!AITalkFlag) {
+					$.getJSON('https://v1.hitokoto.cn/', function (result) {
+						talkValTimer();
+						showMessage(result.hitokoto, 0);
+					});
+				}
+			} else {
+				hideMessage(0);
+				if (sleepTimer_ == null) {
+					sleepTimer_ = setInterval(function () {
+						checkSleep();
+					}, 200);
+				}
+			}
+		}
+
+		function checkSleep() {
+			var sleepStatu = sessionStorage.getItem("Sleepy");
+			if (sleepStatu !== '1') {
+				talkValTimer();
+				showMessage('你回来啦~', 0);
+				clearInterval(sleepTimer_);
+				sleepTimer_ = null;
+			}
+		}
+
+		function showMessage(text, timeout) {
+			if (Array.isArray(text)) text = text[Math.floor(Math.random() * text.length + 1) - 1];
+			$('.message').stop();
+			$('.message').html(text);
+			$('.message').fadeTo(200, 1);
+			//if (timeout === null) timeout = 5000;
+			//hideMessage(timeout);
+		}
+		function talkValTimer() {
+			$('#live_talk').val('1');
+		}
+
+		function hideMessage(timeout) {
+			//$('.message').stop().css('opacity',1);
+			if (timeout === null) timeout = 5000;
+			$('.message').delay(timeout).fadeTo(200, 0);
+		}
+
+		function initLive2d() {
+			$('#hideButton').on('click', function () {
+				if (AIFadeFlag) {
+					return false;
+				} else {
+					AIFadeFlag = true;
+					localStorage.setItem("live2dhidden", "0");
+					$('#landlord').fadeOut(200);
+					$('#open_live2d').delay(200).fadeIn(200);
+					setTimeout(function () {
+						AIFadeFlag = false;
+					}, 300);
+				}
+			});
+			$('#open_live2d').on('click', function () {
+				if (AIFadeFlag) {
+					return false;
+				} else {
+					AIFadeFlag = true;
+					localStorage.setItem("live2dhidden", "1");
+					$('#open_live2d').fadeOut(200);
+					$('#landlord').delay(200).fadeIn(200);
+					setTimeout(function () {
+						AIFadeFlag = false;
+					}, 300);
+				}
+			});
+			$('#youduButton').on('click', function () {
+				if ($('#youduButton').hasClass('doudong')) {
+					var typeIs = $('#youduButton').attr('data-type');
+					$('#youduButton').removeClass('doudong');
+					$('body').removeClass(typeIs);
+					$('#youduButton').attr('data-type', '');
+				} else {
+					var duType = $('#duType').val();
+					var duArr = duType.split(",");
+					var dataType = duArr[Math.floor(Math.random() * duArr.length)];
+
+					$('#youduButton').addClass('doudong');
+					$('#youduButton').attr('data-type', dataType);
+					$('body').addClass(dataType);
+				}
+			});
+			if (apiKey) {
+				$('#showInfoBtn').on('click', function () {
+					var live_statu = $('#live_statu_val').val();
+					if (live_statu == "0") {
+						return
+					} else {
+						$('#live_statu_val').val("0");
+						$('.live_talk_input_body').fadeOut(500);
+						AITalkFlag = false;
+						showHitokoto();
+						$('#showTalkBtn').show();
+						$('#showInfoBtn').hide();
+					}
+				});
+				$('#showTalkBtn').on('click', function () {
+					var live_statu = $('#live_statu_val').val();
+					if (live_statu == "1") {
+						return
+					} else {
+						$('#live_statu_val').val("1");
+						$('.live_talk_input_body').fadeIn(500);
+						AITalkFlag = true;
+						$('#showTalkBtn').hide();
+						$('#showInfoBtn').show();
+
+					}
+				});
+				$('#talk_send').on('click', function () {
+					var info_ = $('#AIuserText').val();
+					var userid_ = $('#AIuserName').val();
+					if (info_ == "") {
+						showMessage('写点什么吧！', 0);
+						return;
+					}
+					if (userid_ == "") {
+						showMessage('聊之前请告诉我你的名字吧！', 0);
+						return;
+					}
+					showMessage('思考中~', 0);
+					let protocol = window.location.protocol.indexOf("s") > 0 ? "https" : "http";
+					$.ajax({
+						type: "get",
+						url: `${protocol}://www.tuling123.com/openapi/api?key=${apiKey}&info=${info_}`,
+						dataType: "json",
+						success: function (res) {
+							talkValTimer();
+							showMessage(res.text, 0);
+							$('#AIuserText').val("");
+							sessionStorage.setItem("live2duser", userid_);
+						},
+						error: function (e) {
+							talkValTimer();
+							showMessage('似乎有什么错误，请和站长联系！', 0);
+						}
+					});
+				});
+			} else {
+				$('#showInfoBtn').hide();
+				$('#showTalkBtn').hide();
+			}
+			//获取音乐信息初始化
+			var bgmListInfo = $('input[name=live2dBGM]');
+			if (bgmListInfo.length == 0) {
+				$('#musicButton').hide();
+			} else {
+				var bgmPlayNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+				var bgmPlayTime = 0;
+				var live2dBGM_Num = sessionStorage.getItem("live2dBGM_Num");
+				var live2dBGM_PlayTime = sessionStorage.getItem("live2dBGM_PlayTime");
+				if (live2dBGM_Num) {
+					if (live2dBGM_Num <= $('input[name=live2dBGM]').length - 1) {
+						bgmPlayNow = parseInt(live2dBGM_Num);
+					}
+				}
+				if (live2dBGM_PlayTime) {
+					bgmPlayTime = parseInt(live2dBGM_PlayTime);
+				}
+				var live2dBGMSrc = bgmListInfo.eq(bgmPlayNow).val();
+				$('#live2d_bgm').attr('data-bgm', bgmPlayNow);
+				$('#live2d_bgm').attr('src', live2dBGMSrc);
+				$('#live2d_bgm')[0].currentTime = bgmPlayTime;
+				$('#live2d_bgm')[0].volume = 0.5;
+				var live2dBGM_IsPlay = sessionStorage.getItem("live2dBGM_IsPlay");
+				var live2dBGM_WindowClose = sessionStorage.getItem("live2dBGM_WindowClose");
+				if (live2dBGM_IsPlay == '0' && live2dBGM_WindowClose == '0') {
+					$('#live2d_bgm')[0].play();
+					$('#musicButton').addClass('play');
+				}
+				sessionStorage.setItem("live2dBGM_WindowClose", '1');
+				$('#musicButton').on('click', function () {
+					if ($('#musicButton').hasClass('play')) {
+						$('#live2d_bgm')[0].pause();
+						$('#musicButton').removeClass('play');
+						sessionStorage.setItem("live2dBGM_IsPlay", '1');
+					} else {
+						$('#live2d_bgm')[0].play();
+						$('#musicButton').addClass('play');
+						sessionStorage.setItem("live2dBGM_IsPlay", '0');
+					}
+				});
+				window.onbeforeunload = function () {
+					sessionStorage.setItem("live2dBGM_WindowClose", '0');
+					if ($('#musicButton').hasClass('play')) {
+						sessionStorage.setItem("live2dBGM_IsPlay", '0');
+					}
+				}
+				document.getElementById('live2d_bgm').addEventListener("timeupdate", function () {
+					var live2dBgmPlayTimeNow = document.getElementById('live2d_bgm').currentTime;
+					sessionStorage.setItem("live2dBGM_PlayTime", live2dBgmPlayTimeNow);
+				});
+				document.getElementById('live2d_bgm').addEventListener("ended", function () {
+					var listNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+					listNow++;
+					if (listNow > $('input[name=live2dBGM]').length - 1) {
+						listNow = 0;
+					}
+					var listNewSrc = $('input[name=live2dBGM]').eq(listNow).val();
+					sessionStorage.setItem("live2dBGM_Num", listNow);
+					$('#live2d_bgm').attr('src', listNewSrc);
+					$('#live2d_bgm')[0].play();
+					$('#live2d_bgm').attr('data-bgm', listNow);
+				});
+				document.getElementById('live2d_bgm').addEventListener("error", function () {
+					$('#live2d_bgm')[0].pause();
+					$('#musicButton').removeClass('play');
+					showMessage('音乐似乎加载不出来了呢！', 0);
+				});
+			}
+			//获取用户名
+			var live2dUser = sessionStorage.getItem("live2duser");
+			if (live2dUser !== null) {
+				$('#AIuserName').val(live2dUser);
+			}
+			//获取位置
+			var landL = sessionStorage.getItem("historywidth");
+			var landB = sessionStorage.getItem("historyheight");
+			if (landL == null || landB == null) {
+				landL = '5px'
+				landB = '0px'
+			}
+			$('#landlord').css('left', landL + 'px');
+			$('#landlord').css('bottom', landB + 'px');
+			//移动
+			function getEvent() {
+				return window.event || arguments.callee.caller.arguments[0];
+			}
+			var smcc = document.getElementById("landlord");
+			var moveX = 0;
+			var moveY = 0;
+			var moveBottom = 0;
+			var moveLeft = 0;
+			var moveable = false;
+			var docMouseMoveEvent = document.onmousemove;
+			var docMouseUpEvent = document.onmouseup;
+			smcc.onmousedown = function () {
+				var ent = getEvent();
+				moveable = true;
+				moveX = ent.clientX;
+				moveY = ent.clientY;
+				var obj = smcc;
+				moveBottom = parseInt(obj.style.bottom);
+				moveLeft = parseInt(obj.style.left);
+				if (isFirefox = navigator.userAgent.indexOf("Firefox") > 0) {
+					window.getSelection().removeAllRanges();
+				}
+				document.onmousemove = function () {
+					if (moveable) {
+						var ent = getEvent();
+						var x = moveLeft + ent.clientX - moveX;
+						var y = moveBottom + (moveY - ent.clientY);
+						obj.style.left = x + "px";
+						obj.style.bottom = y + "px";
+					}
+				};
+				document.onmouseup = function () {
+					if (moveable) {
+						var historywidth = obj.style.left;
+						var historyheight = obj.style.bottom;
+						historywidth = historywidth.replace('px', '');
+						historyheight = historyheight.replace('px', '');
+						sessionStorage.setItem("historywidth", historywidth);
+						sessionStorage.setItem("historyheight", historyheight);
+						document.onmousemove = docMouseMoveEvent;
+						document.onmouseup = docMouseUpEvent;
+						moveable = false;
+						moveX = 0;
+						moveY = 0;
+						moveBottom = 0;
+						moveLeft = 0;
+					}
+				};
+			};
+		}
+		$(document).ready(function () {
+			var AIimgSrc = [];
+			let chooseLive2d = 'histoire'
+			if (chooseLive2d === 'histoire') {
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_00.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_01.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_02.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_03.png");
+			} else if (chooseLive2d === 'rem') {
+				AIimgSrc.push(message_Path + "model/rem/remu2048/texture_00.png");
+			} else if (chooseLive2d === 'aoba') {
+				AIimgSrc.push(message_Path + "model/aoba/textures/texture_00.png");
+			} else if (chooseLive2d === 'hijiki') {
+				AIimgSrc.push(message_Path + "model/hijiki/moc/hijiki.2048/texture_00.png");
+			} else if (chooseLive2d === 'tororo') {
+				AIimgSrc.push(message_Path + "model/tororo/moc/tororo.2048/texture_00.png");
+			}
+			var images = [];
+			var imgLength = AIimgSrc.length;
+			var loadingNum = 0;
+			for (var i = 0; i < imgLength; i++) {
+				images[i] = new Image();
+				images[i].src = AIimgSrc[i];
+				images[i].onload = function () {
+					loadingNum++;
+					if (loadingNum === imgLength) {
+						var live2dhidden = localStorage.getItem("live2dhidden");
+						if (live2dhidden === "0") {
+							setTimeout(function () {
+								$('#open_live2d').fadeIn(200);
+							}, 1300);
+						} else {
+							setTimeout(function () {
+								$('#landlord').fadeIn(200);
+							}, 1300);
+						}
+						let model = '';
+						if (chooseLive2d === 'histoire') {
+							model = message_Path + "model/histoire/model.json";
+						} else if (chooseLive2d === 'rem') {
+							model = message_Path + "model/rem/model.json";
+						} else if (chooseLive2d === 'aoba') {
+							model = message_Path + "model/aoba/model.json";
+						} else if (chooseLive2d === 'hijiki') {
+							model = message_Path + "model/hijiki/hijiki.model.json";
+						} else if (chooseLive2d === 'tororo') {
+							model = message_Path + "model/tororo/tororo.model.json";
+						}
+						setTimeout(function () {
+							loadlive2d("live2d", model);
+						}, 1000);
+						initLive2d();
+						images = null;
+					}
+				}
+			}
+		});
+	}
+</script>
+                      
                         
 </div>
 <script>
@@ -926,7 +1588,7 @@
   hljs.initHighlightingOnLoad();
 
   // 离开当前页title变化
-  var leaveTitle = "别走嘛";
+  var leaveTitle = "别走嘛^_^";
   var normal_title = document.title;
   if (leaveTitle) {
     document.addEventListener("visibilitychange", function () {
@@ -967,26 +1629,14 @@
         <div style="position: relative; width: 140px; height: 140px;">
           
           
-            <img id="zfb" class="reward-img" src="支付宝" alt="赞赏码">
-          
-          
-            <img id="wx" class="reward-img" src="微信" alt="赞赏码">
           
         </div>
       </div>
       <p class="reward-word">扫码打赏，你说多少就多少</p>
-      <p class="reward-tip"> 爱你哦</p>
+      <p class="reward-tip"> </p>
     </div>
     <div class="bottom">
       
-      <div id="zfbBtn" class="pay-text">
-        支付宝
-      </div>
-      
-      
-      <div id="wxBtn" class="pay-text">
-        微信支付
-      </div>
       
     </div>
   </div>
@@ -1206,348 +1856,6 @@
     <div class="result" id="result">
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.4t.pw/post/zhu-ti/"" data-c="
-          &lt;p&gt;Next主题是翻版hexo平台上的主题，由于其简约的风格深受用户的喜爱，不过很可惜的是hexo在使用上有很多不足之处。而gridea则弥补了其很多的缺点，但是目前gridea仍处于成长阶段，bug也有不少，至于Next主题情况也是类似，从开发至今大概以及过去了4个月的时间，还处于一个很不稳定的阶段，这个阶段在功能上会有很大的调整，很多用户还不是很会使用这个主题。所以准备维护一个使用文档，帮助大家解决问题。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/group_chat.jpeg&#34; data-fancybox=&#34;images&#34; data-rel=&#34;fancybox-button&#34; class=&#34;fancybox&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/group_chat.jpeg&#34; alt=&#34;Next主题交流群&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
-上图是主题交流群，有什么问题可以在群里交流，有建议也可以在群里提，希望能帮助大家快速构建主题。&lt;/p&gt;&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;h2 id=&#34;主题使用&#34;&gt;主题使用&lt;/h2&gt;
-&lt;p&gt;主题使用即安装和更新操作，分为手动版和git 命令版两种方式，并且都有其各自的优缺点。其中手动版使用方式简单，不需要懂git命令，但是更新的时候比较麻烦，需要备份主题中上传的图片等资源；而git版本无论是下载还是更新都比较简单，但是需要懂git命令有学习成本。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;不过个人觉得还是git比较好点，实在是方便，目前next主题功能上还有所欠缺，bug也有不少，时不时会有更新，所以还是建议使用git来更新，比较方便。其实更新要用到的命令也就git pull一个，非开发人员用到的也就那么几个，没有过于复杂。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;手动安装&#34;&gt;手动安装&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;首先在&lt;a href=&#34;https://github.com/hsxyhao/gridea-theme-next&#34;&gt;github仓库&lt;/a&gt;中下载&lt;a href=&#34;https://github.com/hsxyhao/gridea-theme-next/archive/master.zip&#34;&gt;压缩包&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;将压缩包解压到&lt;a href=&#34;&#34;&gt;gridea主题文包&lt;/a&gt;，并修改主题文件夹名称为next。&lt;/li&gt;
-&lt;li&gt;如果是更新操作的话，需要先备份旧Next主题中assets/media/images中的文件，然后替换掉旧Next主题，最后将备份好的文件在复制到新Next主题中的相同路径下。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;git-安装&#34;&gt;git 安装&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;需要确保本地已经安装git bash客户端，&lt;a href=&#34;https://git-scm.com/download&#34;&gt;官网下载&lt;/a&gt;地址，常用 版本：&lt;a href=&#34;/git-2.23.0-intel-universal-mavericks.dmg&#34;&gt;mac git.2.23.0&lt;/a&gt;、&lt;a href=&#34;https://github.com/git-for-windows/git/releases/download/v2.26.2.windows.1/Git-2.26.2-32-bit.exe&#34;&gt;windows git.2.23.0 34位&lt;/a&gt;、&lt;a href=&#34;https://github.com/git-for-windows/git/releases/download/v2.26.2.windows.1/Git-2.26.2-64-bit.exe&#34;&gt;windows git.2.23.0 64位&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;在gridea主题包路径下右键git bash(windows用户，mac用户需要打开终端使用cd命令前往)。&lt;/li&gt;
-&lt;li&gt;接着使用以下命令克隆项目，最后打开gridea客户端，切换主题&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-shell hljs&#34;&gt;git clone https://github.com/hsxyhao/gridea-theme-next.git next
-&lt;/code&gt;&lt;span class=&#34;copy-code&#34;&gt;复制代码&lt;/span&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;自定义配置&#34;&gt;自定义配置&lt;/h2&gt;
-&lt;p&gt;自定义配置可以说是整个next主题的核心，很多初级用户不太了解如何去配置，才能改造出自己理想的博客主题。当然也有的配置过于繁琐，没有合适的文档，导致很多用户不清楚到底有什么效果，在这里将讲解next主题整个配置项的作用，以及使用姿势，务必观看。&lt;/p&gt;
-&lt;h3 id=&#34;预览&#34; tabindex=&#34;-1&#34; style=&#34;outline: none;&#34;&gt;预览&lt;/h3&gt;
-&lt;p&gt;在了解配置之前，需要先熟悉下next主题，后面讲解配置时会有提到，有些描述可能不是很明白到底修改了哪里，所以先了解下每个next主题大致的区域。主要包含以下几个部分：导航菜单、左菜单、背景音乐、看板娘。&lt;br&gt;
-&lt;a href=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/1587666321230.png&#34; data-fancybox=&#34;images&#34; data-rel=&#34;fancybox-button&#34; class=&#34;fancybox&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/1587666321230.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;布局&#34;&gt;布局&lt;/h3&gt;
-&lt;p&gt;布局部分主要包含以下几个主要部分：布局、子标题、博主介绍、自定义css、博客可视区宽度、字体大小、字体。布局部分主要是修改整个博客的布局效果，下面将介绍每个部分具体的含义。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;风格&lt;br&gt;
-Next主题目前主要有四种风格，分别是gemini、pisces、mist、muse，具体是什么效果，只需选中一个风格切换保存一下就可以预览看见，文字不好描述，用户可自行体验。&lt;/li&gt;
-&lt;li&gt;子标题&lt;br&gt;
-导航菜单上方的标题，默认为“&lt;strong&gt;精于心，简于形&lt;/strong&gt;”&lt;/li&gt;
-&lt;li&gt;博主介绍&lt;br&gt;
-站点预览下方的博主介绍，主要用来做个简单的自我介绍&lt;/li&gt;
-&lt;li&gt;自定义css&lt;br&gt;
-大多数情况下，默认的主题样式都是符合大众的需求，但是为了满足个别用户的特殊需求，所以用户可以自己修改指定的css，达到自定义化的效果，不过自定义css需要熟悉前端语言（css）。&lt;/li&gt;
-&lt;li&gt;博客可视区宽度&lt;br&gt;
-可视区宽度的主要应用场景就是适配各种尺寸的屏幕，笔记本常见的尺寸有14寸、16寸，台式机常见的则是17寸、19寸这样。为了应对几种常见的尺寸使用户在体验上趋向一致，可以设置可视区宽度来调整。可视区宽度一般可以设置为1080px或者80%两种形式，第一种为固定的宽度，也就是说不管在哪种屏幕尺寸下都是显示的1080px，而百分比的方式，则根据屏幕的尺寸进行计算。&lt;/li&gt;
-&lt;li&gt;字体大小&lt;br&gt;
-字体大小主要是调整博客的内容区域的文字大小，可填写为纯数字形式，默认值为14.&lt;/li&gt;
-&lt;li&gt;字体&lt;br&gt;
-用户可以将自己喜欢的字体下载下来，复制到Next主题包路径下的assets/media/fonts目录，然后将字体文件的文件名填写在字体配置项那里。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;颜色&#34;&gt;颜色&lt;/h3&gt;
-&lt;p&gt;颜色配置模块，其意在为用户提供更高的自定义主题，用户可以选择自己喜欢的颜色为自己的博客大部分区域设置单独的颜色。目前可以设置的颜色包含：背景色、主色调、归档页时间线条颜色、字体颜色、标题颜色、链接颜色、链接hover颜色、博客标题区域背景色、博客标题背景色、博客标题色、菜单项字体颜色、菜单项hover字体颜色、当前菜单背景颜色。每个颜色对应的区域可以参考下图：&lt;br&gt;
-&lt;a href=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/1587671658091.png&#34; data-fancybox=&#34;images&#34; data-rel=&#34;fancybox-button&#34; class=&#34;fancybox&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/1587671658091.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;br&gt;
-在配置颜色的时候有的是带有hover的颜色配置，是指当鼠标经过该区域的颜色配置，还有一点就是，各个风格之前的切换需要重新配置颜色适配该风格，比较麻烦，暂时还没有比较好的解决方案。&lt;/p&gt;
-&lt;h3 id=&#34;鼠标&#34;&gt;鼠标&lt;/h3&gt;
-&lt;p&gt;鼠标的配置项可以修改一些鼠标的样式，不过在修改之前需要上传 一些鼠标的样式文件，至于素材，大家可以从网上查找，这里提供几个资源网站:&lt;a href=&#34;http://moe.005.tv/zj/sbzz/&#34;&gt;萌娘资源站&lt;/a&gt;、&lt;a href=&#34;https://zhutix.com/tag/cursors/&#34;&gt;致美化&lt;/a&gt;。下载好素材之后将素材复制到Next主题下assets/media/curs路径中。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;默认：相当于电脑的默认箭头鼠标&lt;/li&gt;
-&lt;li&gt;链接：当鼠标经过可跳转链接时的样式&lt;/li&gt;
-&lt;li&gt;文本：当出现输入框(评论区的账号信息填写框)或者富文本区域(评论区)会出现的光标样式&lt;/li&gt;
-&lt;li&gt;复制：代码块区域的“复制代码”会应用该光标&lt;/li&gt;
-&lt;li&gt;放大：当鼠标经过博客中的图片时，会生效&lt;/li&gt;
-&lt;li&gt;缩小：当图片被点击后进入全屏观看的时候会生效&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;特性&#34;&gt;特性&lt;/h3&gt;
-&lt;p&gt;特性主要包含一些主题基本功能以外的一些特有功能，目前next支持以及后续宽展的功能大概有以下几个方面：SEO、导航菜单图标、站点预览头像圆角、菜单栏右侧显示、更新提示、文章链接新窗口打开、RSS、夜间模式、打赏功能、代码块高亮主题、封面显示策略&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;SEO&lt;br&gt;
-SEO是添加到网页源码中的加入以下类似的标签，这个主要是用来优化搜索引擎的，更方便所有引擎检索你的站点&lt;br&gt;
-&lt;code&gt;&amp;lt;meta name=&#34;keywords&#34; content=&#34;关键字&#34;/&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;导航菜单图标&lt;br&gt;
-目前gridea平台的自定义菜单是不支持图标的，但是大多数用户都喜欢给自己的博客导航添加一些图标，提高博客的体验效果。next主题为了弥补这一点，添加了一些默认的菜单图标，但是如果需要支持更多的自定义图标，就需要用户自行修改源码了。如果不会代码，那么可以通过emoji来搭配。导航菜单目前支持三个选项，无：不会添加任何图标，菜单上文案原封不动的搬上去；默认：目前next主题内置了一些图标，如果根据链接识别出则显示图标，如果识别不出则不显示；自动：主要针对默认的扩展，对识别不出的菜单项会使用一个小地球一样的图标。&lt;br&gt;
-目前next主题内置的图标有五种，对应关系为：&#39;/&#39;：&#39;home&#39; ，&#39;/archives&#39;,：&#39;archive&#39;，&#39;/tags&#39;：&#39;tags&#39;，&#39;/post/about&#39;：&#39;user&#39;，&#39;/post/skin-update&#39;：&#39;info-circle&#39;。对应关系就是在添加菜单的时候设置的链接地址需要填写以上的指定的值才可以生效。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;站点预览头像圆角&lt;br&gt;
-默认的站点预览头像是方形的，开启后会变成一个圆形的图像，还会顺带一个旋转的彩蛋。这里建议大家的头像选择宽高为1:1的图片，这样才会显示一个圆形图片，否则为椭圆形。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;菜单栏右侧显示&lt;br&gt;
-开启菜单栏右侧显示会将导航栏和站点预览以及目录移至右侧，该效果所有风格下都会生效，可自行尝试。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;更新提示&lt;br&gt;
-未开发完成，目前更新按照github上的&lt;a href=&#34;https://github.com/hsxyhao/gridea-theme-next/releases&#34;&gt;release&lt;/a&gt;版本为主。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;文章链接新窗口打开&lt;br&gt;
-当点击文章内的链接时，如果开启该配置会打开一个新的窗口，否则会在当前窗口下加载链接。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;RSS&lt;br&gt;
-rss功能主要和搜索引擎集合，可以将rss的连接提交给百度搜索或者google搜索。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;夜间模式&lt;br&gt;
-页面模式暂时未开发完成，但是用户可以通过颜色配置修改成页面模式，不过很是麻烦。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;打赏功能&lt;br&gt;
-暂时未开发&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;代码块高亮主题&lt;br&gt;
-关于高亮插件采用的是highlightjs，高亮的主题可以去&lt;a href=&#34;https://highlightjs.org/&#34;&gt;官网&lt;/a&gt;体验，然后将喜欢的高亮主题填写上即可。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Latex渲染&lt;br&gt;
-目前latex公式渲染网上有两种插件，mathjax和katex。目前测试的效果，两种插件都有各自不兼容的地方，所以用户在使用的时候要自己测试，确定哪种效果更好。还有就是katex矩阵渲染好像还有点问题，这个问题后期会去找资料看看能否解决。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;封面显示策略&lt;br&gt;
-封面显示策略，主要是针对原版next主题的兼容，原版的next主题是没有封面的，想要添加封面的话，可以在摘要里面添加一张图片，但是gridea平台是支持封面的，为了保持最大化的自由度，next主题一共提供了5种策略：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;无：即不显示封面，即使gridea后台配置了封面，也不会显示&lt;/li&gt;
-&lt;li&gt;第一段落后：在摘要的第一段落后面添加封面图片&lt;/li&gt;
-&lt;li&gt;摘要前：在摘要的前面添加封面图片&lt;/li&gt;
-&lt;li&gt;摘要后：在摘要的最后面添加封面图片（推荐）&lt;/li&gt;
-&lt;li&gt;两百字以后：会在摘要两百字之后的段落处显示封面图片&lt;/li&gt;
-&lt;li&gt;随机：随机是以上策略随机选择一种显示封面图片，但是该策略会受发布影响，每次发布都会随机一个新的策略。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;a href=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/1587883340295.png&#34; data-fancybox=&#34;images&#34; data-rel=&#34;fancybox-button&#34; class=&#34;fancybox&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/1587883340295.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;目录&#34;&gt;目录&lt;/h3&gt;
-&lt;p&gt;next主题为了提供高度的自定义，很多地方都采用了大量的自定义配置，目录也是一部分，目录的自定义主要包含两个部分显示和颜色方案，接下来针对目录部分的配置来作讲解。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;阅读页目录展示方案
-&lt;ul&gt;
-&lt;li&gt;隐藏：不展示目录和站点预览&lt;/li&gt;
-&lt;li&gt;自动：next主题自动检测，如果有目录则展示，没有则展示站点预览（推荐）&lt;/li&gt;
-&lt;li&gt;目录：只展示目录，没有的话则不展示&lt;/li&gt;
-&lt;li&gt;站点预览：只展示站点预览&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;目录自动序号&lt;br&gt;
-开启后会对生成的目录追加序号，当然有的用户在编写md时，喜欢自己添加序号，所以这里可以选择关闭该选项，自己配置序号，看用户自己选择。&lt;/li&gt;
-&lt;li&gt;目录颜色&lt;br&gt;
-目录颜色就是在常规状态下，没有hover，active等状态下显示的颜色&lt;/li&gt;
-&lt;li&gt;目录Hover颜色&lt;br&gt;
-当鼠标经过目录时所展示的颜色&lt;/li&gt;
-&lt;li&gt;当前目录颜色&lt;br&gt;
-当前目录和文章内容区域有关，标识当前文章内容的阅读位置&lt;/li&gt;
-&lt;li&gt;目录压缩策略
-&lt;ul&gt;
-&lt;li&gt;自动：超过10个链接后会默认不展开目录&lt;/li&gt;
-&lt;li&gt;不压缩：自动展开所有目录&lt;/li&gt;
-&lt;li&gt;压缩：不论有多少目录都不会自动展开&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;a href=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/1587887222262.png&#34; data-fancybox=&#34;images&#34; data-rel=&#34;fancybox-button&#34; class=&#34;fancybox&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/1587887222262.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;社交&#34;&gt;社交&lt;/h3&gt;
-&lt;p&gt;用户可以添加一些信息在站点预览处，next主题的社交分为图片和链接两种，图片一般为微信或者qq的二维码图片，链接一般为github、掘金、facebook等社交账号的主页。不过目前windows用户下图片社交不能使用，上传图片会导致配置保存不生效bug，mac下用户暂无影响。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;链接
-&lt;ul&gt;
-&lt;li&gt;名称：社交平台&lt;/li&gt;
-&lt;li&gt;图标：必须选自&lt;a href=&#34;http://www.fontawesome.com.cn/faicons/&#34;&gt;font awesome图标库&lt;/a&gt;，复制图标英文名称加上&lt;strong&gt;fa&lt;/strong&gt;前缀，如address-book要改写成fa-address-book&lt;/li&gt;
-&lt;li&gt;链接：社交网址主页url链接&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;图片
-&lt;ul&gt;
-&lt;li&gt;名称：社交账号名称&lt;/li&gt;
-&lt;li&gt;图标：同上&lt;/li&gt;
-&lt;li&gt;图片：上传微信、qq二维码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;友链&#34;&gt;友链&lt;/h3&gt;
-&lt;p&gt;next主题目前支持两种友链排版，一种是精简型，另一种是单独友链页面。精简型就是在站点预览下出现一些友链链接，友链页面是指在菜单栏出现单独的友链菜单项。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;自定义友链页面：精简型和单独友链模式开关&lt;/li&gt;
-&lt;li&gt;友链标题&lt;/li&gt;
-&lt;li&gt;导航图标：单独友链模式下的菜单项图标&lt;/li&gt;
-&lt;li&gt;内部/外部：点击友链链接的访问模式，target新窗口打开，_self当前页面加载&lt;/li&gt;
-&lt;li&gt;导航链接位置：单独友链模式下在导航菜单项出现的位置&lt;/li&gt;
-&lt;li&gt;友链：
-&lt;ul&gt;
-&lt;li&gt;名称：博客站点名称&lt;/li&gt;
-&lt;li&gt;链接：博客地址&lt;/li&gt;
-&lt;li&gt;头像：博客站点的头像&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;魔改&#34;&gt;魔改&lt;/h3&gt;
-&lt;p&gt;推出魔改的目的主要是为了对主题进行美化，即“骚操作”，目前支持的美化操作有以下几类：背景图片、背景图片地址（兼容windows）、博客介绍美化、可视区透明度、圆角、站点标题字体大小、背景图片虚化、Muse风格阴影效果&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;背景图片：mac用户可直接通过此配置上传博客站点的背景图片&lt;/li&gt;
-&lt;li&gt;背景图片地址：目前windows下用户不能直接上传背景图片，否则会导致配置无法保存，但是可以通过手动的方式上传，来兼容windows系统，具体操作步骤看这里，&lt;a href=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/help/sdsc.gif&#34;&gt;手动上传背景图片&lt;/a&gt;，thanks for @01f的教程。&lt;/li&gt;
-&lt;li&gt;博客介绍美化：开启后站点预览下的博客介绍文字会出现一种动态的彩虹打字效果，但是开启后，如果有多行博主介绍内容会被简化成一行，逐一显示。&lt;/li&gt;
-&lt;li&gt;可视区透明度：修改透明度使菜单栏、站点预览、主内容区有一个渐隐渐现的效果。&lt;/li&gt;
-&lt;li&gt;圆角：所有可视区的元素的边角都会出现一个圆角效果，只能填写纯数字，数值越大效果越明显，建议10~20即可&lt;/li&gt;
-&lt;li&gt;站点标题字体大小：该配置可以修改站点标题的字体大小，一般只有muse风格才会修改，其他风格可使用默认值。&lt;/li&gt;
-&lt;li&gt;背景图片虚化：对背景图片添加一种虚化效果。&lt;/li&gt;
-&lt;li&gt;Muse风格阴影效果&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;看板娘&#34;&gt;看板娘&lt;/h3&gt;
-&lt;p&gt;看板娘就是在博客页面上展示的一个萌宠，next主题目前添加了五种看板娘，除此之外看板娘还支持一些社交功能：聊天、播放音乐、病毒特效。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;是否开启看板娘：开启后会在博客上显示一个看板娘人物&lt;/li&gt;
-&lt;li&gt;是否开启社交：如果不开启则只会显示看板娘动画任务，没有任何社交功能&lt;/li&gt;
-&lt;li&gt;选择看板娘：小黑是一种黑色的猫，小白是一只白色的猫，喜欢撸猫的小伙伴可以尝试一下，其他三种都是二次元风格的少女人物。&lt;/li&gt;
-&lt;li&gt;apikey为图灵机器人接口的秘钥，开启开功能，可以在聊天框和看板娘聊天，不过此接口收费，免费的一天只有几次访问次数。申请apikey的步骤可以百度，比较简单。&lt;/li&gt;
-&lt;li&gt;看板娘大小：调整看板娘的大小，数值一般取在[0,1]之间，无效值会使用默认的0.8替代。&lt;/li&gt;
-&lt;li&gt;看板娘左/底距离：可以调整看板娘第一次加载的位置，防止遮挡其他页面插件。&lt;/li&gt;
-&lt;li&gt;音乐：看板娘的背景音乐，为网络资源，一般建议使用专有的音乐功能替代
-&lt;ul&gt;
-&lt;li&gt;音乐名&lt;/li&gt;
-&lt;li&gt;链接：音乐的网络资源链接&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;音乐&#34;&gt;音乐&lt;/h3&gt;
-&lt;p&gt;虽然看板娘支持背景音乐，但是其功能不是很完善，这里建议使用音乐功能来作为博客的背景音乐插件。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;音乐插件
-&lt;ul&gt;
-&lt;li&gt;无：不显示音乐&lt;/li&gt;
-&lt;li&gt;Aplayer：网上开源的音乐插件，可以访问&lt;a href=&#34;https://aplayer.js.org/#/&#34;&gt;官网&lt;/a&gt;了解一下&lt;/li&gt;
-&lt;li&gt;Hkplayer: 一款功能强大的音乐播放器，含有收费功能，具体可上&lt;a href=&#34;https://player.lmih.cn&#34;&gt;官网&lt;/a&gt;了解&lt;/li&gt;
-&lt;li&gt;外链：类似网易云的歌单外链，但是注意，外链的背景音乐需要修改代码，比如说网易云的歌单外链支持三种size，但是这三种size都不适配next主题，所以需要修改一外链代码中的width，一般建议将width设置成200，还有目前只支持最小的size，而且网易云的资源现在很多都受版权保护，总之外链支持不是很完善，不建议使用😥&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-html hljs xml&#34;&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;iframe&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;frameborder&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&#34;no&#34;&lt;/span&gt; 
-    &lt;span class=&#34;hljs-attr&#34;&gt;border&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&#34;0&#34;&lt;/span&gt; 
-    &lt;span class=&#34;hljs-attr&#34;&gt;marginwidth&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&#34;0&#34;&lt;/span&gt; 
-    &lt;span class=&#34;hljs-attr&#34;&gt;marginheight&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&#34;0&#34;&lt;/span&gt; 
-    &lt;span class=&#34;hljs-attr&#34;&gt;width&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;330&lt;/span&gt; 
-    &lt;span class=&#34;hljs-attr&#34;&gt;height&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;450&lt;/span&gt; 
-    &lt;span class=&#34;hljs-attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&#34;xxx&#34;&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;iframe&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;span class=&#34;copy-code&#34;&gt;复制代码&lt;/span&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;播放列表
-&lt;ul&gt;
-&lt;li&gt;音乐名&lt;/li&gt;
-&lt;li&gt;艺术家&lt;/li&gt;
-&lt;li&gt;资源：.mp3、.mp4网络资源链接&lt;/li&gt;
-&lt;li&gt;封面: 图片类型的网络资源链接&lt;/li&gt;
-&lt;li&gt;歌词: lru类型的网络资源&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;网络资源是存放在服务器上的资源，即可以通过浏览器访问到的。不是本地资源&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;valine评论&#34;&gt;Valine评论&lt;/h3&gt;
-&lt;p&gt;gridea平台gittalk以及disqus评论，但是网上很多用户对于valine的呼声也很高，所以就做了个插件支持，valine评论总体来说体验效果还是很不错的，相比gittalk速度用户体验上都有优势，建议使用。在使用valine之前，需要到&lt;a href=&#34;https://leancloud.cn/&#34;&gt;leancloud&lt;/a&gt;上注册一个账号，然后复制appKey以及appID。最后在&lt;strong&gt;安全中心&lt;/strong&gt;配置一下&lt;strong&gt;Web 安全域名&lt;/strong&gt;，安全域名填写自己的申请的域名或者github.io提供的域名即可，主要要加端口。&lt;br&gt;
-&lt;a href=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/1587916709413.png&#34; data-fancybox=&#34;images&#34; data-rel=&#34;fancybox-button&#34; class=&#34;fancybox&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/1587916709413.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Valine评论：启用会覆盖gridea平台的gittalk和disqus评论&lt;/li&gt;
-&lt;li&gt;AppID: leancloud上的appId&lt;/li&gt;
-&lt;li&gt;AppKey：leancloud上的appKey&lt;/li&gt;
-&lt;li&gt;评论占位符：valine评论框的提示语&lt;/li&gt;
-&lt;li&gt;评论框背景图&lt;/li&gt;
-&lt;li&gt;封面图像：具体参数含义请参考：https://valine.js.org/avatar.html&lt;/li&gt;
-&lt;li&gt;评论分页：评论列表分页，每页条数，纯数字，默认10。&lt;/li&gt;
-&lt;li&gt;多语言：评论插件的语言，支持zh-CN，zh-TW，en，ja，支持自定义语言，请参考https://valine.js.org/i18n.html&lt;/li&gt;
-&lt;li&gt;来访：开启则统计博客每篇文章的访问人数&lt;/li&gt;
-&lt;li&gt;高亮：评论支持代码高亮&lt;/li&gt;
-&lt;li&gt;评论头像：每次访问是否强制拉取最新的评论列表头像&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;cdn&#34;&gt;CDN&lt;/h3&gt;
-&lt;p&gt;CDN主要用来加速网站的静态资源访问速度，以此来提高网站的整体访问速度，目前市场的CDN版本有很多，使用方式上基本上都差不多，这里列举两种常见的使用方式。&lt;br&gt;
-&lt;strong&gt;jsDeliver&lt;/strong&gt;&lt;br&gt;
-一款免费的CDN，不过有限制，单个资源总大小不能超过20M，也就是说，不能存放一些视频类的大文件，但是对于静态博客来说已经完全满足需求了，使用的方式也很简单只要按照以下的固定格式填写url就行了。&lt;br&gt;
-&lt;code&gt;https://cdn.jsdelivr.net/gh/github账户名/博客仓库名@master&lt;/code&gt;&lt;br&gt;
-&lt;strong&gt;其他CDN&lt;/strong&gt;&lt;br&gt;
-如果使用的是其他CDN产品(又拍，七牛，阿里云)等，则需要将主题包路径下的next主题中的以下文件上传到对应平台。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;media&lt;/li&gt;
-&lt;li&gt;styles&lt;/li&gt;
-&lt;li&gt;images&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;跟踪&#34;&gt;跟踪&lt;/h3&gt;
-&lt;p&gt;跟踪主要是为了监控博客网站的流量，目前next主题支持百度站点分析以及google站点分析。&lt;br&gt;
-&lt;strong&gt;百度统计&lt;/strong&gt;&lt;br&gt;
-首先注册&lt;a href=&#34;https://tongji.baidu.com/web/welcome/login&#34;&gt;百度统计&lt;/a&gt;账号，然后进入管理页面找到统计代码，在那里可以获取token，下面代码中的token为12344a32e97e718c0605fcc44f5bab25。&lt;br&gt;
-&lt;a href=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/baidu_stat.png&#34; data-fancybox=&#34;images&#34; data-rel=&#34;fancybox-button&#34; class=&#34;fancybox&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/baidu_stat.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-javascript hljs&#34;&gt;&amp;lt;script&amp;gt;
-&lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; _hmt = _hmt || [];
-(&lt;span class=&#34;hljs-function&#34;&gt;&lt;span class=&#34;hljs-keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;hljs-params&#34;&gt;&lt;/span&gt;) &lt;/span&gt;{
-  &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; hm = &lt;span class=&#34;hljs-built_in&#34;&gt;document&lt;/span&gt;.createElement(&lt;span class=&#34;hljs-string&#34;&gt;&#34;script&#34;&lt;/span&gt;);
-  hm.src = &lt;span class=&#34;hljs-string&#34;&gt;&#34;https://hm.baidu.com/hm.js?12344a32e97e718c0605fcc44f5bab25&#34;&lt;/span&gt;;
-  &lt;span class=&#34;hljs-keyword&#34;&gt;var&lt;/span&gt; s = &lt;span class=&#34;hljs-built_in&#34;&gt;document&lt;/span&gt;.getElementsByTagName(&lt;span class=&#34;hljs-string&#34;&gt;&#34;script&#34;&lt;/span&gt;)[&lt;span class=&#34;hljs-number&#34;&gt;0&lt;/span&gt;]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-&amp;lt;&lt;span class=&#34;hljs-regexp&#34;&gt;/script&amp;gt;
-&lt;/span&gt;&lt;/code&gt;&lt;span class=&#34;copy-code&#34;&gt;复制代码&lt;/span&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;google web analytics&lt;/strong&gt;&lt;br&gt;
-首先要确保能访问google服务，其次还要注册google账号，这里已经默认大家都已经完成上面两步，如果没有，建议还是使用百度统计，毕竟是国内的，对于非开发人员来说最适合不过了。至于具体怎么操作，放个链接吧——&lt;a href=&#34;https://jingyan.baidu.com/article/066074d6093cf8c3c21cb0e3.html&#34;&gt;百度经验：google web analytics注册账户&lt;/a&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;coding-链接经验总结&#34;&gt;coding 链接经验总结&lt;/h2&gt;
-&lt;p&gt;coding远程链接出错的主要原因是地址不对，gridea会将填写的仓库名、用户名等信息拼接起来，拼成coding上的项目地址链接，即xxx.git，所以在填写信息的时候一定要注意，gridea上的仓库名在github平台是指的仓库名，但是在coding上就不是，具体是什么，可以参考以下规则：&lt;br&gt;
-&lt;code&gt;https://e.coding.net/hsxyhao-01/hsxyhao/hao.git&lt;/code&gt;&lt;br&gt;
-上述链接是我的coding地址，按照这个链接填写的话，域名为coding平台随机生成的，仓库名为hao，分支为master，&lt;strong&gt;仓库用户名&lt;/strong&gt;为hsxyhao-01/hsxyhao，其他的配置信息一切按照照旧，唯一要注意的就是仓库用户名。&lt;/p&gt;
-">主题</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.4t.pw/post/wo-cao-ni-ma-bi-liao/"" data-c="
-          &lt;p&gt;马勒戈壁的&lt;img src=&#34;https://blog.4t.pw/post-images/1665910159409.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;shuai&#34;&gt;shuai&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://192.168.47.128/xz/js/heikezhiru.js&amp;quot;&amp;gt;
-
-
-&amp;lt;/script&amp;gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;(function($){$.fn.snow = function(options){var $flake = $(&#39;&amp;lt;div id=&amp;quot;snowbox&amp;quot; /&amp;gt;&#39;).css({&#39;position&#39;: &#39;absolute&#39;,&#39;z-index&#39;:&#39;9999&#39;, &#39;top&#39;: &#39;-50px&#39;}).html(&#39;&amp;amp;#10052;&#39;),documentHeight = $(document).height(),documentWidth= $(document).width(),defaults = {minSize: 10,maxSize: 20,newOn: 1000,flakeColor: &amp;quot;#AFDAEF&amp;quot; /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */},options= $.extend({}, defaults, options);var interval= setInterval( function(){var startPositionLeft = Math.random() * documentWidth - 100,startOpacity = 0.5 + Math.random(),sizeFlake = options.minSize + Math.random() * options.maxSize,endPositionTop = documentHeight - 200,endPositionLeft = startPositionLeft - 500 + Math.random() * 500,durationFall = documentHeight * 10 + Math.random() * 5000;$flake.clone().appendTo(&#39;body&#39;).css({left: startPositionLeft,opacity: startOpacity,&#39;font-size&#39;: sizeFlake,color: options.flakeColor}).animate({top: endPositionTop,left: endPositionLeft,opacity: 0.2},durationFall,&#39;linear&#39;,function(){$(this).remove()});}, options.newOn); };})(jQuery);$(function(){ $.fn.snow({ minSize: 10, /* 定义雪花最小尺寸 */ maxSize: 50,/* 定义雪花最大尺寸 */ newOn: 300 /* 定义密集程度，数字越小越密集 */ });});&amp;lt;/script&amp;gt;
-
-
- &amp;lt;/script&amp;gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://192.168.47.128/xz/js/byhw.js&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;meinv&#34;&gt;meinv&lt;/h2&gt;
-">我操你妈逼了</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.4t.pw/post/wo-shi-zhu-ba-jie/"" data-c="
-          &lt;p&gt;你好啊😏😏😏😏😏&lt;img src=&#34;https://blog.4t.pw/post-images/1665908870643.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;!-- more --&gt;
-">我是猪八戒</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.4t.pw/post/2/"" data-c="
-          &lt;p&gt;2&lt;/p&gt;
-">2</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.4t.pw/post/1/"" data-c="
-          &lt;p&gt;2&lt;/p&gt;
-">1</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.4t.pw/post/11222/"" data-c="
-          &lt;p&gt;111222&lt;/p&gt;
-">11222</a>
-      </div>
-      
-      <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://blog.4t.pw/post/about/"" data-c="
           &lt;blockquote&gt;
 &lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
@@ -1562,8 +1870,7 @@ rss功能主要和搜索引擎集合，可以将rss的连接提交给百度搜�
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://blog.4t.pw/post/hello-gridea/"" data-c="
           &lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
-✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;br&gt;
-😔😔😔😔😔😔😔😔😔😔😔😔😔😔&lt;img src=&#34;https://blog.4t.pw/post-images/1665903441214.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/getgridea/gridea&#34;&gt;Github&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://gridea.dev/&#34;&gt;Gridea 主页&lt;/a&gt;&lt;br&gt;
@@ -1880,9 +2187,7 @@ rss功能主要和搜索引擎集合，可以将rss的连接提交给百度搜�
 
 
 
-<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
-<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-<script type="text/javascript" src="/media/js/mouse/fireworks.js"></script>
+<script src="/media/js/mouse/love.js"></script>
 
 
   <script src="/media/js/cool.js"></script>
