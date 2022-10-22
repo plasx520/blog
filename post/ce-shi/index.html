@@ -8,7 +8,7 @@
 <meta name="keywords" content="怕冷爱上雪,晋天杰,博客,学习资料">
 <meta name="description" content="千里之行 始于足下">
 <meta name="theme-color" content="#1b4d74">
-<title>怕冷爱上雪</title>
+<title>测试 | 怕冷爱上雪</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1666441639334">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -41,8 +41,9 @@
 
 
 
-  <meta name="description" content="千里之行 始于足下">
-  <!--网站加载动画开始-->
+  <meta name="description" content="测试" />
+  <meta name="keywords" content="" />
+<!--网站加载动画开始-->
 <style>
 #loading-box .loading-left-bg,
 #loading-box .loading-right-bg {
@@ -273,7 +274,7 @@ div.loaded div.spinner-box {
             
               
             
-            <li class="nav-item nav-item-active">
+            <li class="nav-item ">
               
               
                 <a href="/archives" target="_self">
@@ -357,10 +358,26 @@ div.loaded div.spinner-box {
   <div class="main-continer">
     
     <div
-      class="section-layout  gemini">
+      class="section-layout gemini ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active language" data-lan="index">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item language" data-lan="preview">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -428,102 +445,470 @@ div.loaded div.spinner-box {
   </div>
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper  auto"
+    id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E4%BD%BF%E7%94%A8">使用</a></li>
+<li><a href="#%E6%9B%B4%E6%96%B0">更新</a></li>
+<li><a href="#%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D">主题介绍</a></li>
+<li><a href="#%E8%AE%A1%E5%88%92%E6%9B%B4%E6%96%B0">计划更新</a></li>
+<li><a href="#valine%E9%82%AE%E4%BB%B6%E6%94%AF%E6%8C%81">Valine邮件支持</a></li>
+<li><a href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE%E4%BF%9D%E5%AD%98">自定义配置保存</a></li>
+<li><a href="#%E6%9C%80%E5%90%8E">最后</a></li>
+<li><a href="#%E8%81%94%E7%B3%BB">联系</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
 </div>
+
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'gemini';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+
+  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
+  let active = 'active-show', activeClass = 'active-current';
+  let tocWrapper = document.querySelector('#toc_wrapper');
+  let tocContent = tocWrapper.children[0];
+  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
+
+  function addTocNumber(elem, deep) {
+    if (!elem) {
+      return;
+    }
+    let prop = elem.__proto__;
+
+    if (prop === HTMLUListElement.prototype) {
+      for (let i = 0; i < elem.children.length; i++) {
+        addTocNumber(elem.children[i], deep + (i + 1) + '.');
       }
+    } else if (prop === HTMLLIElement.prototype) {
+      // 保存li元素
+      if (elem.children[0] && elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+        lList.push(elem);
+      }
+      for (let i = 0; i < elem.children.length; i++) {
+        let cur = elem.children[i];
+        if (cur.__proto__ === HTMLAnchorElement.prototype) {
+          if (autoNumber) {
+            cur.text = deep + ' ' + cur.text;
+          }
+        } else if (cur.__proto__ === HTMLUListElement.prototype) {
+          addTocNumber(cur, deep);
+        }
+      }
+    }
+  }
+
+  function removeParentActiveClass() {
+    let parents = tocContent.querySelectorAll('.' + active)
+    parents.forEach(function (elem) {
+      elem.classList.remove(active);
     });
   }
-  </script>
-        <div class="section-box box-shadow-wrapper">
-          <section class="section archives-section bg-color posts-expand">
-            
 
-<div class="bg-color">
-  <div class="archive-timeline-box">
-    <div class="archive-timeline-title">
-      
-        <h2 class="language" data-lan="archives" data-count="3">非常好！目前共计3篇文章，继续努力！</h2>
-      
+  function addActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.add(activeClass);
+    }
+  }
+
+  function removeActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.remove(activeClass);
+    }
+  }
+
+  function addActiveLiElemment(elem, parent) {
+    if (!elem || elem === parent) {
+      return;
+    } else {
+      if (elem.__proto__ === HTMLLIElement.prototype) {
+        elem.classList.add(active);
+      }
+      addActiveLiElemment(elem.parentElement, parent);
+    }
+  }
+
+  function showToc() {
+    if (tocWrapper) {
+      postBody = document.querySelector('#post_body');
+      for (let i = 0; i < postBody.children.length; i++) {
+        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+          hList.push(postBody.children[i]);
+        }
+      }
+      if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+      } else if (tocWrapper.classList.contains('no_compress')) {
+        tocContent.classList.add('expanded');
+      } else {
+        if (hList.length > 10) {
+          active = 'active-hidden'
+          tocContent.classList.add('closed');
+        } else {
+          tocContent.classList.add('expanded');
+        }
+      }
+    }
+  }
+
+  (function () {
+    // 处理不是从#一级标题开始目录
+    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+      let con = tocContent.children[0].children[0];
+      tocContent.innerHTML = con.innerHTML;
+    }
+    let markdownItTOC = document.querySelector('.markdownIt-TOC');
+    let innerHeight = window.innerHeight;
+    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+    addTocNumber(tocContent, '');
+  })();
+
+  document.addEventListener('scroll', function (e) {
+    if (lList.length <= 0) {
+      return;
+    }
+    let scrollTop = document.scrollingElement.scrollTop + 10;
+    let dir;
+
+    if (lastTop - scrollTop > 0) {
+      dir = 'up';
+    } else {
+      dir = 'down';
+    }
+
+    lastTop = scrollTop;
+    if (scrollTop <= 0) {
+      if (lastIndex >= 0 && lastIndex < hList.length) {
+        lList[lastIndex].classList.remove(activeClass);
+      }
+      return;
+    }
+
+    let current = 0, hasFind = false;
+    for (let i = 0; i < hList.length; i++) {
+      if (hList[i].offsetTop > scrollTop) {
+        current = i;
+        hasFind = true;
+        break;
+      }
+    }
+    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+      current = hList.length - 1;
+    } else {
+      current--;
+    }
+    if (dir === 'down') {
+      if (current > lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex)
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    } else {
+      if (current < lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex);
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    showToc();
+    document.querySelector('#sidebar').style = 'display: block;';
+    tocWrapper.classList.add('toc-active');
+    setTimeout(function () {
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("scroll", false, true);
+        document.dispatchEvent(evt);
+      }
+      else {
+        document.fireEvent("scroll");
+      }
+    }, 500)
+  })
+
+</script>
+            </div>
+          
+        
+      </div>
     </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    jQuery.Velocity(hideElement, 'stop');
+    jQuery.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        jQuery.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+			<div class="post-body">
+              
+              
+            </div>	
+            <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.4t.pw/post/ce-shi/"> 测试 </a>
+  </h1>
+  <div class="post-meta">
     
-      
-      
-        <div class="node-title">
-          <h2 class="tag-year">2022</h2>
-        </div>    
-        
-      
-      <a href="https://blog.4t.pw/post/guan-yu-cdn/">
-        <div class="motion-warpper tag-archive-node">
-          <div class="tag-node">
-            <h1>
-              10-22
-              <small>关于CDN</small>
-            </h1>
-          </div>  
-      </div>
-      </a>
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2022-10-22 10:49:43">2022-10-22</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
     
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span
+        >2<span class="language" data-lan="minute"
+          >分钟</span
+        ></span
+      >
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span
+        >502<span class="pc-show language" data-lan="words"
+          >字数</span
+        ></span
+      >
+    </span>
       
-      
-      <a href="https://blog.4t.pw/post/ce-shi/">
-        <div class="motion-warpper tag-archive-node">
-          <div class="tag-node">
-            <h1>
-              10-22
-              <small>测试</small>
-            </h1>
-          </div>  
-      </div>
-      </a>
-    
-      
-      
-        <div class="node-title">
-          <h2 class="tag-year">2018</h2>
-        </div>    
-        
-      
-      <a href="https://blog.4t.pw/post/hello-gridea/">
-        <div class="motion-warpper tag-archive-node">
-          <div class="tag-node">
-            <h1>
-              12-12
-              <small>Hello Gridea</small>
-            </h1>
-          </div>  
-      </div>
-      </a>
+    <span
+      id="/post/ce-shi/"
+      data-flag-title="测试"
+      class="meta-item pc-show leancloud_visitors"
+    >
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span
+        ><span class="language" data-lan="view">浏览量:</span>:<span
+          class="leancloud-visitors-count"
+        ></span
+      ></span>
+    </span>
     
   </div>
-  
-<div class="page bg-color">
-  <ul class="pagination-ul">
-    
-    
-      
-        <li class="pagination-li pagination-active">
-            <a href="/archives/page/../">
-              1
-            </a>
-        </li>
-      
-    
-    
-  </ul>
-</div>
-</div>
+</section>
 
-          </section>
+            <div class="post-body next-md-body" id="post_body">
+              <h1 align="center">
+  Gridea Theme NexT
+</h1>
+<p><img src="https://blog.4t.pw/post-images/1666407021798.jpg" alt="NexT主题概览" loading="lazy">rview.jpg)</p>
+<h3 id="使用">使用</h3>
+<p>下载主题压缩包至gridea主题包中，在主题包文件夹下解压，并将其文件名改为next，主题包路径可以在gridea站点源文件夹中找到。</p>
+<h3 id="更新">更新</h3>
+<p>更新之前需要先备份旧的next主题assets/media路径下的images文件，下载最新版主题压缩包，并将其解压至gridea主题包中，最后将备份的images文件迁移回assets/media下。（如果旧版本next主题中不包含images可忽略备份操作）</p>
+<h3 id="主题介绍">主题介绍</h3>
+<p>gridea-theme-next原产自hexo平台的next主题，将其搬至gridea，也算是为gridea开源社区做一份贡献。主题目前包含以下功能：自定义主题色，搜索功能，主题魔改功能，自定义鼠标样式，看板娘，背景音乐（外链以及aplayer），支持CDN，valine（1.4版本）评论，谷歌、百度站点分析，以及其他常用自定义配置等功能。</p>
+<h3 id="计划更新">计划更新</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3832686"><label class="task-list-item-label" for="task-item-3832686"> 夜间模式</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6063404"><label class="task-list-item-label" for="task-item-6063404"> 打赏功能</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8473051"><label class="task-list-item-label" for="task-item-8473051"> 多语言支持</label></li>
+</ul>
+<h3 id="valine邮件支持">Valine邮件支持</h3>
+<p>新版本中作者将邮件通知功能移除，所以要想实现评论邮件通知，需要借助第三方支持，具体操作步骤，可以参考<a href="https://github.com/zhaojun1998/Valine-Admin">Valine-Admin</a></p>
+<h3 id="自定义配置保存">自定义配置保存</h3>
+<p>windows用户如果上传了背景图片，会导致之后整个配置无法保存，这里不建议windows用户上传背景图片。但是可以选择手动填写图片地址的兼容方案，目前手动填写可以是图片外链，也可以是本地图片。如果是本地图片的话需要将图片先复制到next主题下assets/media/images这个目录，如果没有images文件夹，手动创建一个，然后再配置项那里填写成/media/images/文件名。</p>
+<p><a href="https://cdn.jsdelivr.net/gh/o1f/i@master/2020/04/11/2U2OBqTR.gif">手动填写操作步骤</a></p>
+<h3 id="最后">最后</h3>
+<p>在这里祝大家2020年新的一年里开心每一天，感觉不错的话，点赞支持一下呗！</p>
+<h3 id="联系">联系</h3>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/group_chat.jpeg" alt="Next主题交流群" loading="lazy"></figure>
+
+            </div>
+<br/> 
+  <div style="text-align:center;color: #999;font-size:14px;">---------- 本文到此结束 <i class="fa fa-paw"></i> 感谢您的阅读 ----------</div>
+<br/>
+</div>
+            
+              <div class="reward-btn">
+                <div class="reward-btn-text">赞赏</div>
+              </div>
+            
+            
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      晋天杰丫
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://blog.4t.pw/post/ce-shi/" title="测试">https://blog.4t.pw/post/ce-shi/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="关于CDN" href="https://blog.4t.pw/post/guan-yu-cdn/">关于CDN</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="关于CDN" href="https://blog.4t.pw/post/guan-yu-cdn/">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="Hello Gridea" href="https://blog.4t.pw/post/hello-gridea/">Hello Gridea</a>
+        <a class="nav-mobile-next" title="Hello Gridea" href="https://blog.4t.pw/post/hello-gridea/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
+            
+            
+  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
+
+<style>
+  .v .veditor {
+    min-height: 10rem;
+    background-image: url('/media/images/custom-bgImg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+  }
+
+  .v .vwrap {
+    border: 1px solid #000 !important;
+  }
+
+  .v .vbtn {
+    padding: .4rem 1.2rem !important;
+    border-color: #fff !important;
+    background-color: #49b1f5 !important;
+    color: #fff !important;
+    font-size: .7rem !important;
+  }
+
+  .v .vcards .vcard .vh .vmeta .vat {
+    padding: 0 .8rem !important;
+    border: 1px solid #00c4b6 !important;
+    border-radius: 5px !important;
+    color: #00c4b6 !important;
+  }
+</style>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '6n6eJKWmHrAVnL2al0T7EJcD-MdYXbMMI',
+    appKey: 'EUch7TKYNwZWrdZE735DUqUk',
+    avatar: 'wavatar',
+    placeholder: '哎呀好害羞',
+    pageSize: '',
+    lang: 'zh-cn',
+    enableQQ: 'true' === 'true',
+    visitor: 'true' === 'true',
+    highlight: 'true' === 'true',
+    avatarForce: 'true' === 'true',
+    serverURLs: '',
+		recordIP: 'true' === 'true',
+  });
+</script>
+
+          </div>
         </div>
       </div>
     </div>
@@ -826,6 +1211,235 @@ div.loaded div.spinner-box {
     parent.insertBefore(aelem, next);
   });
 </script>
+    <div class="reward-mask" style="display: none;">
+  <div class="reward-relative">
+    <span class="close" aria-hidden="true">x</span>
+    <div class="reward-body">
+      <h2>感谢您的支持，我会继续努力的!</h2>
+      <div class="reward-img-box">
+        <div style="position: relative; width: 140px; height: 140px;">
+          
+          
+            <img id="zfb" class="reward-img" src="\media\images\custom-zfbImg.jpg" alt="赞赏码">
+          
+          
+            <img id="wx" class="reward-img" src="\media\images\custom-wxImg.jpg" alt="赞赏码">
+          
+        </div>
+      </div>
+      <p class="reward-word">扫码打赏，你说多少就多少</p>
+      <p class="reward-tip"> 老板威武霸气</p>
+    </div>
+    <div class="bottom">
+      
+      <div id="zfbBtn" class="pay-text">
+        支付宝
+      </div>
+      
+      
+      <div id="wxBtn" class="pay-text">
+        微信支付
+      </div>
+      
+    </div>
+  </div>
+</div>
+<style>
+  .reward-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000054;
+  }
+
+  .reward-relative {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -205px;
+  }
+
+  .reward-relative .close {
+    position: absolute;
+    right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+  }
+
+  .reward-body {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .reward-btn {
+    text-align: center;
+  }
+
+  .reward-btn-text {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ff9734;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .pay-text {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    transition: all .2s linear;
+  }
+
+  .pay-text:hover {
+    background-color: #a5a5a536;
+  }
+
+  .reward-body h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
+  .reward-body h2:after,
+  .reward-body h2:before {
+    font-family: Arial, Helvetica, sans-serif;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    font-style: normal;
+    color: #eee;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .reward-body h2:before {
+    content: '\201c';
+    left: 50px;
+  }
+
+  .reward-body h2:after {
+    content: '\201d';
+    right: 80px;
+  }
+
+  .reward-img-box {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .reward-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .reward-relative {
+      height: 100%;
+      top: 0px;
+      margin-top: 0;
+      width: auto;
+    }
+
+    .reward-relative .bottom {
+      flex-direction: column;
+    }
+
+    .reward-relative .pay-text {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid silver;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .reward-body h2:after {
+      right: 40px;
+    }
+
+    .reward-body h2:after,
+    .reward-body h2:before {
+      font-size: 60px;
+    }
+
+    .reward-body h2:before {
+      left: 20px;
+    }
+  }
+</style>
+<script>
+  !function () {
+    var mask = document.querySelector('.reward-mask');
+    let close = document.querySelector('.reward-relative .close');
+    let rewardBtn = document.querySelector('.reward-btn');
+
+    let zfb = document.querySelector('#zfb'),
+      wx = document.querySelector('#wx'),
+      zfbBtn = document.querySelector('#zfbBtn'),
+      wxBtn = document.querySelector('#wxBtn');
+
+    if (zfbBtn && wxBtn) {
+      zfbBtn.addEventListener('click', () => {
+        jQuery.Velocity(zfb, 'transition.slideLeftIn', {
+          duration: 400
+        });
+        jQuery.Velocity(wx, 'transition.slideRightOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+
+      wxBtn.addEventListener('click', () => {
+        jQuery.Velocity(wx, 'transition.slideRightIn', {
+          duration: 400
+        });
+        jQuery.Velocity(zfb, 'transition.slideLeftOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+    }
+
+    rewardBtn.addEventListener('click', (e) => {
+      jQuery.Velocity(mask, 'transition.slideDownIn', {
+        duration: 400
+      })
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      jQuery.Velocity(mask, 'transition.slideUpOut', {
+        duration: 400
+      })
+    })
+  }()
+</script>
+
   </div>
 </body>
 
@@ -1252,6 +1866,5 @@ div.loaded div.spinner-box {
 
 
   <script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
-
 
 </html>

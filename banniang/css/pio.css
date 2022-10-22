@@ -92,17 +92,18 @@
 
 .pio-container .pio-dialog{
     top: -4em;
+	color: #007379;
     opacity: 0;
     z-index: -2;
     font-size: .8em;
     min-width: 12em;
-    background-color: rgba(236, 217, 188, .5);
+    background-color: rgb(0 47 90 / 15%);
     padding: .75em 1em;
     border-radius: 1em;
     visibility: hidden;
     position: absolute;
     word-break: break-all;
-    border: 1px solid #eee;
+    border: 2px solid #00d9ff;
     transition: opacity .3s, visibility .3s;
 }
 .pio-container .pio-dialog.active{

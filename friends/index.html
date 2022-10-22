@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="keywords" content="Gridea静态个人博客,博客，blog，怕冷爱上雪，晋天杰">
+<meta name="keywords" content="怕冷爱上雪,晋天杰,博客,学习资料">
 <meta name="description" content="千里之行 始于足下">
-<meta name="theme-color" content="#495057">
+<meta name="theme-color" content="#1b4d74">
 <title>怕冷爱上雪</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1666358094484">
-<link rel="stylesheet" href="/media/css/pisces.css">
+<link rel="shortcut icon" href="/favicon.ico?v=1666441639334">
+<link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
   href="//fonts.loli.net/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
@@ -191,55 +191,11 @@ div.loaded div.spinner-box {
     width: 8px; /*竖向滚动条的宽度*/
     height: 8px; /*横向滚动条的高度*/
 }
-</style>
-<!--防止扒代码-->
-<script>((function() {var callbacks = [],timeLimit = 50,open = false;setInterval(loop, 1);return {addListener: function(fn) {callbacks.push(fn);},cancleListenr: function(fn) {callbacks = callbacks.filter(function(v) {return v !== fn;});}}
-function loop() {var startTime = new Date();debugger;if (new Date() - startTime > timeLimit) {if (!open) {callbacks.forEach(function(fn) {fn.call(null);});}open = true;window.stop();alert('哒咩哒咩!大佬别扒人家裤裤惹QAQ！');document.body.innerHTML = "";} else {open = false;}}})()).addListener(function() {window.location.reload();});</script>
-
-
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>document.onkeydown = document.onkeyup = document.onkeypress = function(event) {
-    var e = event || window.event || arguments.callee.caller.arguments[0];
-    if (e && (e.keyCode == 123)) {
-      e.keyCode = 0;
-      e.returnValue = false;
-        swal({
-        title: "丫麦滴！不要酱紫。",
-        text: '大佬别扒人家裤裤惹QAQ！',
-        buttons: false,
-        closeOnClickOutside: false,
-        icon: "/hx.jpg",
-        timer: 9000,
-    });
-      return (false);
-    }
-}
-$(document).keydown(function(e){
-  if( e.ctrlKey  == true && e.keyCode == 83 ){
-    console.log('ctrl+s');
-    return false;
-  }
-});</script>
-<!-- 复制弹窗提示开始 -->
-<script>
-  window.onload = function(){
-    document.body.oncopy = function() {
-      swal({
-        title: "复制成功！",
-        text: "若要转载请务必保留原文链接并注明来源，谢谢合作！",
-        icon: "success",
-        buttons: false,
-        closeOnClickOutside: false,
-        timer: 1500,
-     });
-    };
-  }
-</script>
-<!-- 复制弹窗提示结束 -->									   
+</style>									   
 </head>
-<div class="pio-container left">
+<div class="pio-container right">
     <div class="pio-action"></div>
-    <canvas id="pio" width="200" height="250"></canvas>
+    <canvas id="pio" width="270" height="350"></canvas>
 </div>
 <link rel="stylesheet" href="https://blog.4t.pw/banniang/css/pio.css">
 <script src="https://blog.4t.pw/banniang/js/pio.js"></script>
@@ -265,6 +221,8 @@ $(document).keydown(function(e){
     "https://blog.4t.pw/banniang/live2d-widget-models/live2d-widget-model-haru/02/assets/haru02.model.json",
     "https://blog.4t.pw/banniang/live2d-widget-models/live2d-widget-model-histoire/histoire/histoire.model.json",
     "https://blog.4t.pw/banniang/live2d-widget-models/live2d-widget-model-blanc_normal/blanc_normal/blanc_normal.model.json",
+	"https://blog.4t.pw/banniang/live2d-widget-models/live2d-widget-model-izumi/assets/izumi.model.json",
+	"https://blog.4t.pw/banniang/live2d-widget-models/live2d-widget-model-z16/assets/z16.model.json",
     ]
 });
 </script>
@@ -272,7 +230,7 @@ $(document).keydown(function(e){
   <div class="head-top-line"></div>
   <div class="header-box">
     
-<div class="pisces">
+<div class="gemini">
   <header class="header  ">
     <div class="blog-header box-shadow-wrapper bg-color " id="header">
       <div class="nav-toggle" id="nav_toggle">
@@ -354,7 +312,7 @@ $(document).keydown(function(e){
               <li class="nav-item nav-item-active">
                 <a href="/friends/" target="_self">
                   
-                    <i class="fa fa-address-book"></i> 友链
+                    fa-ship友链
                   
                 </a>
               </li>
@@ -398,7 +356,7 @@ $(document).keydown(function(e){
   <div class="main-continer">
     
       <div
-        class="section-layout pisces ">
+        class="section-layout gemini ">
         <div class="section-layout-wrapper">
           <div id="sidebarMeta" class="sidebar">
     
@@ -409,7 +367,7 @@ $(document).keydown(function(e){
     
     <div class="site-description right-motion">
       
-        <p id="binft">怕冷爱上雪</p>
+        <p id="binft">王者气质\n实力打造非凡\n王者绝非偶然</p>
       
     </div>
     
@@ -418,7 +376,7 @@ $(document).keydown(function(e){
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-count">3</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
@@ -440,6 +398,26 @@ $(document).keydown(function(e){
     
   
   
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="1400000222">
+              <i class="fa fa-globe" title="QQ"></i>
+            </a>
+          
+        
+        
+          
+            <a class="social-img" href="#">
+              <img src="\media\images\custom-array-imgSocials-1666441587750-socialImg.png" />
+              <i class="fa fa-globe" title="logo" ></i>
+            </a>
+          
+        
+      </div>
+    </div>
+  
 
 
 
@@ -452,7 +430,7 @@ $(document).keydown(function(e){
 </div>
 <script>
   let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'pisces';
+  let scheme = 'gemini';
   let sidebarWrapper = document.querySelector('.sidebar-wrapper');
   if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
     document.addEventListener('scroll', function(e) {
@@ -464,7 +442,7 @@ $(document).keydown(function(e){
     });
   }
   </script>
-            <div class="section-box pisces box-shadow-wrapper">
+            <div class="section-box gemini box-shadow-wrapper">
               <section class="friends-section bg-color slide-down-in">
                 <div class="firends-box" align="center">
                   <h1 class="firends-title" itemprop="name headline">
@@ -472,6 +450,34 @@ $(document).keydown(function(e){
                   </h1>
                   
                     
+                      <a href="https://www.sojson.com/rgb.html" target="_blank">
+                        <div class="firends-item">
+                          <img src="https://cdn.sojson.com/sojson/favicon.ico" />
+                          <div class="right">
+                            <div class="top">
+                              取色
+                            </div>
+                            <div class="bottom">
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      
+                      <a href="https://tinypng.com/" target="_blank">
+                        <div class="firends-item">
+                          <img src="https://tinypng.com/images/favicon.ico" />
+                          <div class="right">
+                            <div class="top">
+                              压缩
+                            </div>
+                            <div class="bottom">
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      
                         
                 </div>
                 <hr>
@@ -503,7 +509,7 @@ $(document).keydown(function(e){
 <style>
   .v .veditor {
     min-height: 10rem;
-    background-image: url('https://blog.4t.pw/pl.jpg');
+    background-image: url('/media/images/custom-bgImg.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -536,7 +542,7 @@ $(document).keydown(function(e){
     appId: '6n6eJKWmHrAVnL2al0T7EJcD-MdYXbMMI',
     appKey: 'EUch7TKYNwZWrdZE735DUqUk',
     avatar: 'wavatar',
-    placeholder: '禁止胡乱评论',
+    placeholder: '哎呀好害羞',
     pageSize: '',
     lang: 'zh-cn',
     enableQQ: 'true' === 'true',
@@ -596,7 +602,7 @@ $(document).keydown(function(e){
   </footer>
   
     
-        <div class="pisces back-to-top" id="back_to_top">
+        <div class="gemini back-to-top" id="back_to_top">
           <i class="fa fa-arrow-up"></i>
           
             <span class="scrollpercent"> <span id="back_to_top_text">0</span>% </span>
@@ -606,7 +612,7 @@ $(document).keydown(function(e){
           
             
               <div class="bg-img">
-                <img src="\media\images\custom-bgImg.jpg" />
+                <img src="/media/images/custom-bgImg.jpg" />
               </div>
               
                 
@@ -617,7 +623,7 @@ $(document).keydown(function(e){
   <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
   <div class="aplayer" id="aplayer"></div>
   <script>
-  let musics = JSON.parse('[{"author":"陈一发","cover":"https://blog.4t.pw/hx.jpg","lrc":"https://blog.4t.pw/thz.lrc","musicLink":"https://mp3.jiuku.9ku.com/upload/128/2017/08/03/863848.mp3","musicName":"童话镇"}]');
+  let musics = JSON.parse('[{"author":"陈一发","cover":"https://cdn.hercd.com/static/2020/05/1589707290-561c9ab24f7b7cc.jpg","lrc":"thz.lrc","musicLink":"https://mp3.jiuku.9ku.com/upload/128/2017/08/03/863848.mp3","musicName":"童话镇"}]');
   let mediaMusic = [];
   for (let i = 0; i < musics.length; i++) {
     let item = musics[i];
@@ -799,7 +805,7 @@ $(document).keydown(function(e){
   }
 
   // 链接跳转
-  let newWindow = "true";
+  let newWindow = "false";
   if (newWindow === "true") {
     let links = document.querySelectorAll(".post-body a");
     links.forEach((item) => {
@@ -819,7 +825,7 @@ $(document).keydown(function(e){
   hljs.initHighlightingOnLoad();
 
   // 离开当前页title变化
-  var leaveTitle = "别走嘛";
+  var leaveTitle = "别走嘛 ^_^";
   var normal_title = document.title;
   if (leaveTitle) {
     document.addEventListener("visibilitychange", function () {
@@ -868,6 +874,80 @@ $(document).keydown(function(e){
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://blog.4t.pw/post/guan-yu-cdn/"" data-c="
+          &lt;h1 id=&#34;关于cdn&#34;&gt;&lt;img src=&#34;https://blog.4t.pw/post-images/1666407070220.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;关于CDN&lt;/h1&gt;
+&lt;p&gt;如果你是部署在 github pages&lt;/p&gt;
+&lt;p&gt;可以直接填写&lt;/p&gt;
+&lt;p&gt;https://cdn.jsdelivr.net/gh/你的用户名/你的博客仓库名@master&lt;/p&gt;
+&lt;p&gt;如果为其他云储存托管分发&lt;/p&gt;
+&lt;p&gt;把 源文件价 output 内的静态资源上传到云储存,填写绑定的域名即可 .&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://upimage.alexhchu.com/2020/04/22/65893bbc87747.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;关于鼠标指针设置&#34;&gt;关于鼠标指针设置&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;点击效果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://upimage.alexhchu.com/2020/04/23/f0c42f4f8f901.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;演示:&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://upimage.alexhchu.com/2020/04/23/3620409f14fd1.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;鼠标指针&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;需要预先把 &lt;code&gt;.cur&lt;/code&gt;格式的文件放到主体文件夹 &lt;code&gt;curs&lt;/code&gt;下,具体路径为&lt;code&gt;gridea-theme-next\assets\media\curs&lt;/code&gt;,已经有默认的一套.&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://upimage.alexhchu.com/2020/04/23/2c9e94422d891.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;以此为示例 :&lt;/p&gt;
+&lt;p&gt;在设置中填写文件名称,不需要待文件格式名称&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://upimage.alexhchu.com/2020/04/23/f70ca1ea2e7cc.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;演示:&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://upimage.alexhchu.com/2020/04/23/475ae5ea1d6c4.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;因为仅为测试文件,所以未全覆盖,有需要的朋友可以直接去:&lt;br&gt;
+&lt;a href=&#34;https://zhutix.com/tag/cursors/&#34;&gt;https://zhutix.com/tag/cursors/&lt;/a&gt;下载所需,&lt;br&gt;
+也可以使用&lt;a href=&#34;https://convertio.co/zh/png-cur/&#34;&gt;https://convertio.co/zh/png-cur/&lt;/a&gt;,把任意图片转换成&lt;code&gt;cur&lt;/code&gt;文件使用,但需要注意的是图片大小需要自己设置好,图片太大会不生效.&lt;/p&gt;
+&lt;h1 id=&#34;博主介绍&#34;&gt;博主介绍&lt;/h1&gt;
+&lt;p&gt;关闭美化效果&lt;br&gt;
+&lt;img src=&#34;https://upimage.alexhchu.com/2020/04/23/ecce36a589809.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+开启美化效果&lt;br&gt;
+&lt;img src=&#34;https://upimage.alexhchu.com/2020/04/23/65e6c4f11363f.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;关于加载动画样式&#34;&gt;关于加载动画样式&lt;/h1&gt;
+&lt;p&gt;开源项目 https://github.com/HubSpot/pace/issues&lt;br&gt;
+可选是否开启,默认关闭.&lt;br&gt;
+关于更多样式选择 : https://www.jsdelivr.com/package/npm/pace-js?path=themes&lt;br&gt;
+示例:&lt;br&gt;
+&lt;img src=&#34;https://upimage.alexhchu.com/2020/05/07/3cde4f7c68378.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+选择样式,复制粘贴即可.&lt;/p&gt;
+">关于CDN</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://blog.4t.pw/post/ce-shi/"" data-c="
+          &lt;h1 align=&#34;center&#34;&gt;
+  Gridea Theme NexT
+&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.4t.pw/post-images/1666407021798.jpg&#34; alt=&#34;NexT主题概览&#34; loading=&#34;lazy&#34;&gt;rview.jpg)&lt;/p&gt;
+&lt;h3 id=&#34;使用&#34;&gt;使用&lt;/h3&gt;
+&lt;p&gt;下载主题压缩包至gridea主题包中，在主题包文件夹下解压，并将其文件名改为next，主题包路径可以在gridea站点源文件夹中找到。&lt;/p&gt;
+&lt;h3 id=&#34;更新&#34;&gt;更新&lt;/h3&gt;
+&lt;p&gt;更新之前需要先备份旧的next主题assets/media路径下的images文件，下载最新版主题压缩包，并将其解压至gridea主题包中，最后将备份的images文件迁移回assets/media下。（如果旧版本next主题中不包含images可忽略备份操作）&lt;/p&gt;
+&lt;h3 id=&#34;主题介绍&#34;&gt;主题介绍&lt;/h3&gt;
+&lt;p&gt;gridea-theme-next原产自hexo平台的next主题，将其搬至gridea，也算是为gridea开源社区做一份贡献。主题目前包含以下功能：自定义主题色，搜索功能，主题魔改功能，自定义鼠标样式，看板娘，背景音乐（外链以及aplayer），支持CDN，valine（1.4版本）评论，谷歌、百度站点分析，以及其他常用自定义配置等功能。&lt;/p&gt;
+&lt;h3 id=&#34;计划更新&#34;&gt;计划更新&lt;/h3&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3832686&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3832686&#34;&gt; 夜间模式&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6063404&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6063404&#34;&gt; 打赏功能&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8473051&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8473051&#34;&gt; 多语言支持&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;valine邮件支持&#34;&gt;Valine邮件支持&lt;/h3&gt;
+&lt;p&gt;新版本中作者将邮件通知功能移除，所以要想实现评论邮件通知，需要借助第三方支持，具体操作步骤，可以参考&lt;a href=&#34;https://github.com/zhaojun1998/Valine-Admin&#34;&gt;Valine-Admin&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;自定义配置保存&#34;&gt;自定义配置保存&lt;/h3&gt;
+&lt;p&gt;windows用户如果上传了背景图片，会导致之后整个配置无法保存，这里不建议windows用户上传背景图片。但是可以选择手动填写图片地址的兼容方案，目前手动填写可以是图片外链，也可以是本地图片。如果是本地图片的话需要将图片先复制到next主题下assets/media/images这个目录，如果没有images文件夹，手动创建一个，然后再配置项那里填写成/media/images/文件名。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cdn.jsdelivr.net/gh/o1f/i@master/2020/04/11/2U2OBqTR.gif&#34;&gt;手动填写操作步骤&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;最后&#34;&gt;最后&lt;/h3&gt;
+&lt;p&gt;在这里祝大家2020年新的一年里开心每一天，感觉不错的话，点赞支持一下呗！&lt;/p&gt;
+&lt;h3 id=&#34;联系&#34;&gt;联系&lt;/h3&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/group_chat.jpeg&#34; alt=&#34;Next主题交流群&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+">测试</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://blog.4t.pw/post/about/"" data-c="
