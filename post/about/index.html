@@ -193,7 +193,51 @@ div.loaded div.spinner-box {
     width: 8px; /*竖向滚动条的宽度*/
     height: 8px; /*横向滚动条的高度*/
 }
-</style>								   
+</style>
+<!--防止扒代码-->
+<script>((function() {var callbacks = [],timeLimit = 50,open = false;setInterval(loop, 1);return {addListener: function(fn) {callbacks.push(fn);},cancleListenr: function(fn) {callbacks = callbacks.filter(function(v) {return v !== fn;});}}
+function loop() {var startTime = new Date();debugger;if (new Date() - startTime > timeLimit) {if (!open) {callbacks.forEach(function(fn) {fn.call(null);});}open = true;window.stop();alert('哒咩哒咩!大佬别扒人家裤裤惹QAQ！');document.body.innerHTML = "";} else {open = false;}}})()).addListener(function() {window.location.reload();});</script>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>document.onkeydown = document.onkeyup = document.onkeypress = function(event) {
+    var e = event || window.event || arguments.callee.caller.arguments[0];
+    if (e && (e.keyCode == 123)) {
+      e.keyCode = 0;
+      e.returnValue = false;
+        swal({
+        title: "丫麦滴！不要酱紫。",
+        text: '大佬别扒人家裤裤惹QAQ！',
+        buttons: false,
+        closeOnClickOutside: false,
+        icon: "/hx.jpg",
+        timer: 9000,
+    });
+      return (false);
+    }
+}
+$(document).keydown(function(e){
+  if( e.ctrlKey  == true && e.keyCode == 83 ){
+    console.log('ctrl+s');
+    return false;
+  }
+});</script>
+<!-- 复制弹窗提示开始 -->
+<script>
+  window.onload = function(){
+    document.body.oncopy = function() {
+      swal({
+        title: "复制成功！",
+        text: "若要转载请务必保留原文链接并注明来源，谢谢合作！",
+        icon: "success",
+        buttons: false,
+        closeOnClickOutside: false,
+        timer: 1500,
+     });
+    };
+  }
+</script>
+<!-- 复制弹窗提示结束 -->								   
 </head>
 <div class="pio-container right">
     <div class="pio-action"></div>
@@ -1454,9 +1498,9 @@ div.loaded div.spinner-box {
 &lt;p&gt;gridea-theme-next原产自hexo平台的next主题，将其搬至gridea，也算是为gridea开源社区做一份贡献。主题目前包含以下功能：自定义主题色，搜索功能，主题魔改功能，自定义鼠标样式，看板娘，背景音乐（外链以及aplayer），支持CDN，valine（1.4版本）评论，谷歌、百度站点分析，以及其他常用自定义配置等功能。&lt;/p&gt;
 &lt;h3 id=&#34;计划更新&#34;&gt;计划更新&lt;/h3&gt;
 &lt;ul class=&#34;contains-task-list&#34;&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3832686&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3832686&#34;&gt; 夜间模式&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6063404&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6063404&#34;&gt; 打赏功能&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8473051&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8473051&#34;&gt; 多语言支持&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-386292&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-386292&#34;&gt; 夜间模式&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9579669&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9579669&#34;&gt; 打赏功能&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-391778&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-391778&#34;&gt; 多语言支持&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;valine邮件支持&#34;&gt;Valine邮件支持&lt;/h3&gt;
 &lt;p&gt;新版本中作者将邮件通知功能移除，所以要想实现评论邮件通知，需要借助第三方支持，具体操作步骤，可以参考&lt;a href=&#34;https://github.com/zhaojun1998/Valine-Admin&#34;&gt;Valine-Admin&lt;/a&gt;&lt;/p&gt;

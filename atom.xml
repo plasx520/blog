@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.4t.pw</id>
     <title>怕冷爱上雪</title>
-    <updated>2022-10-22T12:27:22.290Z</updated>
+    <updated>2022-10-22T12:32:48.782Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.4t.pw"/>
     <link rel="self" href="https://blog.4t.pw/atom.xml"/>
@@ -75,9 +75,9 @@
 <p>gridea-theme-next原产自hexo平台的next主题，将其搬至gridea，也算是为gridea开源社区做一份贡献。主题目前包含以下功能：自定义主题色，搜索功能，主题魔改功能，自定义鼠标样式，看板娘，背景音乐（外链以及aplayer），支持CDN，valine（1.4版本）评论，谷歌、百度站点分析，以及其他常用自定义配置等功能。</p>
 <h3 id="计划更新">计划更新</h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3832686"><label class="task-list-item-label" for="task-item-3832686"> 夜间模式</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6063404"><label class="task-list-item-label" for="task-item-6063404"> 打赏功能</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8473051"><label class="task-list-item-label" for="task-item-8473051"> 多语言支持</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-386292"><label class="task-list-item-label" for="task-item-386292"> 夜间模式</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9579669"><label class="task-list-item-label" for="task-item-9579669"> 打赏功能</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-391778"><label class="task-list-item-label" for="task-item-391778"> 多语言支持</label></li>
 </ul>
 <h3 id="valine邮件支持">Valine邮件支持</h3>
 <p>新版本中作者将邮件通知功能移除，所以要想实现评论邮件通知，需要借助第三方支持，具体操作步骤，可以参考<a href="https://github.com/zhaojun1998/Valine-Admin">Valine-Admin</a></p>
