@@ -1,135 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.4t.pw</id>
-    <title>怕冷爱上雪</title>
-    <updated>2022-10-23T09:30:00.170Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://blog.4t.pw"/>
-    <link rel="self" href="https://blog.4t.pw/atom.xml"/>
-    <subtitle>千里之行 始于足下</subtitle>
-    <logo>https://blog.4t.pw/images/avatar.png</logo>
-    <icon>https://blog.4t.pw/favicon.ico</icon>
-    <rights>All rights reserved 2022, 怕冷爱上雪</rights>
-    <entry>
-        <title type="html"><![CDATA[4]]></title>
-        <id>https://blog.4t.pw/post/4/</id>
-        <link href="https://blog.4t.pw/post/4/">
-        </link>
-        <updated>2022-10-23T09:22:10.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="http%3A%2F%2Fwwww.4t.pw%2F4.jpg" alt="66666" loading="lazy"><br>
-<img src="//wwww.4t.pw/4.jpg" alt="66666" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于CDN]]></title>
-        <id>https://blog.4t.pw/post/guan-yu-cdn/</id>
-        <link href="https://blog.4t.pw/post/guan-yu-cdn/">
-        </link>
-        <updated>2022-10-22T02:50:35.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="关于cdn"><img src="https://blog.4t.pw/post-images/1666407070220.jpg" alt="" loading="lazy">关于CDN</h1>
-<p>如果你是部署在 github pages</p>
-<p>可以直接填写</p>
-<p>https://cdn.jsdelivr.net/gh/你的用户名/你的博客仓库名@master</p>
-<p>如果为其他云储存托管分发</p>
-<p>把 源文件价 output 内的静态资源上传到云储存,填写绑定的域名即可 .</p>
-<figure data-type="image" tabindex="1"><img src="https://upimage.alexhchu.com/2020/04/22/65893bbc87747.png" alt="" loading="lazy"></figure>
-<h1 id="关于鼠标指针设置">关于鼠标指针设置</h1>
-<ul>
-<li>点击效果</li>
-</ul>
-<figure data-type="image" tabindex="2"><img src="https://upimage.alexhchu.com/2020/04/23/f0c42f4f8f901.png" alt="" loading="lazy"></figure>
-<p>演示:</p>
-<figure data-type="image" tabindex="3"><img src="https://upimage.alexhchu.com/2020/04/23/3620409f14fd1.gif" alt="" loading="lazy"></figure>
-<ul>
-<li>鼠标指针</li>
-</ul>
-<p>需要预先把 <code>.cur</code>格式的文件放到主体文件夹 <code>curs</code>下,具体路径为<code>gridea-theme-next\assets\media\curs</code>,已经有默认的一套.</p>
-<figure data-type="image" tabindex="4"><img src="https://upimage.alexhchu.com/2020/04/23/2c9e94422d891.png" alt="" loading="lazy"></figure>
-<p>以此为示例 :</p>
-<p>在设置中填写文件名称,不需要待文件格式名称</p>
-<figure data-type="image" tabindex="5"><img src="https://upimage.alexhchu.com/2020/04/23/f70ca1ea2e7cc.png" alt="" loading="lazy"></figure>
-<p>演示:</p>
-<figure data-type="image" tabindex="6"><img src="https://upimage.alexhchu.com/2020/04/23/475ae5ea1d6c4.gif" alt="" loading="lazy"></figure>
-<p>因为仅为测试文件,所以未全覆盖,有需要的朋友可以直接去:<br>
-<a href="https://zhutix.com/tag/cursors/">https://zhutix.com/tag/cursors/</a>下载所需,<br>
-也可以使用<a href="https://convertio.co/zh/png-cur/">https://convertio.co/zh/png-cur/</a>,把任意图片转换成<code>cur</code>文件使用,但需要注意的是图片大小需要自己设置好,图片太大会不生效.</p>
-<h1 id="博主介绍">博主介绍</h1>
-<p>关闭美化效果<br>
-<img src="https://upimage.alexhchu.com/2020/04/23/ecce36a589809.png" alt="" loading="lazy"><br>
-开启美化效果<br>
-<img src="https://upimage.alexhchu.com/2020/04/23/65e6c4f11363f.gif" alt="" loading="lazy"></p>
-<h1 id="关于加载动画样式">关于加载动画样式</h1>
-<p>开源项目 https://github.com/HubSpot/pace/issues<br>
-可选是否开启,默认关闭.<br>
-关于更多样式选择 : https://www.jsdelivr.com/package/npm/pace-js?path=themes<br>
-示例:<br>
-<img src="https://upimage.alexhchu.com/2020/05/07/3cde4f7c68378.png" alt="" loading="lazy"><br>
-选择样式,复制粘贴即可.</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[测试]]></title>
-        <id>https://blog.4t.pw/post/ce-shi/</id>
-        <link href="https://blog.4t.pw/post/ce-shi/">
-        </link>
-        <updated>2022-10-22T02:49:43.000Z</updated>
-        <content type="html"><![CDATA[<h1 align="center">
-  Gridea Theme NexT
-</h1>
-<p><img src="https://blog.4t.pw/post-images/1666407021798.jpg" alt="NexT主题概览" loading="lazy">rview.jpg)</p>
-<h3 id="使用">使用</h3>
-<p>下载主题压缩包至gridea主题包中，在主题包文件夹下解压，并将其文件名改为next，主题包路径可以在gridea站点源文件夹中找到。</p>
-<h3 id="更新">更新</h3>
-<p>更新之前需要先备份旧的next主题assets/media路径下的images文件，下载最新版主题压缩包，并将其解压至gridea主题包中，最后将备份的images文件迁移回assets/media下。（如果旧版本next主题中不包含images可忽略备份操作）</p>
-<h3 id="主题介绍">主题介绍</h3>
-<p>gridea-theme-next原产自hexo平台的next主题，将其搬至gridea，也算是为gridea开源社区做一份贡献。主题目前包含以下功能：自定义主题色，搜索功能，主题魔改功能，自定义鼠标样式，看板娘，背景音乐（外链以及aplayer），支持CDN，valine（1.4版本）评论，谷歌、百度站点分析，以及其他常用自定义配置等功能。</p>
-<h3 id="计划更新">计划更新</h3>
-<ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9575335"><label class="task-list-item-label" for="task-item-9575335"> 夜间模式</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6693682"><label class="task-list-item-label" for="task-item-6693682"> 打赏功能</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9402257"><label class="task-list-item-label" for="task-item-9402257"> 多语言支持</label></li>
-</ul>
-<h3 id="valine邮件支持">Valine邮件支持</h3>
-<p>新版本中作者将邮件通知功能移除，所以要想实现评论邮件通知，需要借助第三方支持，具体操作步骤，可以参考<a href="https://github.com/zhaojun1998/Valine-Admin">Valine-Admin</a></p>
-<h3 id="自定义配置保存">自定义配置保存</h3>
-<p>windows用户如果上传了背景图片，会导致之后整个配置无法保存，这里不建议windows用户上传背景图片。但是可以选择手动填写图片地址的兼容方案，目前手动填写可以是图片外链，也可以是本地图片。如果是本地图片的话需要将图片先复制到next主题下assets/media/images这个目录，如果没有images文件夹，手动创建一个，然后再配置项那里填写成/media/images/文件名。</p>
-<p><a href="https://cdn.jsdelivr.net/gh/o1f/i@master/2020/04/11/2U2OBqTR.gif">手动填写操作步骤</a></p>
-<h3 id="最后">最后</h3>
-<p>在这里祝大家2020年新的一年里开心每一天，感觉不错的话，点赞支持一下呗！</p>
-<h3 id="联系">联系</h3>
-<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/hsxyhao/images.github.io@master/1JA_OJlig/group_chat.jpeg" alt="Next主题交流群" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://blog.4t.pw/post/hello-gridea/</id>
-        <link href="https://blog.4t.pw/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="https://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
-]]></content>
-    </entry>
+  <title>怕冷爱上雪</title>
+  
+  <subtitle>晋天杰</subtitle>
+  <link href="http://blog.4t.pw/atom.xml" rel="self"/>
+  
+  <link href="http://blog.4t.pw/"/>
+  <updated>2022-10-26T11:45:11.938Z</updated>
+  <id>http://blog.4t.pw/</id>
+  
+  <author>
+    <name>晋天杰</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试文章</title>
+    <link href="http://blog.4t.pw/2022/10/25/page/"/>
+    <id>http://blog.4t.pw/2022/10/25/page/</id>
+    <published>2022-10-25T06:01:11.000Z</published>
+    <updated>2022-10-26T11:45:11.938Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="隐藏"><a href="#隐藏" class="headerlink" title="隐藏"></a>隐藏</h1><p>哪个英文字母最酷？ <span class="hide-inline"><button type="button" class="hide-button" style="background-color: #FF7242;color: #fff">查看答案  </button><span class="hide-content">因为西装裤(法克)</span></span></p><p>门里站着一个人? <span class="hide-inline"><button type="button" class="hide-button" style="">Click  </button><span class="hide-content">晋天杰</span></span></p><h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><div class="tabs" id="test1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#test1-1">test1 1</button></li><li class="tab"><button type="button" data-href="#test1-2">test1 2</button></li><li class="tab"><button type="button" data-href="#test1-3">test1 3</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="test1-1"><p><strong>This is Tab 1.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-2"><p><strong>This is Tab 2.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-3"><p><strong>This is Tab 3.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><h1 id="二表格"><a href="#二表格" class="headerlink" title="二表格"></a>二表格</h1><div class="tabs" id="test2"><ul class="nav-tabs"><li class="tab"><button type="button" data-href="#test2-1">test2 1</button></li><li class="tab"><button type="button" data-href="#test2-2">test2 2</button></li><li class="tab active"><button type="button" data-href="#test2-3">test2 3</button></li></ul><div class="tab-contents"><div class="tab-item-content" id="test2-1"><p><strong>This is Tab 1.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test2-2"><p><strong>This is Tab 2.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content active" id="test2-3"><p><strong>This is Tab 3.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><h1 id="logo表格"><a href="#logo表格" class="headerlink" title="logo表格"></a>logo表格</h1><div class="tabs" id="test4"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#test4-1">第一个Tab</button></li><li class="tab"><button type="button" data-href="#test4-2"><i class="fab fa-apple-pay" style="text-align: center;"></i></button></li><li class="tab"><button type="button" data-href="#test4-3"><i class="fas fa-bomb"></i>炸弹</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="test4-1"><p><strong>tab名字为第一个Tab</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test4-2"><p><strong>只有图标 没有Tab名字</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test4-3"><p><strong>名字+icon</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;% btn [url],[text],[icon],[color] [style] [layout] [position] [size] %&#125;</span><br><span class="line"></span><br><span class="line">[url]         : 链接</span><br><span class="line">[text]        : 按钮文字</span><br><span class="line">[icon]        : [可选] 图标</span><br><span class="line">[color]       : [可选] 按钮背景顔色(默认style时）</span><br><span class="line">                      按钮字体和边框顔色(outline时)</span><br><span class="line">                      default/blue/pink/red/purple/orange/green</span><br><span class="line">[style]       : [可选] 按钮样式 默认实心</span><br><span class="line">                      outline/留空</span><br><span class="line">[layout]      : [可选] 按钮佈局 默认为line</span><br><span class="line">                      block/留空</span><br><span class="line">[position]    : [可选] 按钮位置 前提是设置了layout为block 默认为左边</span><br><span class="line">                      center/right/留空</span><br><span class="line">[size]        : [可选] 按钮大小</span><br><span class="line">                      larger/留空</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">This is my website, click the button &#123;% btn &#x27;https://butterfly.js.org/&#x27;,Butterfly %&#125;</span><br><span class="line">This is my website, click the button &#123;% btn &#x27;https://butterfly.js.org/&#x27;,Butterfly,far fa-hand-point-right %&#125;</span><br><span class="line">This is my website, click the button &#123;% btn &#x27;https://butterfly.js.org/&#x27;,Butterfly,,outline %&#125;</span><br><span class="line">This is my website, click the button &#123;% btn &#x27;https://butterfly.js.org/&#x27;,Butterfly,far fa-hand-point-right,outline %&#125;</span><br><span class="line">This is my website, click the button &#123;% btn &#x27;https://butterfly.js.org/&#x27;,Butterfly,far fa-hand-point-right,larger %&#125;</span><br></pre></td></tr></table></figure><p>This is my website, click the button <a class="btn-beautify " href="https://butterfly.js.org/"   title="Butterfly"><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify " href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify outline" href="https://butterfly.js.org/"   title="Butterfly"><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify outline" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% btn &#x27;https://butterfly.js.org/&#x27;,Butterfly,far fa-hand-point-right,block %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org/&#x27;,Butterfly,far fa-hand-point-right,block center larger %&#125;</span><br><span class="line">&#123;% btn &#x27;https://butterfly.js.org/&#x27;,Butterfly,far fa-hand-point-right,block right outline larger %&#125;</span><br></pre></td></tr></table></figure><a class="btn-beautify block" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify block center larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify block right outline larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify blue larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify pink larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify red larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify purple larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify orange larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify green larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><div class="btn-center"><a class="btn-beautify outline larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify outline blue larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify outline pink larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify outline red larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify outline purple larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify outline orange larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify outline green larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a></div># 图片你看我长得漂亮不<p><img src="https://i.loli.net/2021/03/19/2P6ivUGsdaEXSFI.png"></p><p>我觉得很漂亮 <img class="inline-img" src="https://i.loli.net/2021/03/19/5M4jUB3ynq7ePgw.png" style="height:150px"/></p><h1 id="彩色标注"><a href="#彩色标注" class="headerlink" title="彩色标注"></a>彩色标注</h1><p>臣亮言：<mark class="hl-label default">先帝</mark> 创业未半，而<mark class="hl-label blue">中道崩殂</mark> 。今天下三分，<mark class="hl-label pink">益州疲敝</mark> ，此诚<mark class="hl-label red">危急存亡之秋</mark> 也！然侍衞之臣，不懈于内；<mark class="hl-label purple">忠志之士</mark> ，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。<br>宫中、府中，俱为一体；陟罚臧否，不宜异同。若有<mark class="hl-label orange">作奸</mark> 、<mark class="hl-label green">犯科</mark> ，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。</p><h1 id="时间线"><a href="#时间线" class="headerlink" title="时间线"></a>时间线</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># default(留空) / blue / pink / red / purple / orange / green</span><br><span class="line">&#123;% timeline 2022,pink %&#125;</span><br><span class="line">&lt;!-- timeline 01-02 --&gt;</span><br><span class="line">这是测试页面</span><br><span class="line">&lt;!-- endtimeline --&gt;</span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure><div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2022</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>01-02</p></div></div><div class='timeline-item-content'><p>这是测试页面</p></div></div></div><p>红色</p><div class="timeline pink"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2022</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>01-02</p></div></div><div class='timeline-item-content'><p>这是测试页面</p></div></div></div><h1 id="小说"><a href="#小说" class="headerlink" title="小说"></a>小说</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;隐藏&quot;&gt;&lt;a href=&quot;#隐藏&quot; class=&quot;headerlink&quot; title=&quot;隐藏&quot;&gt;&lt;/a&gt;隐藏&lt;/h1&gt;&lt;p&gt;哪个英文字母最酷？ &lt;span class=&quot;hide-inline&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;hide-</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://blog.4t.pw/2022/10/25/hello-world/"/>
+    <id>http://blog.4t.pw/2022/10/25/hello-world/</id>
+    <published>2022-10-25T05:16:28.787Z</published>
+    <updated>2022-10-25T05:50:06.379Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    <category term="后端框架" scheme="http://blog.4t.pw/categories/%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6/"/>
+    
+    
+    <category term="后端" scheme="http://blog.4t.pw/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试文章2</title>
+    <link href="http://blog.4t.pw/2022/09/25/page-1/"/>
+    <id>http://blog.4t.pw/2022/09/25/page-1/</id>
+    <published>2022-09-25T06:01:11.000Z</published>
+    <updated>2022-10-26T12:15:40.713Z</updated>
+    
+    <content type="html"><![CDATA[<style>@keyframes gradientBG{0%{background-position: 0% 50%;}50%{background-position: 100% 50%;}100% {background-position: 0% 50%;}}#rightside{display:none;}</style><blockquote><p>这个页面是用来测试渐变背景的效果，以及不同透明度的效果。如果你有能力可以直接看 css 样式。否则请返回<a href="https://www.antmoe.com/posts/7198453/index.html#%E9%99%84%E5%BD%95">Hexo 博客之 butterfly 主题优化更换背景</a>复制代码。<br>阅读体验及个标签样式请自己进行调整。</p></blockquote><h2 id="透明度调节"><a href="#透明度调节" class="headerlink" title="透明度调节"></a>透明度调节</h2><center style='margin-bottom:20px' id = 'opt'><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0">透明度0</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.1">透明度0.1</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.2">透明度0.2</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.3">透明度0.3</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.4">透明度0.4</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.5">透明度0.5</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.6">透明度0.6</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.7">透明度0.7</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.8">透明度0.8</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.9">透明度0.9</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="1">透明度1</a></center><h2 id="背景调节"><a href="#背景调节" class="headerlink" title="背景调节"></a>背景调节</h2><div id='demo_style' style='text-align:center;margin:0 auto;'><h3 id="渐变类"><a href="#渐变类" class="headerlink" title="渐变类"></a>渐变类</h3><div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px;background: url(&quot;https://ae01.alicdn.com/kf/H5662031fbf344418aa2c8bf74c68826eV.png&quot;),linear-gradient(45deg, #6dd0f2 15%, #f59abe 85%);text-align: center;line-height: 200px;margin-bottom:5px;cursor: pointer;">粉蓝色有图片</div><div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px;background: linear-gradient(45deg, #6dd0f2 15%, #f59abe 85%);text-align: center;line-height: 200px;cursor: pointer;">粉蓝色无图片</div><div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px;background: linear-gradient(102.7deg,#fddaff 8.2%,#dfadfc 19.6%,#adcdfc 36.8%,#adfcf4 73.2%,#caf8d0 90.9%);text-align: center;line-height: 200px;cursor: pointer;">美美哒渐变</div><div data-type="color" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: linear-gradient(90deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);text-align: center;line-height: 200px;cursor: pointer;">博主同款</div><div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);    background-size: 400% 400%;animation: gradientBG 15s ease infinite;text-align: center;line-height: 200px;cursor: pointer;">动态渐变</div><div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: linear-gradient(to right bottom, rgb(0, 255, 240), rgb(92, 159, 247) 40%, rgb(211, 34, 255) 80%);text-align: center;line-height: 200px;cursor: pointer;">紫蓝色渐变</div><h3 id="渐变加图片类"><a href="#渐变加图片类" class="headerlink" title="渐变加图片类"></a>渐变加图片类</h3><div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png),url(https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg)0% 0% / cover;text-align: center;line-height: 200px;cursor: pointer; background-size: cover;">紫蓝色渐变</div><h3 id="图片类"><a href="#图片类" class="headerlink" title="图片类"></a>图片类</h3><div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: url(https://api.abcyun.co/api/tool/bing/token/5d8f31cf6a8ab);text-align: center;line-height: 200px;cursor: pointer; background-size: cover;">必应壁纸</div><div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: url(https://api.abcyun.co/api/others/randacgimage/token/5d8f31cf6a8ab);text-align: center;line-height: 200px;cursor: pointer; background-size: cover;">随机二次元图</div><div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: url(https://api.abcyun.co/api/others/randacgblogbg/token/5d8f31cf6a8ab);text-align: center;line-height: 200px;cursor: pointer; background-size: cover;">随机二次元背景图</div></div><h2 id="测试文章"><a href="#测试文章" class="headerlink" title="测试文章"></a>测试文章</h2><h3 id="春"><a href="#春" class="headerlink" title="春"></a>春</h3><p>盼望着，盼望着，东风来了，春天的脚步近了。</p><p>一切都像刚睡醒的样子，欣欣然张开了眼。山朗润起来了，水长起来了，太阳的脸红起来了。</p><p>小草偷偷地从土里钻出来，嫩嫩的，绿绿的。园子里，田野里，瞧去，一大片一大片满是的。坐着，躺着，打两个滚，踢几脚球，赛几趟跑，捉几回迷藏。风轻悄悄的，草绵软软的。</p><p>桃树、杏树、梨树，你不让我，我不让你，都开满了花赶趟儿。红的像火，粉的像霞，白的像雪。花里带着甜味，闭了眼，树上仿佛已经满是桃儿、杏儿、梨儿。花下成千成百的蜜蜂嗡嗡地闹着，大小的蝴蝶飞来飞去。野花遍地是：杂样儿，有名字的，没名字的，散在花丛里，像眼睛，像星星，还眨呀眨的。</p><p>“吹面不寒杨柳风”，不错的，像母亲的手抚摸着你。风里带来些新翻的泥土的气息，混着青草味，还有各种花的香，都在微微润湿的空气里酝酿。鸟儿将窠巢安在繁花嫩叶当中，高兴起来了，呼朋引伴地卖弄清脆的喉咙，唱出宛转的曲子，与轻风流水应和着。牛背上牧童的短笛，这时候也成天在嘹亮地响。</p><p>雨是最寻常的，一下就是三两天。可别恼。看，像牛毛，像花针，像细丝，密密地斜织着，人家屋顶上全笼着一层薄烟。树叶子却绿得发亮，小草也青得逼你的眼。傍晚时候，上灯了，一点点黄晕的光，烘托出一片这安静而和平的夜。乡下去，小路上，石桥边，撑起伞慢慢走着的人;还有地里工作的农夫，披着蓑，戴着笠的。他们的草屋，稀稀疏疏的在雨里静默着。</p><p>天上风筝渐渐多了，地上孩子也多了。城里乡下，家家户户，老老小小，他们也赶趟儿似的，一个个都出来了。舒活舒活筋骨，抖擞抖擞精神，各做各的一份事去，“一年之计在于春”;刚起头儿，有的是工夫，有的是希望。</p><p>春天像刚落地的娃娃，从头到脚都是新的，它生长着。</p><p>春天像小姑娘，花枝招展的，笑着，走着。</p><p>春天像健壮的青年，有铁一般的胳膊和腰脚，他领着我们上前去。</p><ol><li>有序列表</li><li>有序</li><li>有</li></ol><ul><li>无需列表</li><li>测试</li></ul><div class="note default icon flat"><p>default</p></div><div class="note primary icon flat"><p>primary</p></div><div class="note success icon flat"><p>success</p></div><div class="note info icon flat"><p>info</p></div><div class="note warning icon flat"><p>warning</p></div><div class="note danger icon flat"><p>danger</p></div><div class="note primary no-icon flat"><h4 id="Primary-HeaderWelcome-to-Hexo"><a href="#Primary-HeaderWelcome-to-Hexo" class="headerlink" title="Primary HeaderWelcome to Hexo!"></a>Primary Header<strong>Welcome</strong> to <a href="https://hexo.io/">Hexo!</a></h4></div><script>var article_container=document.getElementById("demo_style"),opt=document.getElementById("opt");article_container.addEventListener("click",function(e){var t=e.target;"DIV"===t.nodeName&&"bg_test"===t.className&&(web_bg.style.background=t.style.background,web_bg.style.animation=t.style.animation),Cookies.set("bg",t.style.background,{expires:1}),Cookies.set("animation",t.style.animation,{expires:1}),Cookies.set("type",t.getAttribute("data-type"),{expires:1})}),opt.addEventListener("click",function(e){var t=e.target;if("A"===t.nodeName){var a=t.getAttribute("data-opacity");if(a){Cookies.set("opacity",a,{expires:1});var n="--light_bg_color: rgb(255, 255, 255,"+a+");",i="--dark_bg_color: rgba(18,18,18,"+a+");";document.getElementById("content-inner").setAttribute("style",n+i)}}e.preventDefault()});</script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;style&gt;@keyframes gradientBG{0%{background-position: 0% 50%;}50%{background-position: 100% 50%;}100% {background-position: 0% 50%;}}#rightsi</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
 </feed>
