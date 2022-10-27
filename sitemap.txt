@@ -1,3 +1,7 @@
+http://blog.4t.pw/2022/09/25/sbw/
+http://blog.4t.pw/notice/index.html
+http://blog.4t.pw/about/index.html
+http://blog.4t.pw/timeline/index.html
 http://blog.4t.pw/music/index.html
 http://blog.4t.pw/2022/09/25/page-1/
 http://blog.4t.pw/2022/10/25/page/
@@ -7,7 +11,6 @@ http://blog.4t.pw/xiance/index.html
 http://blog.4t.pw/link/index.html
 http://blog.4t.pw/categories/index.html
 http://blog.4t.pw/myself/index.html
-http://blog.4t.pw/timeline/index.html
 http://blog.4t.pw/2022/10/25/hello-world/
 http://blog.4t.pw/tags/index.html
 http://blog.4t.pw/

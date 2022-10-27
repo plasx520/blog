@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.4t.pw/2022/09/25/sbw/</loc>
+    
+    <lastmod>2022-10-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.4t.pw/notice/index.html</loc>
+    
+    <lastmod>2022-10-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.4t.pw/about/index.html</loc>
+    
+    <lastmod>2022-10-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.4t.pw/timeline/index.html</loc>
+    
+    <lastmod>2022-10-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.4t.pw/music/index.html</loc>
     
     <lastmod>2022-10-27</lastmod>
@@ -13,7 +49,7 @@
   <url>
     <loc>http://blog.4t.pw/2022/09/25/page-1/</loc>
     
-    <lastmod>2022-10-26</lastmod>
+    <lastmod>2022-10-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +58,7 @@
   <url>
     <loc>http://blog.4t.pw/2022/10/25/page/</loc>
     
-    <lastmod>2022-10-26</lastmod>
+    <lastmod>2022-10-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -75,15 +111,6 @@
   
   <url>
     <loc>http://blog.4t.pw/myself/index.html</loc>
-    
-    <lastmod>2022-10-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.4t.pw/timeline/index.html</loc>
     
     <lastmod>2022-10-25</lastmod>
     
