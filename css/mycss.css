@@ -20,3 +20,64 @@
         background-position: 0% 50%;
     }
 }
+
+/* 网站标题、副标题闪光 */
+#page-header #site-title,
+#page-header #site-subtitle {
+  
+}
+#page-header #site-title:hover,
+#page-header #site-subtitle:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,
+    rgb(255, 255, 255) 0px 0px 30px, rgb(0, 255, 255) 0px 0px 40px,
+    rgb(0, 255, 255) 0px 0px 70px, rgb(0, 255, 255) 0px 0px 80px,
+    rgb(0, 255, 255) 0px 0px 100px;
+}
+
+/*移动端优化：去除归档、标签、最新文章、公告、评论、只保留网站统计*/
+@media screen and (max-width: 900px) {
+  .card-info,
+  .card-announcement,
+  .card-recent-post,
+  #card-newest-comments,
+  .card-categories,
+  .card-tags,
+  .card-archives,
+  .item-headline {
+    display: none;
+  }
+}
+/*彩虹文字*/
+#page-header #site-title,
+#post-info .post-title {
+  padding-top: 3px;
+  background-image: linear-gradient(
+    to left,
+    orangered,
+    orange,
+    gold,
+    lightgreen,
+    cyan,
+    dodgerblue,
+    mediumpurple,
+    hotpink,
+    orangered
+  );
+  background-size: 110vw;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-animation: rainbowan 60s linear infinite;
+  animation: rainbowan 60s linear infinite;
+}
+@-webkit-keyframes rainbowan {
+  to {
+    background-position: -2000vw;
+  }
+}
+@keyframes rainbowan {
+  to {
+    background-position: -2000vw;
+  }
+}
