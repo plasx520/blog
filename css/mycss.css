@@ -33,6 +33,7 @@
   .card-categories,
   .card-tags,
   .card-archives,
+  .notice,
   .item-headline {
     display: none;
   }
