@@ -1,50 +1,114 @@
-.notice-logo {
-  line-height: 22px;
-  margin-right: 8px;
-  transition: 0.3s;
-  color: #ff0000;
-  font-size: 1.45em
-}
-.ggwz {
-  width: 85%;
-  height: 100%;
-  line-height: 25px;
-}
-
-#notice {
-    height: 120px;
-    background-color: rgb(0 199 255 / 59%);
-    border: 2px solid rgb(0 217 255);
-    color: #ffffff;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
+.container {
+    width: 100%;
+    height: 350px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.div-card {
+    width: 96%;
+    height: 320px;
+    position: relative;
+    border-radius: 10px;
+    background:#1672af linear-gradient(to right, rgba(0,255,0,0), rgb(29 34 70 / 48%));
     overflow: hidden;
-
+	transition: background-color .5s;
 }
-[data-theme="dark"] #notice {
-  background: rgba(0, 0, 0, 0.175) !important;
+.div-name {
+    width: 200px;
+    color: #fff;
+    font: 900 40px '';
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    transition: 1s .1s;
+    text-shadow: 2px 2px 3px #000, 1px 1px 0 #000, 4px 6px 9px #001d3bc7;
 }
-#notice span {
-  white-space: nowrap;
-  font-weight: bolder;
+.div-wechat {
+    width: 200px;
+    color: lightsalmon;
+    font: 900 25px '';
+    position: absolute;
+    top: 105px;
+    left: 30px;
+    transition: 1s .1s;
+    opacity: 0;
+}
+.div-description {
+    width: 200px;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    top: 115px;
+    left: 35px;
+    transition: 1s .1s;
+}
+.div-card:hover {
+	background-color: rgb(12, 156, 163);
+}
+.div-bar-type {
+    width: calc(500px + var(--w)*120px);
+    height: 50px;
+    background-color: cornsilk;
+    position: absolute;
+    transform: rotateZ(145deg) translate(calc(-300px + var(--i)*15px), calc(var(--i)*-50px - 90px));
+    border-radius: 25px;
+    transition: 1s calc(var(--i)*0.1s);
+}
+.div-bar-type:nth-child(8) {
+    background-color: lightsalmon;
+}
+.div-bar-type:nth-child(7) {
+    background-color: lightseagreen;
+}
+.div-bar-type:nth-child(6) {
+    background-color: lightpink;
+}
+.div-bar-type:nth-child(5) {
+    background-color: lightcyan;
 }
 
-
-
-#noticeList {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
+.div-card:hover .div-bar-type {
+    transform: rotateZ(145deg) translate(calc(-600px + var(--i)*15px), calc(var(--i)*-50px - 90px));
 }
-.notice-enter {
-  line-height: 25px;
-  margin-left: 8px;
-  transition: 0.3s;
+.div-card:hover .div-name {
+    left: 330px;
+}
+.div-card:hover .div-wechat {
+    left: 330px;
+    opacity: 1;
+}
+.div-card:hover .div-description {
+    left: 335px;
+    top: 150px;
 }
 
+.f {
+    width: 230px;
+    height: 230px;
+    background-image: url('/img/1.webp');
+    background-size: cover;
+    font: 900 15px '';
+    text-align: center;
+    margin: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .7s .3s;
+    color: rgb(0, 187, 255);
+    text-shadow: 2px 2px 3px #000, 1px 1px 0 #000, 1px -1px 0 #005dbc, -1px -1px 0 #0077ad;
+}
+.div-card:hover .f {
+    opacity: 1;
+}
+.recent-post-item {
+    
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 20%);
+}
+.recent-post-item:hover {
+    
+    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 40%);
+}
