@@ -193,7 +193,10 @@
     display: flex;
     overflow: hidden;
     max-width: 1200px;
-    margin: 40px 12.7% -20px 12.7%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: -20px;
+    transform: translateX(10px);
   
   }
 .xianzhi {
