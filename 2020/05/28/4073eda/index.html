@@ -1,0 +1,335 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Butterfly 安裝文檔(六) 進階教程 | 怕冷爱上雪</title><meta name="author" content="晋天杰"><meta name="copyright" content="晋天杰"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="Butterfly安裝文檔-進階教程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Butterfly 安裝文檔(六) 進階教程">
+<meta property="og:url" content="http://blog.4t.pw/2020/05/28/4073eda/index.html">
+<meta property="og:site_name" content="怕冷爱上雪">
+<meta property="og:description" content="Butterfly安裝文檔-進階教程">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-06-cover.png">
+<meta property="article:published_time" content="2020-05-28T14:39:25.000Z">
+<meta property="article:modified_time" content="2022-10-31T05:41:01.000Z">
+<meta property="article:author" content="晋天杰">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="主題">
+<meta property="article:tag" content="butterfly">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-06-cover.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://blog.4t.pw/2020/05/28/4073eda/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 晋天杰","link":"链接: ","source":"来源: 怕冷爱上雪","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"rgb(0 199 255 / 70%)","bgDark":"rgb(0 199 255 / 70%)","position":"top-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Butterfly 安裝文檔(六) 進階教程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-31 13:41:01'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><link rel="stylesheet" href="/css/notice.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/mainColor/heoMainColor.css"><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="怕冷爱上雪" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="怕冷爱上雪" type="application/rss+xml">
+</head><body><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/img/404.webp" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/4041.webp'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/timeline/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/tuku/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/xiance/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/about"><i class="fa-fw /about/"></i><span> 0</span></a></li><li><a class="site-page child" href="/myself"><i class="fa-fw /myself/"></i><span> 1</span></a></li><li><a class="site-page child" href="/butterfly"><i class="fa-fw https://github.com/jerryc127/hexo-theme-butterfly/"></i><span> 2</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-06-cover.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">怕冷爱上雪</a><button type="button" title="切换背景" onclick="toggleWinbox()"> 👨‍💻</button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换" data-pjax-state="data-pjax-state"> 🌒</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/timeline/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/tuku/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/xiance/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/about"><i class="fa-fw /about/"></i><span> 0</span></a></li><li><a class="site-page child" href="/myself"><i class="fa-fw /myself/"></i><span> 1</span></a></li><li><a class="site-page child" href="/butterfly"><i class="fa-fw https://github.com/jerryc127/hexo-theme-butterfly/"></i><span> 2</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Butterfly 安裝文檔(六) 進階教程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-05-28T14:39:25.000Z" title="发表于 2020-05-28 22:39:25">2020-05-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-31T05:41:01.000Z" title="更新于 2022-10-31 13:41:01">2022-10-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Docs%E6%96%87%E6%AA%94/">Docs文檔</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Butterfly 安裝文檔(六) 進階教程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><div class="ggl" id="ggl"><i class="ggl-logo fas fa-bullhorn fa-shake"></i><span> 公告栏:<BR>公告什么公告，我这么懒才不写公告<BR>给我介绍女朋友我就有公告了</span></div><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="note blue icon-padding flat"><i class="note-icon fas fa-bullhorn"></i><p>📖  本教程更新於 2022 年 10 月 31 日，教程的內容針對最新<strong>穩定版</strong>而更新（如果你是舊版，教程會有些出入，請留意）</p>
+<p>🦋  Butterfly 已經更新到 <a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.5.1">4.5.1</a></p>
+</div>
+
+<div class="note green icon-padding flat"><i class="note-icon fas fa-rocket"></i><p> 📚  文檔目錄</p>
+<p><a href="/2020/05/28/21cfbf15/" title="🚀 快速開始">🚀 快速開始</a> - <a href="/2020/05/28/dc584b87/" title="📑 主題頁面">📑 主題頁面</a> - <a href="/2020/05/28/4aa8abbe/" title="🛠 主題配置-1">🛠 主題配置-1</a> - <a href="/2020/05/28/ceeb73f/" title="⚔️ 主題配置-2">⚔️ 主題配置-2</a> - <a href="/2020/05/28/98d20436/" title="❓ 主題問答">❓ 主題問答</a> - <a href="/2020/05/28/4073eda/" title="⚡️ 進階教程">⚡️ 進階教程</a> - <a href="/2020/05/28/198a4240/" title="✨ 更新日誌">✨ 更新日誌</a> - <a href="/2020/05/28/6ad51b4/" title="🤞 打賞">🤞 打賞</a></p>
+</div>
+
+<div class="note orange icon-padding flat"><i class="note-icon fas fa-magic"></i><p>你可以通過右下角的 <strong>簡</strong> 按鈕切換為簡體顯示 </p>
+</div>
+
+<hr>
+<h2 id="建議"><a href="#建議" class="headerlink" title="建議"></a>建議</h2><ol>
+<li>不要把個人需要的文件/圖片放在主題<code>source</code>文件夾裏，因為在升級主題的過程中，可能會把文件覆蓋刪除了。<br>在Hexo根目錄的<code>source</code>文件夾裏，創建一個文件夾來放置個人文件/圖片。<br>引用文件直接為<code>/文件夾名稱/文件名</code></li>
+</ol>
+<h2 id="音樂"><a href="#音樂" class="headerlink" title="音樂"></a>音樂</h2><p>音樂界面使用了插件 <code>hexo-tag-aplayer</code><br>使用方法請參考插件<a target="_blank" rel="noopener" href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">文檔</a></p>
+<p>音樂頁面只是普通的page頁，按普通頁面操作生成就行。</p>
+<blockquote>
+<p>以下內容可供<strong>選擇</strong>配置</p>
+<p>注意： 仍需要安裝插件<a target="_blank" rel="noopener" href="https://github.com/MoePlayer/hexo-tag-aplayer">hexo-tag-aplayer</a></p>
+</blockquote>
+<p>插件會在每一個文件都插入 js 和 css，為了避免這一情況，3.0 版本內置了 aplayer 需要的 css 和 js。</p>
+<p>首先在Hexo根目錄<code>_config</code>裏配置<code>asset_inject</code>為<code>false</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">aplayer:</span></span><br><span class="line">  <span class="attr">asset_inject:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>然後在你需要使用aplayer的頁面Front-matter添加</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aplayer: true</span><br></pre></td></tr></table></figure>
+
+<p>這樣只會在需要aplayer的頁面插入js和css。</p>
+<p>如何添加全局 Aplayer 播放，請參考 <a href="/posts/507c070f/">這篇文章</a></p>
+<h2 id="電影"><a href="#電影" class="headerlink" title="電影"></a>電影</h2><p>電影界面使用了插件 <code>hexo-butterfly-douban</code><br>使用方法請參考插件的<a target="_blank" rel="noopener" href="https://github.com/jerryc127/butterfly-plugins/tree/main/hexo-butterfly-douban">文檔</a>。</p>
+<p><strong>注意：</strong> </p>
+<ol>
+<li>hexo-butterfly-douban 會主動生成頁面，所以不需要自己創建。</li>
+<li>如遇到無法抓取問題，顯示 <code>INFO  0 movies have been loaded in xxx ms, because you are offline or your network is bad</code><br>請過段時間再試試，這我也無能為力。</li>
+</ol>
+<h2 id="説説"><a href="#説説" class="headerlink" title="説説"></a>説説</h2><h3 id="Artitalk"><a href="#Artitalk" class="headerlink" title="Artitalk"></a>Artitalk</h3><p>安裝插件 <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/hexo-butterfly-artitalk">hexo-butterfly-artitalk</a></p>
+<p>具體配置查看<a target="_blank" rel="noopener" href="https://github.com/jerryc127/butterfly-plugins/tree/main/hexo-butterfly-artitalk">插件文檔</a></p>
+<h3 id="HexoPlusPlus-Talk"><a href="#HexoPlusPlus-Talk" class="headerlink" title="HexoPlusPlus Talk"></a>HexoPlusPlus Talk</h3><p>安裝插件 <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/hexo-butterfly-hpptalk">hexo-butterfly-hpptalk</a></p>
+<p>具體配置查看<a target="_blank" rel="noopener" href="https://github.com/jerryc127/butterfly-plugins/tree/main/hexo-butterfly-hpptalk">插件文檔</a></p>
+<h2 id="自定義代碼配色"><a href="#自定義代碼配色" class="headerlink" title="自定義代碼配色"></a>自定義代碼配色</h2><a class="btn-beautify block blue" href="/posts/b37b5fe3/" 
+  title="點擊前往"><i class="fas fa-code"></i><span>點擊前往</span></a>
+
+
+<h2 id="自定義側邊欄"><a href="#自定義側邊欄" class="headerlink" title="自定義側邊欄"></a>自定義側邊欄</h2><a class="btn-beautify block green" href="/posts/ea33ab97/" 
+  title="點擊前往"><i class="fas fa-lightbulb"></i><span>點擊前往</span></a>
+
+
+
+<h2 id="添加全局吸底Aplayer教程"><a href="#添加全局吸底Aplayer教程" class="headerlink" title="添加全局吸底Aplayer教程"></a>添加全局吸底Aplayer教程</h2><a class="btn-beautify block pink" href="/posts/507c070f/" 
+  title="點擊前往"><i class="fas fa-music"></i><span>點擊前往</span></a>
+<h2 id="Icon"><a href="#Icon" class="headerlink" title="Icon"></a>Icon</h2><p>Butterfly主題內置了<a target="_blank" rel="noopener" href="https://fontawesome.com/">Font Awesome V5 </a>圖標，目前已更新到 5.13.0，總共有1,588個免費圖標。由於是國外的圖標網站，對於國內的一些網站Icon並不支持。如有需要，你可以引入其它的圖標服務商。</p>
+<h3 id="iconfont"><a href="#iconfont" class="headerlink" title="iconfont"></a>iconfont</h3><p>國內最出名的莫過於<a target="_blank" rel="noopener" href="https://www.iconfont.cn/">iconfont</a>,功能很強大且圖標內容很豐富的矢量圖標庫。很多<code>Font Awesome</code>不支持的圖標都可以在這裏找到。同時，<a target="_blank" rel="noopener" href="https://www.iconfont.cn/">iconfont</a>支持選擇需要的圖標生成css鏈接，減少不必要的CSS加載。</p>
+<h4 id="註冊賬號"><a href="#註冊賬號" class="headerlink" title="註冊賬號"></a>註冊賬號</h4><p>打開<a target="_blank" rel="noopener" href="https://www.iconfont.cn/">iconfont</a>的網站，點擊導航欄的<code>人像</code>圖標，會跳出註冊界面，按要求註冊賬號。</p>
+<p><img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-iconfont.png" alt="Snipaste_2020-05-28_21-12-01"></p>
+<h4 id="添加圖標入庫"><a href="#添加圖標入庫" class="headerlink" title="添加圖標入庫"></a>添加圖標入庫</h4><p>選擇自己需要的圖標，把鼠標移到圖標上，會顯示三個按鈕（依次是添加入庫、收藏和下載），而我們需要的是把圖標添加入庫</p>
+<p><img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-iconfont-add.png" alt="image-20200528205401440"></p>
+<p>添加入庫後，你可以看到網站右上角<code>購物車</code>圖標顯示了<code>1</code>字，代表圖標已經添加入庫，點擊<code>購物車</code>圖標，會彈出側邊欄顯示詳情。</p>
+<p><img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-iconfont-check.png" alt="image-20200528205925258"></p>
+<p><img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-iconfont-detail.png" alt="image-20200528210120442"></p>
+<p>已選擇的圖標會顯示在上面，你可以重複上面的操作，把需要的圖標添加入庫，然後點擊<code>添加到項目</code>。</p>
+<p>接下來會要求選擇項目名稱，沒有的自己創建一個。</p>
+<p><img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-iconfont-create.png" alt="image-20200528211624459"></p>
+<h4 id="生成CSS鏈接"><a href="#生成CSS鏈接" class="headerlink" title="生成CSS鏈接"></a>生成CSS鏈接</h4><p>在添加到項目之後，會跳到項目的詳情界面。點擊<code>Font class</code>，然後再點擊<code>暫無代碼，點擊生成</code>文字。網站會自動生成CSS鏈接，我們只需要複製鏈接就行。</p>
+<p><img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-iconfont-link.png" alt="image-20200528212301786"></p>
+<h4 id="添加鏈接進主題配置文件"><a href="#添加鏈接進主題配置文件" class="headerlink" title="添加鏈接進主題配置文件"></a>添加鏈接進主題配置文件</h4><p>打開<code>主題配置文件</code>，找到<code>inject</code>配置，按要求把鏈接填入</p>
+<p><img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-iconfont-setting.png" alt="image-20200528212440743"></p>
+<p>在我們需要使用的地方填入icon，例如<code>Menu</code>，圖片使用格式為<code>iconfont icon名字</code></p>
+<p><img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-iconfont-setting-menu.png" alt="image-20200528213151304"></p>
+<p>運行Butterfly之後，你就可以看到menu的圖標生效了</p>
+<p><img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-iconfont-show.png" alt="image-20200528213346338"></p>
+<h4 id="其他添加方法"><a href="#其他添加方法" class="headerlink" title="其他添加方法"></a>其他添加方法</h4><p>除了通過引入CSS鏈接使用圖標，iconfont也支持通過其它方法使用圖標，具體可查看<a target="_blank" rel="noopener" href="https://www.iconfont.cn/help/detail?helptype=code">iconfont官方使用文檔</a></p>
+<h3 id="其它圖標提供商"><a href="#其它圖標提供商" class="headerlink" title="其它圖標提供商"></a>其它圖標提供商</h3><p>除了<a target="_blank" rel="noopener" href="https://www.iconfont.cn/">iconfont</a>，還有<a target="_blank" rel="noopener" href="https://github.com/Remix-Design/RemixIcon">RemixIcon</a>、<a target="_blank" rel="noopener" href="https://www.flaticon.com/categories/seo-and-web">Flaticon</a>等等提供商，很多圖標可以選擇，具體使用方法請參考各自的文檔。</p>
+<h2 id="圖片壓縮"><a href="#圖片壓縮" class="headerlink" title="圖片壓縮"></a>圖片壓縮</h2><p>Butterfly主題需要使用到很多圖片。如果圖片太大，會嚴重拖慢網站的加載速度。</p>
+<p>圖片壓縮能夠有效的緩解這個問題。</p>
+<p>除了通過<code>gulp-imagemin</code>來壓縮圖片，還可以通過在綫壓縮網站和軟件來進行壓縮。以下兩款是我自己正在使用的工具。網上有很多這樣的工具，挑選一款適合自己的就行。</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://tinypng.com/">tinypng</a></p>
+<p>一個在綫壓縮的網站。壓縮後的圖片也保留了很高的質量，在知乎上很多人推薦，不過免費版有限制。</p>
+<p><img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-tinypng.png" alt="image-20200526173511503"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://saerasoft.com/caesium/">caesium</a></p>
+<p>開源軟件，支持Windows和macOS。可以批量壓縮軟件，無限制。</p>
+<p><img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-caesium.png" alt="image-20200526173316278"></p>
+</li>
+<li><p> <a target="_blank" rel="noopener" href="https://github.com/marketplace/imgbot">imgbot</a></p>
+</li>
+</ul>
+<p>  imgbot 是一款 Github 插件。</p>
+<p>  安裝後，你上傳圖片到 Github 去，imgbot 會自動壓縮圖片並推送 PR，我們只需要合併 PR 就行</p>
+<p>  你可以配置 imgbot 的偵測方法、壓縮方法（有損/無損），具體可以查看插件的文檔</p>
+<p>  <img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-enhance-imgbot.png" alt="image-20200830231742951"></p>
+<h2 id="插件推薦"><a href="#插件推薦" class="headerlink" title="插件推薦"></a>插件推薦</h2><ul>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></p>
+<p>可以把鏈接permalink轉為數字的插件，配置容易，生成時自動轉為數字。</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a> </p>
+<p>生成RSS文件的插件</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-filter-nofollow">hexo-filter-nofollow</a></p>
+<p>為網站使用到的所有外鏈添加<code>rel=&quot;noopener external nofollow noreferrer&quot;</code>, 可以有效地加強網站SEO和防止權重流失</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a></p>
+<p>生成sitemap的插件</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/coneycode/hexo-generator-baidu-sitemap">hexo-generator-baidu-sitemap</a></p>
+<p>看名字就知道，是專門為百度生成sitemap的插件</p>
+</li>
+</ul>
+<a class="btn-beautify block purple right larger" href="/posts/198a4240/" 
+  title="✨ Butterfly 安裝文檔(七) 更新日誌"><i class="far fa-hand-point-right"></i><span>✨ Butterfly 安裝文檔(七) 更新日誌</span></a></article><div class="business-center"><div class="business-card"><div class="business-flip"><div class="business-front"><div class="business-strip-bottom"></div><div class="business-strip-top"></div><img class="business-logo" width="80" height="80" src= "/img/404.webp" data-lazy-src="https://s2.loli.net/2022/10/28/PyKjf1CZ3ezUxSI.jpg" alt="cardcode"><div class="business-Invitation">Invitation</div><div class="business-chip"><div class="business-chip-line"></div><div class="business-chip-line"></div><div class="business-chip-line"></div><div class="business-chip-line"></div><div class="business-chip-main"></div></div><svg class="business-wave" viewBox="0 3.71 26.959 38.787" width="26.959" height="38.787" fill="white"><path d="M19.709 3.719c.266.043.5.187.656.406 4.125 5.207 6.594 11.781 6.594 18.938 0 7.156-2.469 13.73-6.594 18.937-.195.336-.57.531-.957.492a.9946.9946 0 0 1-.851-.66c-.129-.367-.035-.777.246-1.051 3.855-4.867 6.156-11.023 6.156-17.718 0-6.696-2.301-12.852-6.156-17.719-.262-.317-.301-.762-.102-1.121.204-.36.602-.559 1.008-.504z"></path><path d="M13.74 7.563c.231.039.442.164.594.343 3.508 4.059 5.625 9.371 5.625 15.157 0 5.785-2.113 11.097-5.625 15.156-.363.422-1 .472-1.422.109-.422-.363-.472-1-.109-1.422 3.211-3.711 5.156-8.551 5.156-13.843 0-5.293-1.949-10.133-5.156-13.844-.27-.309-.324-.75-.141-1.114.188-.367.578-.582.985-.542h.093z"></path><path d="M7.584 11.438c.227.031.438.144.594.312 2.953 2.863 4.781 6.875 4.781 11.313 0 4.433-1.828 8.449-4.781 11.312-.398.387-1.035.383-1.422-.016-.387-.398-.383-1.035.016-1.421 2.582-2.504 4.187-5.993 4.187-9.875 0-3.883-1.605-7.372-4.187-9.875-.321-.282-.426-.739-.266-1.133.164-.395.559-.641.984-.617h.094zM1.178 15.531c.121.02.238.063.344.125 2.633 1.414 4.437 4.215 4.437 7.407 0 3.195-1.797 5.996-4.437 7.406-.492.258-1.102.07-1.36-.422-.257-.492-.07-1.102.422-1.359 2.012-1.075 3.375-3.176 3.375-5.625 0-2.446-1.371-4.551-3.375-5.625-.441-.204-.676-.692-.551-1.165.122-.468.567-.785 1.051-.742h.094z"></path></svg><div class="business-card-number"><div class="business-section">军人社保卡</div><div class="business-section">QQ：1400000222</div></div><div class="business-end"><span class="business-end-text">created:</span><span class="business-end-date">06/18/1993</span></div><div class="business-card-holder">62262419930628360000</div><div class="business-master"><div class="business-circle business-master-red"></div><div class="business-circle business-master-yellow">   </div></div></div><div class="business-back"><div class="business-strip-black"></div><div class="business-ccv"><label>初次来到人间</label><div><a href="https://blog.4t.pw">银行卡签名：晋天杰</a></div></div><div class="business-terms"><p>如果上天不给你机会，那你就自己创造机会，杀出重围 .</p><p>再厉害的英雄也需要夫人的陪伴，所以我很爱我的夫人.</p></div></div></div></div></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://blog.4t.pw">晋天杰</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://blog.4t.pw/2020/05/28/4073eda/">http://blog.4t.pw/2020/05/28/4073eda/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://blog.4t.pw" target="_blank">怕冷爱上雪</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a><a class="post-meta__tags" href="/tags/Hexo/">Hexo</a><a class="post-meta__tags" href="/tags/%E4%B8%BB%E9%A1%8C/">主題</a><a class="post-meta__tags" href="/tags/butterfly/">butterfly</a></div><div class="post_share"><div class="social-share" data-image="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-06-cover.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.webp" target="_blank"><img class="post-qr-code-img" src= "/img/404.webp" data-lazy-src="/img/wechat.webp" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.webp" target="_blank"><img class="post-qr-code-img" src= "/img/404.webp" data-lazy-src="/img/alipay.webp" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><div class="ads-wrap"><br><br><div id="post-info"><h1 class="post-title notice">广告丫</h1></div><br><br><br></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/05/28/198a4240/"><img class="prev-cover" src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-docs-07-cover.png" onerror="onerror=null;src='/img/404.webp'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Butterfly 安裝文檔(七) 更新日誌</div></div></a></div><div class="next-post pull-right"><a href="/2020/05/28/98d20436/"><img class="next-cover" src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-doc-05-cover.png" onerror="onerror=null;src='/img/404.webp'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Butterfly 安裝文檔(五) 主題問答</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/05/28/21cfbf15/" title="Butterfly 安裝文檔(一) 快速開始"><img class="cover" src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-01-cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-28</div><div class="title">Butterfly 安裝文檔(一) 快速開始</div></div></a></div><div><a href="/2020/05/28/dc584b87/" title="Butterfly 安裝文檔(二) 主題頁面"><img class="cover" src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-docs-02-cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-28</div><div class="title">Butterfly 安裝文檔(二) 主題頁面</div></div></a></div><div><a href="/2020/05/28/98d20436/" title="Butterfly 安裝文檔(五) 主題問答"><img class="cover" src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-doc-05-cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-28</div><div class="title">Butterfly 安裝文檔(五) 主題問答</div></div></a></div><div><a href="/2020/05/28/198a4240/" title="Butterfly 安裝文檔(七) 更新日誌"><img class="cover" src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-docs-07-cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-28</div><div class="title">Butterfly 安裝文檔(七) 更新日誌</div></div></a></div><div><a href="/2020/05/28/4aa8abbe/" title="Butterfly 安裝文檔(三) 主題配置-1"><img class="cover" src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-03-cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-28</div><div class="title">Butterfly 安裝文檔(三) 主題配置-1</div></div></a></div><div><a href="/2020/07/31/507c070f/" title="Butterfly添加全局吸底Aplayer教程"><img class="cover" src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-add-aplayer-cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-31</div><div class="title">Butterfly添加全局吸底Aplayer教程</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "/img/404.webp" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/4041.webp'" alt="avatar"/></div><div class="author-info__name">晋天杰</div><div class="author-info__description">众里寻他千百度</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>爱你呀</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xxxxx" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果你在使用中遇到問題，請到 <a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly/issues" style="color:#49b1f5">Github Issues</a> 或者 <a href="/messageboard/" style="color:#49b1f5">留言板</a> 進行反饋，你也可以加入 QQ 群（由於 QQ 群只能有 500 人，會定時清理潛水的人，不要同時申請 2 个 QQ 群）<div class="social-button"> <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=KU9105XR" target="_blank">QQ 1 群 👍</a> <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=r1nK0DQz" target="_blank">QQ 2 群 👍</a> <a class="button--animated" href="https://t.me/bu2fly" target="_blank">Telegram 👍</a> </div></div></div><div class="card-widget card-docs card-categories"><div class="item-headline"><i class="fas fa-car-side"></i><span>文檔目錄</span></div><div class="item-content"><ul class=card-category-list> <li class=card-category-list-item><a class=card-category-list-link href=/posts/21cfbf15/ >🚀 快速開始</a></li> <li class=card-category-list-item><a class=card-category-list-link href=/posts/dc584b87/ >📑 主題頁面</a></li> <li class=card-category-list-item><a class=card-category-list-link href=/posts/4aa8abbe/ >🛠 主題配置-1</a></li> <li class=card-category-list-item><a class=card-category-list-link href=/posts/ceeb73f/ >⚔️ 主題配置-2</a></li> <li class=card-category-list-item><a class=card-category-list-link href=/posts/98d20436/ >❓ 主題問答</a></li> <li class=card-category-list-item><a class=card-category-list-link href=/posts/4073eda/ >⚡️ 進階教程</a></li> <li class=card-category-list-item><a class=card-category-list-link href=/posts/198a4240/ >✨ 更新日誌</a></li> </ul></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E8%AD%B0"><span class="toc-number">1.</span> <span class="toc-text">建議</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9F%B3%E6%A8%82"><span class="toc-number">2.</span> <span class="toc-text">音樂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%BB%E5%BD%B1"><span class="toc-number">3.</span> <span class="toc-text">電影</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AA%AC%E8%AA%AC"><span class="toc-number">4.</span> <span class="toc-text">説説</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Artitalk"><span class="toc-number">4.1.</span> <span class="toc-text">Artitalk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HexoPlusPlus-Talk"><span class="toc-number">4.2.</span> <span class="toc-text">HexoPlusPlus Talk</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E7%BE%A9%E4%BB%A3%E7%A2%BC%E9%85%8D%E8%89%B2"><span class="toc-number">5.</span> <span class="toc-text">自定義代碼配色</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E7%BE%A9%E5%81%B4%E9%82%8A%E6%AC%84"><span class="toc-number">6.</span> <span class="toc-text">自定義側邊欄</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%85%A8%E5%B1%80%E5%90%B8%E5%BA%95Aplayer%E6%95%99%E7%A8%8B"><span class="toc-number">7.</span> <span class="toc-text">添加全局吸底Aplayer教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Icon"><span class="toc-number">8.</span> <span class="toc-text">Icon</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#iconfont"><span class="toc-number">8.1.</span> <span class="toc-text">iconfont</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A8%BB%E5%86%8A%E8%B3%AC%E8%99%9F"><span class="toc-number">8.1.1.</span> <span class="toc-text">註冊賬號</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%9C%96%E6%A8%99%E5%85%A5%E5%BA%AB"><span class="toc-number">8.1.2.</span> <span class="toc-text">添加圖標入庫</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%9F%E6%88%90CSS%E9%8F%88%E6%8E%A5"><span class="toc-number">8.1.3.</span> <span class="toc-text">生成CSS鏈接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E9%8F%88%E6%8E%A5%E9%80%B2%E4%B8%BB%E9%A1%8C%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">8.1.4.</span> <span class="toc-text">添加鏈接進主題配置文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95"><span class="toc-number">8.1.5.</span> <span class="toc-text">其他添加方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E5%AE%83%E5%9C%96%E6%A8%99%E6%8F%90%E4%BE%9B%E5%95%86"><span class="toc-number">8.2.</span> <span class="toc-text">其它圖標提供商</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%96%E7%89%87%E5%A3%93%E7%B8%AE"><span class="toc-number">9.</span> <span class="toc-text">圖片壓縮</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%96%A6"><span class="toc-number">10.</span> <span class="toc-text">插件推薦</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/11/05/c6050a1d/" title="cs"><img src= "/img/404.webp" data-lazy-src="https://s2.loli.net/2022/11/04/y8rclikszbXZ7HK.webp" onerror="this.onerror=null;this.src='/img/404.webp'" alt="cs"/></a><div class="content"><a class="title" href="/2022/11/05/c6050a1d/" title="cs">cs</a><time datetime="2022-11-05T12:42:55.000Z" title="发表于 2022-11-05 20:42:55">2022-11-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/28/43356308/" title="测试撕扯"><img src= "/img/404.webp" data-lazy-src="https://s2.loli.net/2022/10/28/PyKjf1CZ3ezUxSI.jpg" onerror="this.onerror=null;this.src='/img/404.webp'" alt="测试撕扯"/></a><div class="content"><a class="title" href="/2022/10/28/43356308/" title="测试撕扯">测试撕扯</a><time datetime="2022-10-28T11:07:04.000Z" title="发表于 2022-10-28 19:07:04">2022-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/25/ddcb8131/" title="水波纹"><img src= "/img/404.webp" data-lazy-src="https://s2.loli.net/2022/10/28/TqtKCUam3YFglbr.jpg" onerror="this.onerror=null;this.src='/img/404.webp'" alt="水波纹"/></a><div class="content"><a class="title" href="/2022/09/25/ddcb8131/" title="水波纹">水波纹</a><time datetime="2022-09-25T07:01:11.000Z" title="发表于 2022-09-25 15:01:11">2022-09-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/25/5774c795/" title="换背景"><img src= "/img/404.webp" data-lazy-src="https://s2.loli.net/2022/10/28/PyKjf1CZ3ezUxSI.jpg" onerror="this.onerror=null;this.src='/img/404.webp'" alt="换背景"/></a><div class="content"><a class="title" href="/2022/09/25/5774c795/" title="换背景">换背景</a><time datetime="2022-09-25T06:01:11.000Z" title="发表于 2022-09-25 14:01:11">2022-09-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/30/ea33ab97/" title="自定義側邊欄"><img src= "/img/404.webp" data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/aside-diy-cover.png" onerror="this.onerror=null;this.src='/img/404.webp'" alt="自定義側邊欄"/></a><div class="content"><a class="title" href="/2020/12/30/ea33ab97/" title="自定義側邊欄">自定義側邊欄</a><time datetime="2020-12-30T13:48:10.000Z" title="发表于 2020-12-30 21:48:10">2020-12-30</time></div></div></div></div><div class="card-widget ads-wrap"><br><br><div id="post-info"><h1 class="post-title notice">广告丫</h1></div><br><br><br></div></div></div></main><footer id="footer" style="background: linear-gradient(-45deg,#00053f,#00c9ff,#23a6d5,#00cb6f);background-size: 400% 400%; animation: gradientBG 15s ease infinite;"><div id="footer-wrap"><div class="copyright">&copy;1993 - 2022 By 晋天杰</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">合抱之木，生于毫末；九层之台，起于累土；千里之行，始于足下。<a target="_blank" rel="noopener" href="https://4t.pw/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button type="button" title="切换背景" onclick="toggleWinbox()"><i class="fas fa-display"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="6886768100" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-theme="#3F51B5"> </div><script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script><script defer src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script><script defer data-pjax src="https://cdn.jsdelivr.net/gh/sirxemic/jquery.ripples/dist/jquery.ripples.js"></script><script defer data-pjax src="/js/ripples.js"></script><script defer src="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.js"></script><script src="/js/sun_moon.js" async></script><script src="https://cdn.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

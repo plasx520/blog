@@ -33,7 +33,6 @@
   .card-categories,
   .card-tags,
   .card-archives,
-  .notice,
   .item-headline {
     display: none;
   }
@@ -175,3 +174,31 @@
         display: none;
     }
 }
+   /* ggl */
+.ggl-logo {
+    line-height: 22px;
+    margin-right: 8px;
+    transition: 0.3s;
+    color: #ff0000;
+    font-size: 1.45em
+  }
+  #ggl {
+    width: 75.5%;
+    border: 3px solid rgb(0 151 142 / 65%);
+    background-color: rgb(190 212 255 / 77%);
+    color: var(--font-color);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 40px 12.7% -20px 12.7%;
+  
+  }
+.xianzhi {
+    width:100%
+}
+  [data-theme="dark"] #ggl {
+    background: rgba(0, 0, 0, 0.6) !important;
+  }

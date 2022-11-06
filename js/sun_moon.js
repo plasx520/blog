@@ -149,3 +149,39 @@ function toggleWinbox() {
     if (document.querySelector('#changeBgBox')) winbox.toggleClass('hide');
     else createWinbox();
 }
+// F12显示文字
+// 控制台打印自定义内容
+if (window.console) {
+    var getTimeState_console = function () {
+      var t = new Date().getHours(),
+        e = "";
+      return (
+        4 >= t || t > 22
+          ? (e = "Good Night 🛌<br>")
+          : 4 < t && t <= 10
+          ? (e = "Good Morning 🌮")
+          : 10 < t && t <= 12
+          ? (e = "Good Noon 🍱")
+          : 12 < t && t <= 17
+          ? (e = "Good Afternoon ☕")
+          : 17 < t && t <= 22 && (e = "Good Evening 🍇"),
+        e
+      );
+    };
+    Function.prototype.makeMulti = function () {
+      let l = new String(this);
+      l = l.substring(l.indexOf("/*") + 3, l.lastIndexOf("*/"));
+      return l;
+    };
+    let string = function () {
+      /*
+能看到这句话说明我们有缘分，记得别再熬夜了我的程序员朋友。  
+      */
+    };
+    console.log('\n' + ' %c 如果可以 交个朋友吧' + ' %c http://4t.pw ' + '\n', 'color: #fadfa3; background: #002d54; padding:5px 0;', 'background: #00ebff; padding:5px 0;');
+    console.log(string.makeMulti());
+    console.log(getTimeState_console());
+    console.log("禁止代码%c不是我的风格", "color:#1fc7b6;font-weight:bold");
+    console.log("在这里相遇很幸运 💛💙");
+  }
+  
