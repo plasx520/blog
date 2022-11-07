@@ -185,7 +185,7 @@
   #ggl {
     width: 75.5%;
     border: 3px solid rgb(0 151 142 / 65%);
-    background-color: rgb(190 212 255 / 77%);
+    background-color: rgba(255, 255, 255, 0.86);
     color: var(--font-color);
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
