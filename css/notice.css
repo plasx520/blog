@@ -126,6 +126,18 @@
   -webkit-animation: Gradient 10s ease infinite;
   -moz-animation: Gradient 10s ease infinite;
   animation: Gradient 10s ease infinite !important;
+  border-radius: 40px;
+  border: #000 9px solid;
+  background-color: var(--hassan-main);
+  padding: 0 14px 8px;
+  height: 550px;
+}
+#aside-content .card-info .card-info-social-icons {
+  margin: 6px 0 -6px;
+  position: relative;
+  background-color: #b2b2b257;
+  border-radius: 12px;
+  margin-bottom: 14px;
 }
 @-webkit-keyframes Gradient {
   0% {
@@ -164,7 +176,11 @@
 /* 個人信息Follow me按鈕 */
 #aside-content > .card-widget.card-info > #card-info-btn {
   border-radius: 8px;
-  box-shadow: 4px 4px 4px rgb(0 0 0 / 40%);
+  height: 146px;
+  background-image: url(/img/xka.webp);
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  box-shadow: inset 3px 4px 3px 1px rgb(0 0 0 / 40%);
 }
 [data-theme="dark"] #aside-content > .card-widget.card-info {
   background: linear-gradient(
@@ -184,4 +200,54 @@
 }
 [data-theme="dark"] .container {
   filter: brightness(70%);
+}
+/* 手机底部 */
+.home-indicator {
+  position: relative;
+  width: 108px;
+  margin: auto;
+  height: 6px;
+  background-color: var(--recent-post-bgcolor);
+  border-radius: 3px;
+}
+/* 手机顶部 */
+.home-indicatordin {
+  position: relative;
+  width: 108px;
+  margin: auto;
+  height: 6px;
+  background-color: var(--recent-post-bgcolor);
+  border-radius: 3px;
+}
+.fakaozuo{
+  text-align:left
+}
+.status-bar {
+  position: relative;
+  display: flex;
+  height: 20px;
+  margin-bottom: 31px;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+#camera {
+  width: 18px;
+  height: 18px;
+  border: solid 7px #232323;
+  border-radius: 50%;
+  margin: 5px 10px 0px 15%;
+  box-shadow: inset 1px 1px 2px 1px rgb(0 0 0 / 50%);
+}
+.xiayi {
+  padding: 5px;
+} 
+.biaotou {
+  border-radius: 12px;
+  width: 76px;
+  background-color: rgb(156 156 156 / 26%);
+  transition: .3s;
+  margin: 0 10px;
+}
+.biaotou:hover {
+  background-color: rgba(0, 0, 0, 0.411);
 }
