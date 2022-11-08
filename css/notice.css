@@ -335,6 +335,8 @@
     background: var(--card-bg);
     transition: 0.5s;
     height: 120px;
+    box-shadow: 0px 0px 3px 2px rgb(0 31 40 / 53%);
+    color: rgb(231, 231, 231);
 }
 
 .article-sort-item-a{
@@ -407,12 +409,12 @@
 }
 
 .article-sort-item:hover:not(.year){
-  background-color:#1688c9;
+  background-color:#13a6ba;
   box-shadow: 0 0 10px #1688c9;
 }
 
 .article-sort-item:hover:not(.year){
-  background-color:#1688c9;
+  background-color:#13a6ba;
   box-shadow: 0 0 10px #1688c9;
 }
 
