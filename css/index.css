@@ -1373,7 +1373,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: HarmonyOS_Regular;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -2398,7 +2398,7 @@ figure.highlight pre .javascript .function {
 }
 [data-theme="dark"] {
   --recent-post-bgcolor: rgba(35,35,35,0.5);
-  --article-content-bgcolor: #99999a;
+  --article-content-bgcolor: #63637b;
   --recent-post-triangle: #37e2dd;
   --recent-post-cover-shadow: #232323;
 }
@@ -4257,44 +4257,31 @@ span.categoryBar-list-count::after {
   right: -100%;
 }
 li.categoryBar-list-item:nth-child(1) {
-  background: url('https://blog.4t.pw/img/ljz.webp');
+  background: url('https://s2.loli.net/2022/11/09/E9WRrMAYvmKDxnl.webp');
 }
 li.categoryBar-list-item:nth-child(2) {
-  background: #abcdef;
+  background: url('https://s2.loli.net/2022/11/09/UhA2W3QejrwzcLn.webp');
 }
 li.categoryBar-list-item:nth-child(3) {
-  background: rgba(45,67,89,0.7);
+  background: url('https://s2.loli.net/2022/11/09/SRi7l6jNZkD2Bmy.webp');
 }
 li.categoryBar-list-item:nth-child(4) {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
-  background: -ms-linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
-  background: linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
+  background: url('https://s2.loli.net/2022/11/09/95LaCNrd8BKXeSt.webp');
 }
 li.categoryBar-list-item:nth-child(5) {
-  background: url('/img/cover.png');
+  background: url('https://s2.loli.net/2022/11/09/VbopOwvGhfdmy1M.webp');
+}
+li.categoryBar-list-item:nth-child(6) {
+  background: url('https://s2.loli.net/2022/11/09/Et3Yh7GslKX8FwA.webp');
+}
+li.categoryBar-list-item:nth-child(7) {
+  background: url('https://s2.loli.net/2022/11/09/9getUWqvxTjHcbl.webp');
 }
 li.categoryBar-list-item:nth-child(1)>span::after {
-  content: '长篇小说连载' !important;
-}
-li.categoryBar-list-item:nth-child(2)>span::after {
-  content: '杂谈教程' !important;
-}
-li.categoryBar-list-item:nth-child(3)>span::after {
-  content: '玩转Win10' !important;
-}
-li.categoryBar-list-item:nth-child(4)>span::after {
-  content: 'Ubuntu指南' !important;
-}
-li.categoryBar-list-item:nth-child(5)>span::after {
-  content: '个人日记' !important;
-}
-li.categoryBar-list-item:nth-child(6)>span::after {
-  content: '诗词歌赋' !important;
+  content: '' !important;
 }
 li.categoryBar-list-item {
-  width: 24% !important;
+  width: 32.3% !important;
 }
 @media screen and (max-width: 650px) {
   li.categoryBar-list-item {
@@ -4304,7 +4291,7 @@ li.categoryBar-list-item {
   }
 }
 .categoryBar-list {
-  max-height: 190px;
+  max-height: 390px;
   overflow: auto;
 }
 .categoryBar-list::-webkit-scrollbar {
@@ -6177,7 +6164,7 @@ span.mathjax-overflow {
   border-radius: 5px !important;
 }
 [data-theme="dark"] #web_bg {
-  background: url(https://s2.loli.net/2022/11/08/LciYt7Fg1OKVbRy.webp);
+  background: url(https://s2.loli.net/2022/11/04/GOKblJF1BMpWvYf.webp);
   background-attachment: local;
   background-position: center;
   background-size: cover;
@@ -7113,7 +7100,7 @@ blockquote.pullquote.right {
   --tab-botton-color: rgba(255,255,255,0.7);
   --tab-button-hover-bg: #383838;
   --tab-button-active-bg: #121212;
-  --card-bg: #121212;
+  --card-bg: rgba(181,181,181,0.439);
   --sidebar-bg: #121212;
   --btn-hover-color: #787878;
   --btn-color: rgba(255,255,255,0.7);
