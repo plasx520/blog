@@ -15,8 +15,62 @@
     <atom:link href="http://blog.4t.pw/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>这是一个博客丫</description>
-    <pubDate>Wed, 09 Nov 2022 07:42:50 GMT</pubDate>
+    <pubDate>Thu, 10 Nov 2022 05:14:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>魔改教程</title>
+      <link>http://blog.4t.pw/posts/1868f51e.html</link>
+      <guid>http://blog.4t.pw/posts/1868f51e.html</guid>
+      <pubDate>Thu, 10 Nov 2022 05:14:10 GMT</pubDate>
+      
+      <description>描述 Butterfly魔改-教程</description>
+      
+      
+      
+      
+      <category domain="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/">魔改</category>
+      
+      
+      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
+      
+      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/">魔改</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>主题开源</title>
+      <link>http://blog.4t.pw/posts/3c6f5e91.html</link>
+      <guid>http://blog.4t.pw/posts/3c6f5e91.html</guid>
+      <pubDate>Thu, 10 Nov 2022 05:08:38 GMT</pubDate>
+      
+      <description>开源主题，魔改继续开源。</description>
+      
+      
+      
+      
+      <category domain="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/">魔改</category>
+      
+      
+      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
+      
+      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/">魔改</category>
+      
+      
+    </item>
     
     <item>
       <title>cs2</title>
@@ -448,44 +502,6 @@ var physics_accuracy  = 3,
       
       
       <category domain="http://blog.4t.pw/tags/demo/">demo</category>
-      
-      
-    </item>
-    
-    <item>
-      <title>標籤外掛(Tag Plugins)</title>
-      <link>http://blog.4t.pw/posts/2df239ce.html</link>
-      <guid>http://blog.4t.pw/posts/2df239ce.html</guid>
-      <pubDate>Sun, 05 Jan 2020 13:41:03 GMT</pubDate>
-      
-      <description>標籤外掛(Tag Plugins)</description>
-      
-      
-      
-      
-      <category domain="http://blog.4t.pw/categories/Demo/">Demo</category>
-      
-      
-      <category domain="http://blog.4t.pw/tags/%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B/">標籤外掛</category>
-      
-      
-    </item>
-    
-    <item>
-      <title>Code Highlight Style test</title>
-      <link>http://blog.4t.pw/posts/9db656e5.html</link>
-      <guid>http://blog.4t.pw/posts/9db656e5.html</guid>
-      <pubDate>Thu, 25 Jul 2019 08:43:00 GMT</pubDate>
-      
-      <description>Code Highlight Style test</description>
-      
-      
-      
-      
-      <category domain="http://blog.4t.pw/categories/Demo/">Demo</category>
-      
-      
-      <category domain="http://blog.4t.pw/tags/highlight/">highlight</category>
       
       
     </item>
