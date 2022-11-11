@@ -6,7 +6,7 @@
   <link href="http://blog.4t.pw/atom.xml" rel="self"/>
   
   <link href="http://blog.4t.pw/"/>
-  <updated>2022-11-10T05:14:10.000Z</updated>
+  <updated>2022-11-11T11:20:06.000Z</updated>
   <id>http://blog.4t.pw/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>彩色标题发光效果</title>
+    <link href="http://blog.4t.pw/posts/d7005037.html"/>
+    <id>http://blog.4t.pw/posts/d7005037.html</id>
+    <published>2022-11-11T11:20:06.000Z</published>
+    <updated>2022-11-11T11:20:06.000Z</updated>
+    
+    
+    <summary type="html">描述 Butterfly安裝文檔-快速開始</summary>
+    
+    
+    
+    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+    <category term="魔改" scheme="http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/"/>
+    
+  </entry>
   
   <entry>
     <title>魔改教程</title>
@@ -169,7 +196,7 @@ var physics_accuracy  = 3,
     <link href="http://blog.4t.pw/posts/5774c795.html"/>
     <id>http://blog.4t.pw/posts/5774c795.html</id>
     <published>2022-09-25T06:01:11.000Z</published>
-    <updated>2022-11-05T14:01:11.844Z</updated>
+    <updated>2022-11-11T12:06:31.743Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -470,31 +497,6 @@ var physics_accuracy  = 3,
     
     
     <category term="標籤外掛" scheme="http://blog.4t.pw/tags/%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>no cover</title>
-    <link href="http://blog.4t.pw/posts/913b2502.html"/>
-    <id>http://blog.4t.pw/posts/913b2502.html</id>
-    <published>2020-03-09T19:45:41.000Z</published>
-    <updated>2022-10-31T05:41:01.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;This post no</summary>
-        
-      
-    
-    
-    
-    <category term="Demo" scheme="http://blog.4t.pw/categories/Demo/"/>
-    
-    
-    <category term="demo" scheme="http://blog.4t.pw/tags/demo/"/>
     
   </entry>
   

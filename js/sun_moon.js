@@ -184,4 +184,9 @@ if (window.console) {
     console.log("禁止代码%c不是我的风格", "color:#1fc7b6;font-weight:bold");
     console.log("在这里相遇很幸运 💛💙");
   }
-  
+if (GLOBAL_CONFIG.Snackbar) {
+    btf.snackbarShow('欢迎光临')
+}
+document.body.oncopy=function(){
+btf.snackbarShow("复制成功，复制和转载请标注本文地址");
+};
