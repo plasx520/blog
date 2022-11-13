@@ -187,6 +187,3 @@ if (window.console) {
 if (GLOBAL_CONFIG.Snackbar) {
     btf.snackbarShow('欢迎光临')
 }
-document.body.oncopy=function(){
-btf.snackbarShow("复制成功，复制和转载请标注本文地址");
-};
