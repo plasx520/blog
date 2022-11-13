@@ -207,3 +207,34 @@ var CountUp = function (target, startVal, endVal, decimals, duration, options) {
       self.printValue(self.startVal);
     }
   };
+//控制鼠标滚轮事件触发
+var scrollRuning = true;
+/**
+ * 控制滚动一次滚动一页
+ */
+function scrollOnePage(){
+        var p = 0, t = 0;
+        $(window).scroll(function (e) {
+                if(scrollRuning) {
+                    scrollRuning = false;
+                    p = $(this).scrollTop();
+                    var heightNum = Math.floor(p / document.body.clientHeight);
+                    if (t <= p) {//向下滚
+                        $('body').animate({scrollTop: (heightNum + 1) * document.body.clientHeight + "px"}, 500,function(){
+                            setTimeout(function () {
+                                scrollRuning = true;
+                                t = $(this).scrollTop();
+                            },200)
+                            return false;
+                        });
+                    } else {//向上滚
+                        $('body').animate({scrollTop: heightNum * document.body.clientHeight + "px"}, 500,function(){
+                            setTimeout(function () {
+                                scrollRuning = true;
+                                t = $(this).scrollTop();
+                            },200)
+                        })
+                    }
+                }
+        });
+}
