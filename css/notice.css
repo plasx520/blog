@@ -212,7 +212,7 @@
   border-radius: 10px;
   background: #1672af linear-gradient(to right, rgba(0, 255, 0, 0), rgb(29 34 70 / 48%));
   overflow: hidden;
-  border: var(--recent-post-bgcolor) 12px solid;
+  border: var(--heo-card-btn-bg) 12px solid;
   transition: background-color .5s
 }
 
