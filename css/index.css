@@ -4319,7 +4319,7 @@ li.categoryBar-list-item:nth-child(1)>span::after {
   content: '' !important;
 }
 li.categoryBar-list-item {
-  width: 32.3% !important;
+  width: 24% !important;
 }
 @media screen and (max-width: 650px) {
   li.categoryBar-list-item {

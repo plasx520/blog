@@ -15,8 +15,35 @@
     <atom:link href="http://blog.4t.pw/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>这是一个博客丫</description>
-    <pubDate>Fri, 11 Nov 2022 11:20:06 GMT</pubDate>
+    <pubDate>Wed, 16 Nov 2022 13:25:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>友情链接快速添加</title>
+      <link>http://blog.4t.pw/posts/80adb334.html</link>
+      <guid>http://blog.4t.pw/posts/80adb334.html</guid>
+      <pubDate>Wed, 16 Nov 2022 13:04:54 GMT</pubDate>
+      
+      <description>友情链接页面添加快速写入按钮</description>
+      
+      
+      
+      
+      <category domain="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/">魔改</category>
+      
+      
+      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
+      
+      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/">魔改</category>
+      
+      
+    </item>
     
     <item>
       <title>彩色标题发光效果</title>
@@ -473,31 +500,6 @@ var physics_accuracy  = 3,
       <pubDate>Thu, 28 May 2020 14:34:41 GMT</pubDate>
       
       <description>Butterfly安裝文檔-主題頁面</description>
-      
-      
-      
-      
-      <category domain="http://blog.4t.pw/categories/Docs%E6%96%87%E6%AA%94/">Docs文檔</category>
-      
-      
-      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
-      
-      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
-      
-      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
-      
-      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
-      
-      
-    </item>
-    
-    <item>
-      <title>Butterfly 安裝文檔(一) 快速開始</title>
-      <link>http://blog.4t.pw/posts/21cfbf15.html</link>
-      <guid>http://blog.4t.pw/posts/21cfbf15.html</guid>
-      <pubDate>Thu, 28 May 2020 14:31:46 GMT</pubDate>
-      
-      <description>Butterfly安裝文檔-快速開始</description>
       
       
       

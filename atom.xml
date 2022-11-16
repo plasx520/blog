@@ -6,7 +6,7 @@
   <link href="http://blog.4t.pw/atom.xml" rel="self"/>
   
   <link href="http://blog.4t.pw/"/>
-  <updated>2022-11-11T11:20:06.000Z</updated>
+  <updated>2022-11-16T13:25:32.451Z</updated>
   <id>http://blog.4t.pw/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>友情链接快速添加</title>
+    <link href="http://blog.4t.pw/posts/80adb334.html"/>
+    <id>http://blog.4t.pw/posts/80adb334.html</id>
+    <published>2022-11-16T13:04:54.000Z</published>
+    <updated>2022-11-16T13:25:32.451Z</updated>
+    
+    
+    <summary type="html">友情链接页面添加快速写入按钮</summary>
+    
+    
+    
+    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+    <category term="魔改" scheme="http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/"/>
+    
+  </entry>
   
   <entry>
     <title>彩色标题发光效果</title>
@@ -467,31 +494,6 @@ var physics_accuracy  = 3,
     
     
     <summary type="html">Butterfly安裝文檔-主題頁面</summary>
-    
-    
-    
-    <category term="Docs文檔" scheme="http://blog.4t.pw/categories/Docs%E6%96%87%E6%AA%94/"/>
-    
-    
-    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
-    
-    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
-    
-    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Butterfly 安裝文檔(一) 快速開始</title>
-    <link href="http://blog.4t.pw/posts/21cfbf15.html"/>
-    <id>http://blog.4t.pw/posts/21cfbf15.html</id>
-    <published>2020-05-28T14:31:46.000Z</published>
-    <updated>2022-10-31T05:41:01.000Z</updated>
-    
-    
-    <summary type="html">Butterfly安裝文檔-快速開始</summary>
     
     
     
