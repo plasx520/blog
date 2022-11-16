@@ -1181,7 +1181,7 @@ color: #fff;
 
   /* 微信公众号 */
   #aside-content .card-widget#card-wechat {
-    background: #57bd6a;
+    background: #45704d0d;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -1236,7 +1236,7 @@ color: #fff;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     /* background-color: #e71840; */
-    background: url(https://img.zhheo.com/i/2022/08/31/630efc6e3e794.png) center center no-repeat;
+    background: url(https://s2.loli.net/2022/11/16/NThS2Y7fjuxtAXk.webp) center center no-repeat;
     background-size: 100%;
   }
   
@@ -1246,7 +1246,7 @@ color: #fff;
     transform: rotateY(180deg);
     box-sizing: border-box;
     /* background-color: #212121; */
-    background: url(https://img.zhheo.com/i/2022/08/31/630efca2abb02.png) center center no-repeat;
+    background: url(https://s2.loli.net/2022/11/16/QnUNS8rvAXgV5dq.webp) center center no-repeat;
     background-size: 100%;
   }
 
@@ -1512,4 +1512,3 @@ color: #fff;
 
   opacity: 100;
 }
- 

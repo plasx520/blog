@@ -1361,8 +1361,8 @@ canvas:not(#ribbon-canvas),
   --blockquote-bg: rgba(73,177,245,0.1);
   --reward-pop: #f5f5f5;
   --toc-link-color: #666261;
-  --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
-  --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
+  --card-box-shadow: 0px 0px 4px 2px rgba(63,134,255,0.741);
+  --card-hover-box-shadow: 0px 0px 4px 3px rgba(105,47,241,0.89);
   --pseudo-hover: #ff7242;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #49b1f5;
@@ -1399,7 +1399,7 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: url(https://s2.loli.net/2022/11/08/5ydOEIzRVqmkDxZ.webp);
+  background: #f5f5f5;
   background-attachment: local;
   background-position: center;
   background-size: cover;
@@ -2432,7 +2432,7 @@ figure.highlight pre .javascript .function {
   --recent-post-cover-shadow: #fff;
 }
 [data-theme="dark"] {
-  --recent-post-bgcolor: rgba(35,35,35,0.5);
+  --recent-post-bgcolor: #202020;
   --article-content-bgcolor: #63637b;
   --recent-post-triangle: #37e2dd;
   --recent-post-cover-shadow: #232323;
@@ -2701,7 +2701,7 @@ figure.highlight pre .javascript .function {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    left: calc(-25% - 41px);
+    left: calc(-30% - -8px);
     -webkit-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
     -moz-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
     -o-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
@@ -2877,9 +2877,9 @@ figure.highlight pre .javascript .function {
     -ms-flex-order: 1;
     -webkit-order: 1;
     order: 1;
-    height: 240px;
+    height: 200px;
     position: absolute;
-    width: calc(100% - 40px);
+    width: calc(100% - 0px);
     z-index: 3;
     background: rgba(22,22,22,0.5);
     border-top-left-radius: 15px;
@@ -2901,7 +2901,7 @@ figure.highlight pre .javascript .function {
     -ms-flex-order: 2;
     -webkit-order: 2;
     order: 2;
-    height: 240px;
+    height: 200px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -4319,7 +4319,7 @@ li.categoryBar-list-item:nth-child(1)>span::after {
   content: '' !important;
 }
 li.categoryBar-list-item {
-  width: 24% !important;
+  width: 32.3% !important;
 }
 @media screen and (max-width: 650px) {
   li.categoryBar-list-item {
@@ -6203,7 +6203,7 @@ span.mathjax-overflow {
   border-radius: 5px !important;
 }
 [data-theme="dark"] #web_bg {
-  background: url(https://s2.loli.net/2022/11/04/GOKblJF1BMpWvYf.webp);
+  background: #444;
   background-attachment: local;
   background-position: center;
   background-size: cover;
@@ -6211,14 +6211,14 @@ span.mathjax-overflow {
 }
 @media screen and (max-width: 800px) {
   #web_bg {
-    background: url(https://s2.loli.net/2022/11/08/t74QygsSoxuh1DV.webp) !important;
+    background: #f5f5f5 !important;
     background-attachment: local !important;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
   }
   [data-theme="dark"] #web_bg {
-    background: url(https://s2.loli.net/2022/11/08/AmXoRdZ67LfpI5W.webp) !important;
+    background: #444 !important;
     background-attachment: local !important;
     background-position: center !important;
     background-size: cover !important;

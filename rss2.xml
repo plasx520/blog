@@ -150,6 +150,33 @@
     </item>
     
     <item>
+      <title>魔改目录</title>
+      <link>http://blog.4t.pw/posts/c6050a1d.html</link>
+      <guid>http://blog.4t.pw/posts/c6050a1d.html</guid>
+      <pubDate>Sat, 05 Nov 2022 12:42:55 GMT</pubDate>
+      
+      <description>描述 Butterfly安裝文檔-快速開始</description>
+      
+      
+      
+      
+      <category domain="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/">魔改</category>
+      
+      
+      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
+      
+      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/">魔改</category>
+      
+      
+    </item>
+    
+    <item>
       <title>测试撕扯</title>
       <link>http://blog.4t.pw/posts/43356308.html</link>
       <guid>http://blog.4t.pw/posts/43356308.html</guid>
@@ -485,25 +512,6 @@ var physics_accuracy  = 3,
       <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
       
       <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
-      
-      
-    </item>
-    
-    <item>
-      <title>Hexo Built-in Tag Plugins (Hexo內置標籤外掛)</title>
-      <link>http://blog.4t.pw/posts/39b121ef.html</link>
-      <guid>http://blog.4t.pw/posts/39b121ef.html</guid>
-      <pubDate>Tue, 12 May 2020 14:33:11 GMT</pubDate>
-      
-      <description>Hexo Built-in Tag Plugins</description>
-      
-      
-      
-      
-      <category domain="http://blog.4t.pw/categories/Demo/">Demo</category>
-      
-      
-      <category domain="http://blog.4t.pw/tags/%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B/">標籤外掛</category>
       
       
     </item>
