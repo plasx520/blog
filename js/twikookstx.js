@@ -1,7 +1,7 @@
 var leonus = {    
     linkCom: e => {
         var t = document.querySelector(".el-textarea__inner");
-        "bf" == e ? (t.value = "```yml\n", t.value += "- name: \n  link: \n  avatar: \n  descr: \n  rss: ", t.value += "\n```", t.setSelectionRange(15, 15)) : (t.value = "站点名称：\n站点地址：\n头像链接：\n站点描述：\nRSS地址：", t.setSelectionRange(5, 5)), t.focus()
+        "bf" == e ? (t.value = "```yml\n", t.value += "- name: \n  link: \n  avatar: \n  descr: ", t.value += "\n```", t.setSelectionRange(15, 15)) : (t.value = "站点名称：\n站点地址：\n头像链接：\n站点描述：\nRSS地址：", t.setSelectionRange(5, 5)), t.focus()
     },
     owoBig: () => {
         if (!document.getElementById("post-comment") || document.body.clientWidth < 768) return;
