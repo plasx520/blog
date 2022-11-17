@@ -4214,7 +4214,7 @@ ul.categoryBar-list {
 li.categoryBar-list-item {
   font-weight: bold;
   display: inline-block;
-  height: 180px !important;
+  height: 140px !important;
   margin: 5px 0.5% 0 0.5% !important;
   background-image: -webkit-linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
   background-image: -moz-linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
@@ -4231,8 +4231,8 @@ li.categoryBar-list-item {
 }
 li.categoryBar-list-item:hover {
   background-size: 110% !important;
-  -webkit-box-shadow: inset 500px 50px 50px 50px rgba(50,50,50,0.6);
-  box-shadow: inset 500px 50px 50px 50px rgba(50,50,50,0.6);
+  -webkit-box-shadow: inset 500px 50px 50px 50px rgba(4,255,255,0.3);
+  box-shadow: inset 500px 50px 50px 50px rgba(4,255,255,0.3);
 }
 li.categoryBar-list-item:hover span.categoryBar-list-count::after {
   -webkit-transition: all 0.5s;
@@ -4293,30 +4293,75 @@ span.categoryBar-list-count::after {
 }
 li.categoryBar-list-item:nth-child(1) {
   background: url('https://s2.loli.net/2022/11/09/E9WRrMAYvmKDxnl.webp');
+  -webkit-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -moz-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -o-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -ms-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
 }
 li.categoryBar-list-item:nth-child(2) {
   background: url('https://s2.loli.net/2022/11/09/UhA2W3QejrwzcLn.webp');
+  -webkit-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -moz-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -o-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -ms-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
 }
 li.categoryBar-list-item:nth-child(3) {
   background: url('https://s2.loli.net/2022/11/09/SRi7l6jNZkD2Bmy.webp');
+  -webkit-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -moz-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -o-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -ms-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
 }
 li.categoryBar-list-item:nth-child(4) {
   background: url('https://s2.loli.net/2022/11/09/95LaCNrd8BKXeSt.webp');
+  -webkit-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -moz-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -o-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -ms-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
 }
 li.categoryBar-list-item:nth-child(5) {
   background: url('https://s2.loli.net/2022/11/09/VbopOwvGhfdmy1M.webp');
+  -webkit-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -moz-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -o-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -ms-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
 }
 li.categoryBar-list-item:nth-child(6) {
   background: url('https://s2.loli.net/2022/11/09/Et3Yh7GslKX8FwA.webp');
+  -webkit-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -moz-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -o-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -ms-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
 }
 li.categoryBar-list-item:nth-child(7) {
   background: url('https://s2.loli.net/2022/11/09/9getUWqvxTjHcbl.webp');
+  -webkit-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -moz-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -o-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -ms-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
 }
 li.categoryBar-list-item:nth-child(8) {
   background: url('https://s2.loli.net/2022/11/09/9getUWqvxTjHcbl.webp');
+  -webkit-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -moz-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -o-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -ms-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
 }
 li.categoryBar-list-item:nth-child(1)>span::after {
   content: '' !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -moz-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -o-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  -ms-transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
+  transition: all 0.3s cubic-bezier(0.59, 0.01, 0.48, 1.17);
 }
 li.categoryBar-list-item {
   width: 24% !important;
