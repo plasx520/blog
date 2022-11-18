@@ -18,8 +18,8 @@
 
 .banner-button-group {
 	position: absolute;
-	right: 2rem;
-	bottom: 1.5rem;
+	right: 1rem;
+	bottom: 1rem;
 }
 
 .author-content-item-title {
@@ -29,8 +29,8 @@
 .banner-button {
 	z-index: 1;
 	display: flex;
-	width: 124px;
-	height: 40px;
+	width: 98px;
+	height: 30px;
 	border-bottom: 0 !important;
 	border-radius: 20px;
 	background: var(--recent-post-bgcolor);
@@ -208,7 +208,7 @@ details:not(.tk-admin-config-group) summary:hover::marker {
 		opacity: 0.5;
 	}
 	7.5% {
-		height: 320px;
+		height: 230px;
 	}
 	8%, 12%, 16% {
 		opacity: 0.5;
@@ -220,7 +220,7 @@ details:not(.tk-admin-config-group) summary:hover::marker {
 		opacity: 0;
 	}
 	100% {
-		height: 320px;
+		height: 230px;
 		opacity: 0;
 	}
 }
