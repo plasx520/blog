@@ -190,3 +190,53 @@ details:not(.tk-admin-config-group) summary:hover::marker {
   }
 }
 
+/* 闪电 */
+             
+.lightning {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+}
+.lightning div {
+	position: absolute;
+	overflow: hidden;
+}
+@keyframes flash_light {
+	0% {
+		height: 0px;
+		opacity: 0.5;
+	}
+	7.5% {
+		height: 320px;
+	}
+	8%, 12%, 16% {
+		opacity: 0.5;
+	}
+	10%,  14% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		height: 320px;
+		opacity: 0;
+	}
+}
+.lightning div img {
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+.lightning .lightning1 {
+	position: absolute;
+	right: 11%;
+	animation: flash_light 5.7s infinite;
+}
+.lightning .lightning2 {
+	position: absolute;
+	left: 18%;
+	animation: flash_light 5.1s infinite;
+	animation-delay: -2.33s;
+}
