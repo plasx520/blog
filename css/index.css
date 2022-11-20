@@ -4374,7 +4374,7 @@ li.categoryBar-list-item {
   }
 }
 .categoryBar-list {
-  max-height: 390px;
+  max-height: 308px;
   overflow: auto;
 }
 .categoryBar-list::-webkit-scrollbar {

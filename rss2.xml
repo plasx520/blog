@@ -15,8 +15,87 @@
     <atom:link href="http://blog.4t.pw/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>这是一个博客丫</description>
-    <pubDate>Wed, 16 Nov 2022 13:25:32 GMT</pubDate>
+    <pubDate>Sun, 20 Nov 2022 08:00:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>hexo主题butterfly顶部复制提示弹窗</title>
+      <link>http://blog.4t.pw/posts/3296cbc9.html</link>
+      <guid>http://blog.4t.pw/posts/3296cbc9.html</guid>
+      <pubDate>Sun, 20 Nov 2022 08:00:49 GMT</pubDate>
+      
+      <description>修改默认小弹窗，改为顶部大弹窗</description>
+      
+      
+      
+      
+      <category domain="http://blog.4t.pw/categories/css/">css</category>
+      
+      
+      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
+      
+      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
+      
+      <category domain="http://blog.4t.pw/tags/css/">css</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>hexo主题butterfly4.5.1css美化教程</title>
+      <link>http://blog.4t.pw/posts/b48f40bd.html</link>
+      <guid>http://blog.4t.pw/posts/b48f40bd.html</guid>
+      <pubDate>Sun, 20 Nov 2022 07:40:14 GMT</pubDate>
+      
+      <description>hexo butterfly主题css美化教程</description>
+      
+      
+      
+      
+      <category domain="http://blog.4t.pw/categories/css/">css</category>
+      
+      
+      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
+      
+      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
+      
+      <category domain="http://blog.4t.pw/tags/css%E7%BE%8E%E5%8C%96/">css美化</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>CMD快速辅助工具</title>
+      <link>http://blog.4t.pw/posts/db0a31c8.html</link>
+      <guid>http://blog.4t.pw/posts/db0a31c8.html</guid>
+      <pubDate>Sat, 19 Nov 2022 06:37:59 GMT</pubDate>
+      
+      <description>hexo命令较为麻烦，所以简单化</description>
+      
+      
+      
+      
+      <category domain="http://blog.4t.pw/categories/%E8%BE%85%E5%8A%A9/">辅助</category>
+      
+      
+      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E8%BE%85%E5%8A%A9/">辅助</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E5%91%BD%E4%BB%A4/">命令</category>
+      
+      
+    </item>
     
     <item>
       <title>友情链接快速添加</title>
@@ -152,9 +231,9 @@
     </item>
     
     <item>
-      <title>cs</title>
-      <link>http://blog.4t.pw/posts/c6050a1d.html</link>
-      <guid>http://blog.4t.pw/posts/c6050a1d.html</guid>
+      <title>测试</title>
+      <link>http://blog.4t.pw/posts/9daba997.html</link>
+      <guid>http://blog.4t.pw/posts/9daba997.html</guid>
       <pubDate>Sat, 05 Nov 2022 12:42:55 GMT</pubDate>
       
       <description>描述 Butterfly安裝文檔-快速開始</description>
@@ -182,7 +261,7 @@
       <guid>http://blog.4t.pw/posts/c6050a1d.html</guid>
       <pubDate>Sat, 05 Nov 2022 12:42:55 GMT</pubDate>
       
-      <description>描述 Butterfly安裝文檔-快速開始</description>
+      <description>魔改导航，快速进入魔改</description>
       
       
       
@@ -199,6 +278,29 @@
       <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
       
       <category domain="http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/">魔改</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>5分钟搭一个hexo博客</title>
+      <link>http://blog.4t.pw/posts/b9dc5266.html</link>
+      <guid>http://blog.4t.pw/posts/b9dc5266.html</guid>
+      <pubDate>Thu, 03 Nov 2022 11:24:01 GMT</pubDate>
+      
+      <description>搭建hexo博客快速入门教程</description>
+      
+      
+      
+      
+      <category domain="http://blog.4t.pw/categories/%E5%9F%BA%E7%A1%80/">基础</category>
+      
+      
+      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">基础教程</category>
       
       
     </item>
@@ -400,106 +502,6 @@ var physics_accuracy  = 3,
       <pubDate>Thu, 28 May 2020 14:39:25 GMT</pubDate>
       
       <description>Butterfly安裝文檔-進階教程</description>
-      
-      
-      
-      
-      <category domain="http://blog.4t.pw/categories/Docs%E6%96%87%E6%AA%94/">Docs文檔</category>
-      
-      
-      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
-      
-      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
-      
-      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
-      
-      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
-      
-      
-    </item>
-    
-    <item>
-      <title>Butterfly 安裝文檔(五) 主題問答</title>
-      <link>http://blog.4t.pw/posts/98d20436.html</link>
-      <guid>http://blog.4t.pw/posts/98d20436.html</guid>
-      <pubDate>Thu, 28 May 2020 14:38:21 GMT</pubDate>
-      
-      <description>Butterfly安裝文檔-主題問答</description>
-      
-      
-      
-      
-      <category domain="http://blog.4t.pw/categories/Docs%E6%96%87%E6%AA%94/">Docs文檔</category>
-      
-      
-      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
-      
-      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
-      
-      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
-      
-      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
-      
-      
-    </item>
-    
-    <item>
-      <title>Butterfly 安裝文檔(四) 主題配置-2</title>
-      <link>http://blog.4t.pw/posts/ceeb73f.html</link>
-      <guid>http://blog.4t.pw/posts/ceeb73f.html</guid>
-      <pubDate>Thu, 28 May 2020 14:38:11 GMT</pubDate>
-      
-      <description>Butterfly安裝文檔-主題配置-2</description>
-      
-      
-      
-      
-      <category domain="http://blog.4t.pw/categories/Docs%E6%96%87%E6%AA%94/">Docs文檔</category>
-      
-      
-      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
-      
-      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
-      
-      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
-      
-      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
-      
-      
-    </item>
-    
-    <item>
-      <title>Butterfly 安裝文檔(三) 主題配置-1</title>
-      <link>http://blog.4t.pw/posts/4aa8abbe.html</link>
-      <guid>http://blog.4t.pw/posts/4aa8abbe.html</guid>
-      <pubDate>Thu, 28 May 2020 14:36:02 GMT</pubDate>
-      
-      <description>Butterfly安裝文檔-主題配置</description>
-      
-      
-      
-      
-      <category domain="http://blog.4t.pw/categories/Docs%E6%96%87%E6%AA%94/">Docs文檔</category>
-      
-      
-      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
-      
-      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
-      
-      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
-      
-      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
-      
-      
-    </item>
-    
-    <item>
-      <title>Butterfly 安裝文檔(二) 主題頁面</title>
-      <link>http://blog.4t.pw/posts/dc584b87.html</link>
-      <guid>http://blog.4t.pw/posts/dc584b87.html</guid>
-      <pubDate>Thu, 28 May 2020 14:34:41 GMT</pubDate>
-      
-      <description>Butterfly安裝文檔-主題頁面</description>
       
       
       

@@ -190,6 +190,7 @@ if (window.console) {
 if (GLOBAL_CONFIG.Snackbar) {
     btf.snackbarShow('欢迎光临')
 }
+// 按钮加载雪花
 function loadScript(url,callback){ 
   var script = document.createElement("script");
   script.type = "text/javascript"; 
