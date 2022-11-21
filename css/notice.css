@@ -131,18 +131,18 @@
   font-size: 1.45em
 }
 #ggl {
-  width: 88%;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.86);
   color: var(--font-color);
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: -20px;
-  box-shadow: 0px 0px 4px 3px rgb(0 107 255 / 34%)
+  /* margin-top: 40px; */
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 4px 3px rgb(0 107 255 / 34%);
 }
 .xianzhi {
   width: 100%
