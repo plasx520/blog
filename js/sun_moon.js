@@ -188,7 +188,7 @@ if (window.console) {
     console.log("在这里相遇很幸运 💛💙");
   }
 if (GLOBAL_CONFIG.Snackbar) {
-    btf.snackbarShow('欢迎光临')
+    btf.snackbarShow('欢迎光临', false, 1000)
 }
 // 按钮加载雪花
 function loadScript(url,callback){ 
