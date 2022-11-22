@@ -237,7 +237,7 @@
 .f {
   width: 230px;
   height: 230px;
-  background-image: url('/img/1.webp');
+  background-image: url('https://cdn3.tianli0.top/npm/plasx@1.0.3/img/1.webp');
   background-size: cover;
   font: 900 15px '';
   text-align: center;
@@ -348,7 +348,7 @@
 #aside-content>.card-widget.card-info>#card-info-btn {
   border-radius: 8px;
   height: 135px;
-  background-image: url(/img/xka.webp);
+  background-image: url(https://cdn3.tianli0.top/npm/plasx@1.0.3/img/xka.webp);
   background-position: 50% 50%;
   background-repeat: repeat;
   box-shadow: inset 3px 4px 3px 1px rgb(0 0 0 / 40%)
@@ -674,27 +674,7 @@ color: #fff;
   .layout.hide-aside {
     max-width: 1400px;
   }
-  /* 滚动条 */
-  *::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
-  *::-webkit-scrollbar-thumb {
-    background: var(--heo-scrollbar);
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  *::-webkit-scrollbar-thumb:hover {
-    background: var(--heo-main);
-    opacity: 1;
-    display: block !important;
-  }
-  *::-webkit-scrollbar-track {
-    background-color: var(--heo-none);
-  }
-  html {
-    overflow-y: overlay;
-  }
+
 /* 消息弹窗 */
 .snackbar-container {
     background: var(--heo-main) !important;
@@ -737,7 +717,7 @@ color: #fff;
     background: var(--heo-white);
     opacity: 0.1;
     content: "";
-    animation: snackbar-progress var(--heo-snackbar-time) linear forwards;
+    animation: snackbar-progress 5s linear forwards;
     pointer-events: none;
   }
   @keyframes snackbar-progress {

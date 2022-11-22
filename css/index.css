@@ -3277,7 +3277,7 @@ h1.page-title + .tag-cloud-list {
   #aside-content .sticky_layout {
     position: sticky;
     position: -webkit-sticky;
-    top: 20px;
+    top: 70px;
     -webkit-transition: top 0.3s;
     -moz-transition: top 0.3s;
     -o-transition: top 0.3s;
