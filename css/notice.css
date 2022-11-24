@@ -11,7 +11,6 @@
   }
 }
 /* 网站标题、副标题闪光 */									
-
 #page-header #site-title:hover,
 #page-header #site-subtitle:hover {
   color: rgb(255, 255, 255);
@@ -37,8 +36,8 @@
   }
 }
 /*彩虹文字*/
-#page-header #site-title,
-#post-info .post-title {
+#site-info h1,
+#page-header #site-title {
   padding-top: 3px;
   background-image: linear-gradient(to left, orangered, orange, gold, lightgreen, cyan, dodgerblue, mediumpurple, hotpink, orangered);
   background-size: 110vw;
@@ -57,6 +56,53 @@
   to {
       background-position: -2000vw
   }
+}
+/* 顶部标签*/
+#post-meta .post-meta__tags {
+  display: inline-block;
+  background: #ffffff33;
+  margin: 0px 8px 0px 0px;
+  padding: 2px 20px;
+  width: fit-content;
+  border-radius: 7px;
+  color: #49b1f5;
+  font-size: 1em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#post-meta .post-meta__tags:hover {
+  background: #49b1f5 !important;
+  color: var(--white) !important;
+  border-radius: 8px !important;
+  
+}
+.post>#page-header {
+  box-shadow: var(--plasx-anheiwz);
+}
+
+
+.tagsbq{
+  display: inline-block;
+  background: rgb(255 131 235 / 22%);
+  margin: 0px 8px 0px 0px;
+  padding: 0px 10px;
+  width: fit-content;
+  border-radius: 7px;
+  color: #49b1f5;
+  font-size: 1em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.tagsbq:hover {
+  background: #49b1f5 !important;
+  color: var(--white) !important;
+  border-radius: 8px !important;
 }
 /* 背景切换*/
 /* 由于全屏会出bug，所以直接给他隐藏 */										  
@@ -717,7 +763,7 @@ color: #fff;
     background: var(--heo-white);
     opacity: 0.1;
     content: "";
-    animation: snackbar-progress 5s linear forwards;
+    animation: snackbar-progress 2s linear forwards;
     pointer-events: none;
   }
   @keyframes snackbar-progress {
@@ -1142,3 +1188,16 @@ strong {
   border-radius: 4px;
   box-shadow: var(--heo-shadow-main);
 }
+
+
+
+
+
+[data-theme=light] {
+  --plasx-anheiwz: 350px -205px 229px 59px rgb(50 178 255 / 90%) inset;
+}
+
+[data-theme=dark] {
+  --plasx-anheiwz: 154px -45px 429px 149px rgb(94 94 94 / 81%) inset;
+}
+
