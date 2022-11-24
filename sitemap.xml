@@ -463,14 +463,14 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/tags/%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B/</loc>
+    <loc>http://blog.4t.pw/tags/highlight/</loc>
     <lastmod>2022-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/tags/highlight/</loc>
+    <loc>http://blog.4t.pw/tags/%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B/</loc>
     <lastmod>2022-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -484,14 +484,14 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/</loc>
+    <loc>http://blog.4t.pw/tags/Bar/</loc>
     <lastmod>2022-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/tags/Bar/</loc>
+    <loc>http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/</loc>
     <lastmod>2022-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -570,14 +570,14 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/</loc>
+    <loc>http://blog.4t.pw/categories/Markdown/</loc>
     <lastmod>2022-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/categories/Markdown/</loc>
+    <loc>http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/</loc>
     <lastmod>2022-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
