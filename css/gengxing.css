@@ -6,3 +6,6 @@
 .tagsbq {
     background: rgb(131 234 255 / 19%) !important;
 }
+#aside-content>.card-widget.card-info {
+    height: 570px !important;
+}
