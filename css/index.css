@@ -7533,7 +7533,9 @@ kbd {
 }
 #article-container a.link-card {
   margin: 0.25rem auto;
-  background: rgba(145,157,157,0.529);
+  background: rgba(209,209,209,0.749);
+  -webkit-box-shadow: 0 0px 8px 0 rgba(31,90,255,0.685);
+  box-shadow: 0 0px 8px 0 rgba(31,90,255,0.685);
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -webkit-inline-flex;
@@ -7551,12 +7553,18 @@ kbd {
   min-width: 200px;
   max-width: 361px;
   color: #444;
-  border-radius: 12px;
+  border-radius: 50px;
   text-decoration: none;
 }
 #article-container a.link-card:hover {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(33,55,121,0.685);
+  box-shadow: 0 4px 8px 0 rgba(33,55,121,0.685);
+  background: rgba(0,153,255,0.558);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 #article-container a.link-card div.left {
   width: 48px;
@@ -7575,7 +7583,7 @@ kbd {
 #article-container a.link-card div.left img {
   display: block;
   position: absolute;
-  border-radius: 2px;
+  border-radius: 50px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
