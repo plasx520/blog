@@ -13,7 +13,7 @@ LIGHTS.Config = {
 
     // _______________________________________________________________________________________ Music
 
-	musicMP3:               'audio/music.mp3', // Chrome
+	musicMP3:               'https://drfs.ctcontents.com/file/14237530/739545408/46ddef/%E4%B8%8D%E8%83%BD%E5%8A%A8/img1/music/music.mp3', // Chrome
 	musicOGG:               'audio/music.ogg', // Firefox
 
     // _______________________________________________________________________________________ Images

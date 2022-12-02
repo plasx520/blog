@@ -5019,6 +5019,7 @@ li.categoryBar-list-item {
 @font-face {
   font-family: "iconfont"; /* Project id 3784380 */
   src: url("//at.alicdn.com/t/c/font_3784380_kc4cbj7voqm.woff2?t=1669036181909") format('woff2'), url("//at.alicdn.com/t/c/font_3784380_kc4cbj7voqm.woff?t=1669036181909") format('woff'), url("//at.alicdn.com/t/c/font_3784380_kc4cbj7voqm.ttf?t=1669036181909") format('truetype');
+  font-display: swap;
 }
 .icon-apple-fill:before {
   content: "\e881";
