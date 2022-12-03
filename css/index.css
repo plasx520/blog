@@ -1,4 +1,4 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css");
+@import url("https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/4.1.6/css/swiper.min.css");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -1339,8 +1339,8 @@ canvas:not(#ribbon-canvas),
   --global-font-size: 16px;
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: #d2ebfd;
-  --hr-before-color: #bfe4fb;
+  --hr-border: #a4d8fa;
+  --hr-before-color: #80c8f8;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
@@ -4577,7 +4577,7 @@ li.categoryBar-list-item {
   content: '';
 }
 #page-header.full_page {
-  height: 101vh;
+  height: 100vh;
   border-bottom: 3px solid #007a97;
   background-attachment: fixed;
 }
@@ -5212,7 +5212,7 @@ li.categoryBar-list-item {
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: #99a9bf;
+  color: #49b1f5;
 }
 #article-container a:hover {
   text-decoration: underline;
