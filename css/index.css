@@ -5786,7 +5786,6 @@ div#swiper_container {
   border-radius: 12px 8px 8px 12px;
   margin: auto;
   background: var(--global-bg);
-  padding: 10px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
