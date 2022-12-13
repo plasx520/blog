@@ -453,15 +453,7 @@
         
           
           
-      <description>&lt;p&gt;&lt;canvas id=&quot;c&quot;&gt;&lt;/canvas&gt;&lt;/p&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-
-
-// settings
-
-var physics_accuracy  = 3,
-    mouse_influence   = 20,
-   </description>
+      <description>&lt;h1 id=&quot;如果不出来请刷新&quot;&gt;&lt;a href=&quot;#如果不出来请刷新&quot; class=&quot;headerlink&quot; title=&quot;如果不出来请刷新&quot;&gt;&lt;/a&gt;如果不出来请刷新&lt;/h1&gt;&lt;script charset=&quot;utf-8&quot; data-pjax=&quot;&quot;</description>
           
         
       
