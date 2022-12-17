@@ -71,6 +71,106 @@
   </entry>
   
   <entry>
+    <title>HexoMAC代码框样式美化</title>
+    <link href="http://blog.4t.pw/posts/2c9505a3.html"/>
+    <id>http://blog.4t.pw/posts/2c9505a3.html</id>
+    <published>2022-11-26T09:01:00.839Z</published>
+    <updated>2022-12-17T07:13:16.052Z</updated>
+    
+    
+    <summary type="html">代码框样式美化HexoMAC代码框样式美化</summary>
+    
+    
+    
+    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+    <category term="css" scheme="http://blog.4t.pw/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>butterfly版权栏养个鱼</title>
+    <link href="http://blog.4t.pw/posts/263068a8.html"/>
+    <id>http://blog.4t.pw/posts/263068a8.html</id>
+    <published>2022-11-26T08:20:31.737Z</published>
+    <updated>2022-12-17T07:13:16.054Z</updated>
+    
+    
+    <summary type="html">hexo Butterfly版权栏改成鱼池</summary>
+    
+    
+    
+    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客 | Hexo竟然可以展示PDF</title>
+    <link href="http://blog.4t.pw/posts/b2fdb571.html"/>
+    <id>http://blog.4t.pw/posts/b2fdb571.html</id>
+    <published>2022-11-26T07:35:00.653Z</published>
+    <updated>2022-12-17T07:19:20.920Z</updated>
+    
+    
+    <summary type="html">hexo功能加强，增加pdf在线阅读功能</summary>
+    
+    
+    
+    <category term="hexo插件" scheme="http://blog.4t.pw/categories/hexo%E6%8F%92%E4%BB%B6/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="pdf" scheme="http://blog.4t.pw/tags/pdf/"/>
+    
+    <category term="插件" scheme="http://blog.4t.pw/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客 | 插件推荐</title>
+    <link href="http://blog.4t.pw/posts/dae98a7e.html"/>
+    <id>http://blog.4t.pw/posts/dae98a7e.html</id>
+    <published>2022-11-26T07:33:29.184Z</published>
+    <updated>2022-12-17T07:22:48.815Z</updated>
+    
+    
+    <summary type="html">Hexo插件汇总收集了一些常用插件</summary>
+    
+    
+    
+    <category term="hexo插件" scheme="http://blog.4t.pw/categories/hexo%E6%8F%92%E4%BB%B6/"/>
+    
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+    <category term="插件" scheme="http://blog.4t.pw/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo 主题butterfly如何让你的博客拥有星空背景和流星特效</title>
     <link href="http://blog.4t.pw/posts/9ee2cd59.html"/>
     <id>http://blog.4t.pw/posts/9ee2cd59.html</id>
@@ -94,6 +194,27 @@
     <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
     
     <category term="hexo特效" scheme="http://blog.4t.pw/tags/hexo%E7%89%B9%E6%95%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jsdelivr cdn 缓存清理</title>
+    <link href="http://blog.4t.pw/posts/3a4575d7.html"/>
+    <id>http://blog.4t.pw/posts/3a4575d7.html</id>
+    <published>2022-11-25T07:40:48.713Z</published>
+    <updated>2022-12-17T07:13:16.056Z</updated>
+    
+    
+    <summary type="html">jsdelivr缓存清楚教程</summary>
+    
+    
+    
+    <category term="cdn" scheme="http://blog.4t.pw/categories/cdn/"/>
+    
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="cdn" scheme="http://blog.4t.pw/tags/cdn/"/>
     
   </entry>
   
@@ -125,9 +246,9 @@
   </entry>
   
   <entry>
-    <title>hexo主题butterfly4.5.1css美化教程二</title>
-    <link href="http://blog.4t.pw/posts/eb769414.html"/>
-    <id>http://blog.4t.pw/posts/eb769414.html</id>
+    <title>hexo主题butterfly4.5.1css美化教程一</title>
+    <link href="http://blog.4t.pw/posts/b48f40bd.html"/>
+    <id>http://blog.4t.pw/posts/b48f40bd.html</id>
     <published>2022-11-20T07:40:14.000Z</published>
     <updated>2022-11-20T07:40:14.000Z</updated>
     
@@ -152,9 +273,9 @@
   </entry>
   
   <entry>
-    <title>hexo主题butterfly4.5.1css美化教程一</title>
-    <link href="http://blog.4t.pw/posts/b48f40bd.html"/>
-    <id>http://blog.4t.pw/posts/b48f40bd.html</id>
+    <title>hexo主题butterfly4.5.1css美化教程二</title>
+    <link href="http://blog.4t.pw/posts/eb769414.html"/>
+    <id>http://blog.4t.pw/posts/eb769414.html</id>
     <published>2022-11-20T07:40:14.000Z</published>
     <updated>2022-11-20T07:40:14.000Z</updated>
     
@@ -341,7 +462,7 @@
     <link href="http://blog.4t.pw/posts/9daba997.html"/>
     <id>http://blog.4t.pw/posts/9daba997.html</id>
     <published>2022-11-05T12:42:55.000Z</published>
-    <updated>2022-12-13T09:44:13.876Z</updated>
+    <updated>2022-12-16T12:57:55.665Z</updated>
     
     
     <summary type="html">描述 Butterfly安裝文檔-快速開始</summary>
@@ -408,111 +529,6 @@
     <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
     
     <category term="基础教程" scheme="http://blog.4t.pw/tags/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试撕扯</title>
-    <link href="http://blog.4t.pw/posts/43356308.html"/>
-    <id>http://blog.4t.pw/posts/43356308.html</id>
-    <published>2022-10-28T11:07:04.000Z</published>
-    <updated>2022-12-12T03:37:13.936Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如果不出来请刷新&quot;&gt;&lt;a href=&quot;#如果不出来请刷新&quot; class=&quot;headerlink&quot; title=&quot;如果不出来请刷新&quot;&gt;&lt;/a&gt;如果不出来请刷新&lt;/h1&gt;&lt;script charset=&quot;utf-8&quot; data-pjax=&quot;&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>水波纹</title>
-    <link href="http://blog.4t.pw/posts/ddcb8131.html"/>
-    <id>http://blog.4t.pw/posts/ddcb8131.html</id>
-    <published>2022-09-25T07:01:11.000Z</published>
-    <updated>2022-12-12T03:41:17.864Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;网页添加水波纹&quot;&gt;&lt;a href=&quot;#网页添加水波纹&quot; class=&quot;headerlink&quot; title=&quot;网页添加水波纹&quot;&gt;&lt;/a&gt;网页添加水波纹&lt;/h1&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>换背景</title>
-    <link href="http://blog.4t.pw/posts/5774c795.html"/>
-    <id>http://blog.4t.pw/posts/5774c795.html</id>
-    <published>2022-09-25T06:01:11.000Z</published>
-    <updated>2022-11-11T12:06:31.743Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;这个页面是用来测试渐变背景的效果。&lt;br&gt;阅读体验及个标签样式请自己进行调整。&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>自定義側邊欄</title>
-    <link href="http://blog.4t.pw/posts/ea33ab97.html"/>
-    <id>http://blog.4t.pw/posts/ea33ab97.html</id>
-    <published>2020-12-30T13:48:10.000Z</published>
-    <updated>2022-12-10T04:37:53.645Z</updated>
-    
-    
-    <summary type="html">自定義側側邊欄</summary>
-    
-    
-    
-    <category term="進階教程" scheme="http://blog.4t.pw/categories/%E9%80%B2%E9%9A%8E%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
-    
-    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
-    
-    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Butterfly添加全局吸底Aplayer教程</title>
-    <link href="http://blog.4t.pw/posts/507c070f.html"/>
-    <id>http://blog.4t.pw/posts/507c070f.html</id>
-    <published>2020-07-31T11:02:28.000Z</published>
-    <updated>2022-12-10T04:37:53.651Z</updated>
-    
-    
-    <summary type="html">Butterfly添加全局吸底Aplayer教程</summary>
-    
-    
-    
-    <category term="進階教程" scheme="http://blog.4t.pw/categories/%E9%80%B2%E9%9A%8E%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
-    
-    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
-    
-    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
-    
-    <category term="Aplayer" scheme="http://blog.4t.pw/tags/Aplayer/"/>
     
   </entry>
   
