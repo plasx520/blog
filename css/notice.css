@@ -18,18 +18,7 @@
 }
 /*移动端优化：去除归档、标签、最新文章、公告、评论、只保留网站统计*/																   
 @media screen and (max-width:900px) {
-  .user-map,
-  .ads-wrap,
-  .card-announcement,
-  .card-recent-post,
-  #card-newest-comments,
-  .card-categories,
-  .card-tags,
-  .aside-content,
-  .card-webinfo,
-  .touying,
-  .ggl,
-  .item-headline {
+  .videosy {
       display: none
   }
 }
