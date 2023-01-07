@@ -1764,7 +1764,7 @@ a.deal_link {
   border-radius: 3rem;
   width: 32px;
   height: 32px;
-  background: var(--font-color);
+  background: var(--heo-theme);
   justify-content: center;
   align-items: center;
   transition: .1s
