@@ -4347,12 +4347,18 @@ h1.page-title + .tag-cloud-list {
 .recent-post-item#swiperBar #cyber-swiper-container .cyber-swiper-wrapper .cyber-swiper-item .cyber-swiper-item-decoration {
   width: 150px;
   height: 150px;
-  opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
   position: absolute;
   top: calc(50% - 75px);
   left: calc(50% - 75px);
+  display: inline-block;
+  -webkit-animation: avatar_turn_around 1s ease-in-out infinite;
+  -moz-animation: avatar_turn_around 1s ease-in-out infinite;
+  -o-animation: avatar_turn_around 1s ease-in-out infinite;
+  -ms-animation: avatar_turn_around 1s ease-in-out infinite;
+  animation: avatar_turn_around 1s ease-in-out infinite;
   z-index: -1;
 }
 .recent-post-item#swiperBar #cyber-swiper-container .cyber-swiper-pagination {
