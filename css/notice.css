@@ -21,7 +21,7 @@
   div#footer_deal,
   div#Jay-footer,
   .topGroup,
-  .home_top2,
+  #home_top,
   .div-card2,
   .videosy {
       display: none !important
@@ -1958,4 +1958,9 @@ span.recent-post-top-text {
 }
 .recent-post-info>.article-title:hover{
   color: var(--heo-theme);
+}
+svg use {
+
+  fill: var(--heo-theme);
+
 }
