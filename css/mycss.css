@@ -63,22 +63,33 @@ a.categoryButton i {
 	filter: blur(0px);
 }
 
-@media screen and (min-width:1300px) {
+
+@media screen and (min-width: 1300px) {
+	.recent-post-top .categoryGroup {
+	  flex-direction: row;
+	  height: 24%;
+	}
+  
 	.categoryItem {
-		margin-right: 0.5rem;
-		width: calc(100% / 3 - 0.33rem);
-		height: 100%;
+	  width: calc(100% / 3 - 0.33rem);
+	  height: 100%;
+	  margin-right: 0.5rem;
 	}
-
+  
 	.categoryItem:last-child {
-		margin-right: 0;
+	  margin-right: 0;
 	}
-
+  
 	.categoryItem:hover {
-		width: 50%;
+	  width: 50%;
 	}
-}
-
+  
+	.categoryGroup .categoryItem:nth-child(3) {
+	  display: flex;
+	  margin-right: 0rem !important;
+	}
+  }
+  
 a.categoryButton.bikan {
 	background: linear-gradient(to right, #358bff, #15c6ff);
 	background-size: 200%;

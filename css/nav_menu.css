@@ -1,5 +1,5 @@
 #nav a:hover {
-  background: var(--anzhiyu-main);
+  background: var(--heo-theme) !important;
   transition: 0.3s;
 }
 

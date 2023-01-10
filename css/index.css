@@ -230,8 +230,8 @@ hr:before,
 .layout > .recent-posts .pagination > *:not(.space) {
   border-radius: 8px;
   background: var(--card-bg);
-  -webkit-box-shadow: var(--card-box-shadow);
-  box-shadow: var(--card-box-shadow);
+  -webkit-box-shadow: 0px 0px 2px 1.5px var(--heo-theme);
+  box-shadow: 0px 0px 2px 1.5px var(--heo-theme);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -243,8 +243,8 @@ hr:before,
 .layout > div:first-child:not(.recent-posts):hover,
 #aside-content .card-widget:hover,
 .layout > .recent-posts .pagination > *:not(.space):hover {
-  -webkit-box-shadow: var(--card-hover-box-shadow);
-  box-shadow: var(--card-hover-box-shadow);
+  -webkit-box-shadow: 0px 0px 2px 1.5px rgba(105,47,241,0.538);
+  box-shadow: 0px 0px 2px 1.5px rgba(105,47,241,0.538);
 }
 .imgHover,
 .error404 #error-wrap .error-content .error-img img,
@@ -4225,7 +4225,7 @@ h1.page-title + .tag-cloud-list {
   filter: alpha(opacity=80);
 }
 .recent-post-item#swiperBar #cyber-swiper-container .cyber-swiper-wrapper .cyber-swiper-item .cyber-swiper-item-time {
-  width: 350px;
+  width: 100%;
   color: var(--cyber-post-item-font-color);
   font-size: 25px;
   text-shadow: 2px 2px 3px #000;
@@ -4238,9 +4238,8 @@ h1.page-title + .tag-cloud-list {
   display: box;
   display: flex;
   position: absolute;
-  height: 30px;
-  top: calc(50% - 16px);
-  left: calc(50% - 176px);
+  height: 43px;
+  top: calc(50% - -89px);
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
@@ -4265,7 +4264,7 @@ h1.page-title + .tag-cloud-list {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: var(--cyber-post-item-screen);
+  background: var(--heo-zhuti);
   height: 100%;
   display: -webkit-box;
   display: -moz-box;
@@ -4298,12 +4297,9 @@ h1.page-title + .tag-cloud-list {
   z-index: 0;
 }
 .recent-post-item#swiperBar #cyber-swiper-container .cyber-swiper-wrapper .cyber-swiper-item .cyber-swiper-item-info a.cyber-swiper-item-title {
-  border-style: dotted;
-  border-width: 0 0 3px 0;
-  width: 120%;
+  width: 100%;
   height: 50%;
   color: var(--cyber-post-item-font-color);
-  border-color: var(--heo-theme);
   text-align: center;
   display: -webkit-box;
   display: -moz-box;
@@ -4338,7 +4334,14 @@ h1.page-title + .tag-cloud-list {
   display: box;
   display: flex;
   text-align: start;
+  width: 100%;
   height: 50%;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
@@ -4360,19 +4363,19 @@ h1.page-title + .tag-cloud-list {
   position: absolute;
   top: calc(50% - 90px);
   left: calc(50% - 90px);
-  z-index: 1;
-  -webkit-animation: avatar_turn_around 1s ease-in-out infinite;
-  -moz-animation: avatar_turn_around 1s ease-in-out infinite;
-  -o-animation: avatar_turn_around 1s ease-in-out infinite;
-  -ms-animation: avatar_turn_around 1s ease-in-out infinite;
-  animation: avatar_turn_around 1s ease-in-out infinite;
+  z-index: -1;
+  -webkit-animation: avatar_turn_around 1.5s ease-in-out infinite;
+  -moz-animation: avatar_turn_around 1.5s ease-in-out infinite;
+  -o-animation: avatar_turn_around 1.5s ease-in-out infinite;
+  -ms-animation: avatar_turn_around 1.5s ease-in-out infinite;
+  animation: avatar_turn_around 1.5s ease-in-out infinite;
   display: inline-block;
 }
 .recent-post-item#swiperBar #cyber-swiper-container .cyber-swiper-pagination {
   bottom: 5px;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 @media screen and (min-width: 768px) {
   .recent-post-item#swiperBar {
@@ -4381,7 +4384,7 @@ h1.page-title + .tag-cloud-list {
   .recent-post-item#swiperBar::after {
     content: "";
     display: block;
-    height: 100%;
+    height: 86%;
     width: 100%;
     position: absolute;
     background: var(--heo-theme);
@@ -4391,31 +4394,29 @@ h1.page-title + .tag-cloud-list {
     clip-path: polygon(50% 50%, 45px 50%, 45px 45px, 60px 45px, 65px 40px, 40px 40px, 40px calc(50% - 10px), 45px calc(50% - 10px), 45px 50%, 25px 50%, 25px calc(50% - 15px), 10px calc(50% - 15px), 10px calc(50% - 10px), 25px calc(50% - 10px), 25px calc(50% - 2.5px), 0 calc(50% - 2.5px), 0 50%, 50% 50%, 45px 50%, 45px calc(100% - 45px), 60px calc(100% - 45px), 65px calc(100% - 40px), 40px calc(100% - 40px), 40px calc(50% + 10px), 45px calc(50% + 10px), 45px 50%, 25px 50%, 25px calc(50% + 15px), 10px calc(50% + 15px), 10px calc(50% + 10px), 25px calc(50% + 10px), 25px calc(50% + 2.5px), 0 calc(50% + 2.5px), 0 50%, 50% 50%, calc(100% - 45px) 50%, calc(100% - 45px) 45px, calc(100% - 60px) 45px, calc(100% - 65px) 40px, calc(100% - 40px) 40px, calc(100% - 40px) calc(50% - 10px), calc(100% - 45px) calc(50% - 10px), calc(100% - 45px) 50%, calc(100% - 25px) 50%, calc(100% - 25px) calc(50% - 15px), calc(100% - 10px) calc(50% - 15px), calc(100% - 10px) calc(50% - 10px), calc(100% - 25px) calc(50% - 10px), calc(100% - 25px) calc(50% - 2.5px), 100% calc(50% - 2.5px), 100% 50%, 50% 50%, calc(100% - 45px) 50%, calc(100% - 45px) calc(100% - 45px), calc(100% - 60px) calc(100% - 45px), calc(100% - 65px) calc(100% - 40px), calc(100% - 40px) calc(100% - 40px), calc(100% - 40px) calc(50% + 10px), calc(100% - 45px) calc(50% + 10px), calc(100% - 45px) 50%, calc(100% - 25px) 50%, calc(100% - 25px) calc(50% + 15px), calc(100% - 10px) calc(50% + 15px), calc(100% - 10px) calc(50% + 10px), calc(100% - 25px) calc(50% + 10px), calc(100% - 25px) calc(50% + 2.5px), 100% calc(50% + 2.5px), 100% 50%, 50% 50%);
   }
   .recent-post-item#swiperBar #cyber-swiper-container .cyber-swiper-wrapper .cyber-swiper-item .cyber-swiper-item-cover {
-    width: calc(50% + 100px);
-    clip-path: polygon(0 0, 100% 0, calc(100% - 200px) 100%, 0 100%);
+    width: 100%;
   }
   .recent-post-item#swiperBar #cyber-swiper-container .cyber-swiper-wrapper .cyber-swiper-item .cyber-swiper-item-time {
-    -webkit-transform: rotateZ(-52deg);
-    -moz-transform: rotateZ(-52deg);
-    -o-transform: rotateZ(-52deg);
-    -ms-transform: rotateZ(-52deg);
-    transform: rotateZ(-52deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
   }
   .recent-post-item#swiperBar #cyber-swiper-container .cyber-swiper-wrapper .cyber-swiper-item .cyber-swiper-item-info {
-    width: calc(50% + 100px);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 200px 0);
-    padding: 0 0 0 140px;
+    width: 100%;
+    text-shadow: 2px 2px 3px #000;
   }
   .recent-post-item#swiperBar #cyber-swiper-container .cyber-swiper-wrapper .cyber-swiper-item .cyber-swiper-item-info a.cyber-swiper-item-title {
-    padding: 15px 20px 0 60px;
-    font-size: 20px;
-    line-height: 25px;
+    padding: 30px 40px;
+    font-size: 30px;
+    line-height: 50px;
   }
   .recent-post-item#swiperBar #cyber-swiper-container .cyber-swiper-wrapper .cyber-swiper-item .cyber-swiper-item-info a.cyber-swiper-item-title .cyber-swiper-item-title-link {
     -webkit-line-clamp: 2;
   }
   .recent-post-item#swiperBar #cyber-swiper-container .cyber-swiper-wrapper .cyber-swiper-item .cyber-swiper-item-info .cyber-swiper-item-description {
-    padding: 10px 20px 10px 10px;
+    padding: 0px 40px 70px;
     font-size: 16px;
     line-height: 30px;
   }
