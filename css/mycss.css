@@ -4,7 +4,8 @@
 
 .categoryItem {
 	overflow: hidden;
-	height: 48%;
+	width: calc(100% / 3 - 0.33rem);
+    height: auto;
 	border-radius: 12px;
 	transition: all 0.8s cubic-bezier(0.65, 0.15, 0.37, 1.19);
 	transform: scale(1);
@@ -118,10 +119,3 @@ details:not(.tk-admin-config-group) summary:hover::marker {
 	color: var(--heo-white);
 }
 
-@media screen and (max-width:1300px) {
-
-  .author-content,
-  .categoryGroup {
-      display: none
-  }
-}

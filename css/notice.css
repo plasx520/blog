@@ -1005,10 +1005,25 @@ strong {
   height: 570px !important;
 }
 /* 版权cc描边 */
-#post .post-copyright {
-  border: 2px dashed var(--font-color);
+#post .post-copyright{
+  border: 2px dashed var(--heo-theme) !important;
   border-radius: 8px;
-  box-shadow: 0px 0px 7px 0px rgba(255, 123, 0, 0.66);
+  box-shadow: 0px 0px 7px 0px rgba(255, 123, 0, 0.397)
+}
+/* 标签颜色 */
+#post .tag_share .post-meta__tags{
+  border: 1px solid var(--heo-theme) !important;
+  color: var(--heo-theme) !important
+}
+
+#post .post-copyright:before{
+  color: var(--heo-theme)
+}
+hr{
+  border: 2px dashed var(--heo-theme)
+}
+hr:before{
+  color: var(--heo-theme)
 }
 /* @font-face {
 font-family: ZhuZiAYuanJWD;
@@ -2062,4 +2077,77 @@ h-5>a{color: var(--font-color);}
 #notice .notice-logo {
   animation: avatar_turn_around 1s linear infinite;
   display: inline-block;
+}
+
+/* 赞赏名单按钮 */
+a.reward-main-btn {
+  background: var(--heo-secondbg);
+  color: var(--heo-fontcolor);
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 4px 0;
+  border: var(--style-border-always);
+  margin: 8px;
+  width: 100%
+}
+
+a.reward-main-btn:hover {
+  color: var(--heo-white);
+  background: var(--heo-red);
+  background-image: url(/img/JgNrST23690481619450556342.gif!cover);
+  box-shadow: var(--heo-shadow-red);
+}
+.post-reward .reward-button {
+  background: var(--heo-red);
+  color: var(--heo-white);
+  padding: 0;
+  width: 133px;
+  height: 40px;
+  line-height: 39px;
+  border-radius: 8px !important;
+  box-shadow: var(--heo-shadow-red);
+}
+.reward-title {
+  font-weight: bold;
+  color: var(--heo-red);
+}
+.reward-group {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.post-reward .reward-main .reward-all {
+  padding: 20px 30px 20px 10px !important;
+}
+.reward-link.mode {
+  background: var(--heo-green);
+  color: var(--heo-white);
+  padding: 0;
+  width: 173px;
+  height: 40px;
+  line-height: 39px;
+  box-shadow: var(--heo-shadow-green);
+  border-radius: 8px;
+  margin-left: 0.5rem;
+  text-align: center;
+  transition: 0.3s;
+}
+.reward-link.mode a {
+  color: var(--heo-white);
+}
+.post-reward:hover .reward-button {
+  background:  var(--heo-theme);
+}
+.reward-link.mode:hover {
+  background: var(--heo-theme);
+  box-shadow: none
+}
+.post-tools-left {
+  white-space: nowrap;
+  display: flex;
+  text-overflow: ellipsis;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  margin-top: 80px;
+  justify-content: center;
 }
