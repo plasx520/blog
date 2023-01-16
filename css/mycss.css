@@ -327,15 +327,6 @@ details:not(.tk-admin-config-group) summary:hover::marker {
   .down-index .fas {
 	line-height: 1.5 !important;
   }
-  .about-statistic3 {
-	width: 100%;
-	height: 100%;
-	background: url(/img/bt.webp) no-repeat top;
-	background-size: cover;
-	box-shadow: 0 -109px 133px -9px #0083af inset;
-	color: #fff;
-	content: "";
-  }
   .down-index .type>a {
   position: relative;
   animation: scroll-down-effect 1.5s infinite;
@@ -344,4 +335,126 @@ details:not(.tk-admin-config-group) summary:hover::marker {
 	.down-index{
 	display: none !important
   }
+  }
+
+/* 主页隐藏 */
+.div-card3 {
+	display: flex;
+  }
+  .div-card3 .todayCard {
+	display: none;
+  }
+  @media screen and (min-width: 1300px) {
+	.div-card3 {
+	  display: flex;
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  justify-content: flex-end;
+	  align-content: space-between;
+	  width: 42%;
+	  position: relative;
+	}
+	.div-card3 .todayCard {
+	  position: absolute;
+	  width: 100%;
+	  height: 360px;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background: var(--card-bg);
+	  border-radius: 10px;
+	  overflow: hidden;
+	  transition: 0.3s;
+	  display: flex;
+	  cursor: pointer;
+	  pointer-events: all;
+	}
+	.div-card3 .todayCard::after {
+	  position: absolute;
+	  content: '';
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
+	}
+	.div-card3 .todayCard.hide {
+	  opacity: 0;
+	  pointer-events: none;
+	}
+	.div-card3 .todayCard .todayCard-info {
+	  position: absolute;
+	  bottom: 2rem;
+	  left: 2rem;
+	  z-index: 2;
+	  color: var(--heo-white);
+	  max-width: 60%;
+	  transition: 0.3s;
+	}
+	.div-card3 .todayCard.hide .todayCard-info {
+	  bottom: 1rem;
+	  opacity: 0;
+	}
+	.div-card3 .todayCard .todayCard-info .todayCard-tips {
+	  opacity: 0.8;
+	  font-size: 0.6rem;
+	}
+	.div-card3 .todayCard .todayCard-info .todayCard-title {
+	  font-size: 28px;
+	  font-weight: bold;
+	  line-height: 36px;
+	}
+	.div-card3 .banner-button-group {
+	  position: absolute;
+	  right: 2rem;
+	  bottom: 2rem;
+	  display: flex;
+	  transition: 0.3s;
+	}
+	.div-card3 .todayCard.hide .banner-button-group {
+	  bottom: 1rem;
+	}
+	.div-card3 .banner-button {
+	  background: var(--heo-white-op);
+	  border-radius: 20px;
+	  color: var(--heo-white);
+	  display: flex;
+	  align-items: center;
+	  z-index: 1;
+	  transition: 0.3s;
+	  cursor: pointer;
+	  backdrop-filter: saturate(180%) blur(20px);
+	  -webkit-backdrop-filter: blur(20px);
+	  height: 40px;
+	  width: 124px;
+	  justify-content: center;
+	}
+	.div-card3 .banner-button:hover {
+	  background: var(--heo-theme);
+	  color: var(--heo-white);
+	}
+	.div-card3 .banner-button i {
+	  margin-right: 8px;
+	  font-size: 1rem;
+	}
+	.div-card3 .todayCard .todayCard-cover {
+	  position: absolute;
+	  min-width: 100%;
+	  min-height: 100%;
+	  top: 0;
+	  left: 0;
+	  background-size: cover;
+	  z-index: -1;
+	  transition: 0.3s;
+	}
+	.div-card3 .todayCard.hide .todayCard-cover {
+	  transform: scale(1.2);
+	}
+  }
+  #categoryList>a:nth-child()>i {
+	padding-right: 8px;
+  }
+  .div-card3 img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
   }
