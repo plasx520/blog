@@ -122,8 +122,8 @@ var mixedModeHtml = {
 	function win()
 	{
 		var myCode='';
-    document.getElementById("demo").innerHTML = '<iframe id="iframe" scrolling="auto" src="/example/try/code/1/bd/rono" frameborder="0" height="400px" width="100%"></iframe>';
-    document.getElementById('iframe').contentWindow.location.reload(true);
+        document.getElementById("demo").innerHTML = '<iframe id="iframe" scrolling="auto" src="/example/try/code/1/bd/rono" frameborder="0" height="400px" width="100%"></iframe>';
+        document.getElementById('iframe').contentWindow.location.reload(true);
 		myCode+=myCodeMirrorHtml.getValue();
 		myCode+='<style>'+myCodeMirrorCss.getValue()+'</style>';
 		myCode+='<script>'+myCodeMirrorJs.getValue()+'<\/script>';

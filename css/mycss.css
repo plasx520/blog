@@ -458,3 +458,6 @@ details:not(.tk-admin-config-group) summary:hover::marker {
 	height: 100%;
 	border-radius: 10px;
   }
+  .news span {
+    width: 20%!important;
+}
