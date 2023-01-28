@@ -549,3 +549,7 @@ center#name-container {
   --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
   --anzhiyu-card-border: #42444a;
 }
+.xiaotuzi{
+  width: 80px;
+  height: 80px;
+}
