@@ -461,17 +461,3 @@ details:not(.tk-admin-config-group) summary:hover::marker {
   .news span {
     width: 20%!important;
 }
-#footer:before {
-    display: none;
-}
-.container>canvas{
-	position: absolute;
-    left: 0px;
-    top: 10px;
-}
-#footer-wrap {
-    color: var(--heo-theme)!important
-}
-#footer-wrap a {
-    color: var(--heo-theme);
-}
