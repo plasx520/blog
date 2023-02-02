@@ -6,7 +6,7 @@ function fish() {
     ),
     $(".container").css({
       width: "100%",
-      height: "170px",
+      height: "160px",
       margin: 0,
       padding: 0,
     }),
@@ -15,7 +15,7 @@ function fish() {
       "text-align": "center",
       top: 0,
       right: 0,
-      left: -3,
+      left: 0,
       bottom: 0,
     }),
     this
