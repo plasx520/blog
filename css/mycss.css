@@ -461,3 +461,21 @@ details:not(.tk-admin-config-group) summary:hover::marker {
   .news span {
     width: 20%!important;
 }
+/* 来回滚动 */
+@keyframes rowup2 {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-50%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
