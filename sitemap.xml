@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.4t.pw/htmlpug/index.html</loc>
+    
+    <lastmod>2023-02-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.4t.pw/link/index.html</loc>
     
     <lastmod>2023-02-06</lastmod>
@@ -227,15 +236,6 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/posts/4073eda.html</loc>
-    
-    <lastmod>2023-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.4t.pw/posts/98d20436.html</loc>
     
     <lastmod>2023-01-04</lastmod>
@@ -245,7 +245,7 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/posts/4aa8abbe.html</loc>
+    <loc>http://blog.4t.pw/posts/4073eda.html</loc>
     
     <lastmod>2023-01-04</lastmod>
     
@@ -255,6 +255,15 @@
   
   <url>
     <loc>http://blog.4t.pw/posts/198a4240.html</loc>
+    
+    <lastmod>2023-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.4t.pw/posts/4aa8abbe.html</loc>
     
     <lastmod>2023-01-04</lastmod>
     
@@ -693,13 +702,6 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/tags/cdn/</loc>
-    <lastmod>2023-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.4t.pw/tags/pdf/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -708,6 +710,13 @@
   
   <url>
     <loc>http://blog.4t.pw/tags/%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2023-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.4t.pw/tags/cdn/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -800,14 +809,14 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/categories/cdn/</loc>
+    <loc>http://blog.4t.pw/categories/hexo%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/categories/hexo%E6%8F%92%E4%BB%B6/</loc>
+    <loc>http://blog.4t.pw/categories/cdn/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
