@@ -15,8 +15,35 @@
     <atom:link href="http://blog.4t.pw/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>UI设计、静态博客、个人博客、互联网干货分享、学习笔记记录。你可以在这里面找到很多关于UI设计相关的工具教程、思维技巧。还可以找到一些开发的小技巧。</description>
-    <pubDate>Sat, 26 Nov 2022 12:51:22 GMT</pubDate>
+    <pubDate>Sat, 11 Feb 2023 09:08:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Pjax适配</title>
+      <link>http://blog.4t.pw/posts/e42627b9.html</link>
+      <guid>http://blog.4t.pw/posts/e42627b9.html</guid>
+      <pubDate>Sat, 11 Feb 2023 09:02:22 GMT</pubDate>
+      
+      <description>pjax报错解决方案</description>
+      
+      
+      
+      
+      <category domain="http://blog.4t.pw/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
+      
+      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
+      
+      
+      <comments>http://blog.4t.pw/posts/e42627b9.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>hexo 主题butterfly如何让你的博客拥有星空背景和流星特效</title>
@@ -155,29 +182,6 @@
     </item>
     
     <item>
-      <title>10种鼠标指针跟随动画特效 - 代码库</title>
-      <link>http://blog.4t.pw/posts/437270be.html</link>
-      <guid>http://blog.4t.pw/posts/437270be.html</guid>
-      <pubDate>Tue, 07 Feb 2023 13:17:18 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;div class=&quot;dmyxcss&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/dmyx/js/codemirror/lib/codemirror_all.min.css&quot; /&gt;&lt;script</description>
-          
-        
-      
-      
-      
-      
-      
-      
-      <comments>http://blog.4t.pw/posts/437270be.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>5分钟搭一个hexo博客</title>
       <link>http://blog.4t.pw/posts/b9dc5266.html</link>
       <guid>http://blog.4t.pw/posts/b9dc5266.html</guid>
@@ -203,6 +207,29 @@
     </item>
     
     <item>
+      <title>10种鼠标指针跟随动画特效 - 代码库</title>
+      <link>http://blog.4t.pw/posts/437270be.html</link>
+      <guid>http://blog.4t.pw/posts/437270be.html</guid>
+      <pubDate>Tue, 07 Feb 2023 13:17:18 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;div class=&quot;dmyxcss&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/dmyx/js/codemirror/lib/codemirror_all.min.css&quot; /&gt;&lt;script</description>
+          
+        
+      
+      
+      
+      
+      
+      
+      <comments>http://blog.4t.pw/posts/437270be.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>代码运行测试</title>
       <link>http://blog.4t.pw/posts/9daba996.html</link>
       <guid>http://blog.4t.pw/posts/9daba996.html</guid>
@@ -222,6 +249,33 @@
       
       
       <comments>http://blog.4t.pw/posts/9daba996.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>HexoMAC代码框样式美化</title>
+      <link>http://blog.4t.pw/posts/2c9505a3.html</link>
+      <guid>http://blog.4t.pw/posts/2c9505a3.html</guid>
+      <pubDate>Tue, 07 Feb 2023 13:17:18 GMT</pubDate>
+      
+      <description>代码框样式美化HexoMAC代码框样式美化</description>
+      
+      
+      
+      
+      <category domain="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/">魔改</category>
+      
+      
+      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
+      
+      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
+      
+      <category domain="http://blog.4t.pw/tags/css/">css</category>
+      
+      
+      <comments>http://blog.4t.pw/posts/2c9505a3.html#disqus_thread</comments>
       
     </item>
     
@@ -276,33 +330,6 @@
       
       
       <comments>http://blog.4t.pw/posts/dae98a7e.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>HexoMAC代码框样式美化</title>
-      <link>http://blog.4t.pw/posts/2c9505a3.html</link>
-      <guid>http://blog.4t.pw/posts/2c9505a3.html</guid>
-      <pubDate>Tue, 07 Feb 2023 13:17:18 GMT</pubDate>
-      
-      <description>代码框样式美化HexoMAC代码框样式美化</description>
-      
-      
-      
-      
-      <category domain="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/">魔改</category>
-      
-      
-      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
-      
-      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
-      
-      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
-      
-      <category domain="http://blog.4t.pw/tags/css/">css</category>
-      
-      
-      <comments>http://blog.4t.pw/posts/2c9505a3.html#disqus_thread</comments>
       
     </item>
     
@@ -384,46 +411,17 @@
     </item>
     
     <item>
-      <title>hexo主题butterfly顶部复制提示弹窗</title>
-      <link>http://blog.4t.pw/posts/3296cbc9.html</link>
-      <guid>http://blog.4t.pw/posts/3296cbc9.html</guid>
-      <pubDate>Sun, 20 Nov 2022 08:00:49 GMT</pubDate>
+      <title>生成随机颜色</title>
+      <link>http://blog.4t.pw/posts/471d1a4f.html</link>
+      <guid>http://blog.4t.pw/posts/471d1a4f.html</guid>
+      <pubDate>Thu, 08 Dec 2022 06:35:42 GMT</pubDate>
       
-      <description>修改默认小弹窗，改为顶部大弹窗</description>
-      
-      
-      
-      
-      <category domain="http://blog.4t.pw/categories/css/">css</category>
-      
-      
-      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
-      
-      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
-      
-      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
-      
-      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
-      
-      <category domain="http://blog.4t.pw/tags/css/">css</category>
-      
-      
-      <comments>http://blog.4t.pw/posts/3296cbc9.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>hexo主题butterfly4.5.1css美化教程一</title>
-      <link>http://blog.4t.pw/posts/b48f40bd.html</link>
-      <guid>http://blog.4t.pw/posts/b48f40bd.html</guid>
-      <pubDate>Sun, 20 Nov 2022 07:40:14 GMT</pubDate>
-      
-      <description>hexo butterfly主题css美化教程</description>
+      <description>这是一个为您生成随机网站主题颜色的示例</description>
       
       
       
       
-      <category domain="http://blog.4t.pw/categories/css/">css</category>
+      <category domain="http://blog.4t.pw/categories/%E7%B1%BB%E5%88%AB/">类别</category>
       
       
       <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
@@ -434,25 +432,23 @@
       
       <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
       
-      <category domain="http://blog.4t.pw/tags/css%E7%BE%8E%E5%8C%96/">css美化</category>
       
-      
-      <comments>http://blog.4t.pw/posts/b48f40bd.html#disqus_thread</comments>
+      <comments>http://blog.4t.pw/posts/471d1a4f.html#disqus_thread</comments>
       
     </item>
     
     <item>
-      <title>hexo主题butterfly4.5.1css美化教程二</title>
-      <link>http://blog.4t.pw/posts/eb769414.html</link>
-      <guid>http://blog.4t.pw/posts/eb769414.html</guid>
-      <pubDate>Sun, 20 Nov 2022 07:40:14 GMT</pubDate>
+      <title>目前可用cdn整理</title>
+      <link>http://blog.4t.pw/posts/82e8df50.html</link>
+      <guid>http://blog.4t.pw/posts/82e8df50.html</guid>
+      <pubDate>Mon, 28 Nov 2022 03:55:28 GMT</pubDate>
       
-      <description>hexo butterfly主题css美化教程</description>
-      
-      
+      <description>目前可用cdn整理</description>
       
       
-      <category domain="http://blog.4t.pw/categories/css/">css</category>
+      
+      
+      <category domain="http://blog.4t.pw/categories/%E6%95%99%E7%A8%8B/">教程</category>
       
       
       <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
@@ -463,47 +459,18 @@
       
       <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
       
-      <category domain="http://blog.4t.pw/tags/css%E7%BE%8E%E5%8C%96/">css美化</category>
       
-      
-      <comments>http://blog.4t.pw/posts/eb769414.html#disqus_thread</comments>
+      <comments>http://blog.4t.pw/posts/82e8df50.html#disqus_thread</comments>
       
     </item>
     
     <item>
-      <title>CMD快速辅助工具</title>
-      <link>http://blog.4t.pw/posts/db0a31c8.html</link>
-      <guid>http://blog.4t.pw/posts/db0a31c8.html</guid>
-      <pubDate>Sat, 19 Nov 2022 06:37:59 GMT</pubDate>
+      <title>分类页样式</title>
+      <link>http://blog.4t.pw/posts/a4a8f401.html</link>
+      <guid>http://blog.4t.pw/posts/a4a8f401.html</guid>
+      <pubDate>Sun, 27 Nov 2022 05:00:01 GMT</pubDate>
       
-      <description>hexo命令较为麻烦，所以简单化</description>
-      
-      
-      
-      
-      <category domain="http://blog.4t.pw/categories/%E8%BE%85%E5%8A%A9/">辅助</category>
-      
-      
-      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
-      
-      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
-      
-      <category domain="http://blog.4t.pw/tags/%E8%BE%85%E5%8A%A9/">辅助</category>
-      
-      <category domain="http://blog.4t.pw/tags/%E5%91%BD%E4%BB%A4/">命令</category>
-      
-      
-      <comments>http://blog.4t.pw/posts/db0a31c8.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>友情链接快速添加</title>
-      <link>http://blog.4t.pw/posts/80adb334.html</link>
-      <guid>http://blog.4t.pw/posts/80adb334.html</guid>
-      <pubDate>Wed, 16 Nov 2022 13:04:54 GMT</pubDate>
-      
-      <description>友情链接页面添加快速写入按钮</description>
+      <description>分类页样式</description>
       
       
       
@@ -519,20 +486,45 @@
       
       <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
       
-      <category domain="http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/">魔改</category>
       
-      
-      <comments>http://blog.4t.pw/posts/80adb334.html#disqus_thread</comments>
+      <comments>http://blog.4t.pw/posts/a4a8f401.html#disqus_thread</comments>
       
     </item>
     
     <item>
-      <title>彩色标题发光效果</title>
-      <link>http://blog.4t.pw/posts/d7005037.html</link>
-      <guid>http://blog.4t.pw/posts/d7005037.html</guid>
-      <pubDate>Fri, 11 Nov 2022 11:20:06 GMT</pubDate>
+      <title>twikoo评论区设置气泡</title>
+      <link>http://blog.4t.pw/posts/b68d2583.html</link>
+      <guid>http://blog.4t.pw/posts/b68d2583.html</guid>
+      <pubDate>Sun, 27 Nov 2022 04:58:02 GMT</pubDate>
       
-      <description>描述 Butterfly安裝文檔-快速開始</description>
+      <description>twikoo评论区设置气泡</description>
+      
+      
+      
+      
+      <category domain="http://blog.4t.pw/categories/%E7%B1%BB%E5%88%AB/">类别</category>
+      
+      
+      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
+      
+      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
+      
+      
+      <comments>http://blog.4t.pw/posts/b68d2583.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hexo侧边栏添加微博热搜</title>
+      <link>http://blog.4t.pw/posts/2da3e376.html</link>
+      <guid>http://blog.4t.pw/posts/2da3e376.html</guid>
+      <pubDate>Sat, 26 Nov 2022 09:03:06 GMT</pubDate>
+      
+      <description>Hexo侧边栏添加微博热搜</description>
       
       
       
@@ -548,10 +540,8 @@
       
       <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
       
-      <category domain="http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/">魔改</category>
       
-      
-      <comments>http://blog.4t.pw/posts/d7005037.html#disqus_thread</comments>
+      <comments>http://blog.4t.pw/posts/2da3e376.html#disqus_thread</comments>
       
     </item>
     
