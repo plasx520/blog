@@ -6,7 +6,7 @@
   <link href="http://blog.4t.pw/atom.xml" rel="self"/>
   
   <link href="http://blog.4t.pw/"/>
-  <updated>2023-02-11T09:08:46.198Z</updated>
+  <updated>2023-02-11T09:17:50.700Z</updated>
   <id>http://blog.4t.pw/</id>
   
   <author>
@@ -17,43 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Pjax适配</title>
-    <link href="http://blog.4t.pw/posts/e42627b9.html"/>
-    <id>http://blog.4t.pw/posts/e42627b9.html</id>
-    <published>2023-02-11T09:02:22.595Z</published>
-    <updated>2023-02-11T09:08:46.198Z</updated>
+    <title>黑客帝国背景js特效</title>
+    <link href="http://blog.4t.pw/posts/ac9c31bc.html"/>
+    <id>http://blog.4t.pw/posts/ac9c31bc.html</id>
+    <published>2023-02-13T10:36:02.445Z</published>
+    <updated>2023-02-11T09:17:50.700Z</updated>
     
     
-    <summary type="html">pjax报错解决方案</summary>
-    
-    
-    
-    <category term="技术" scheme="http://blog.4t.pw/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
-    
-    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
-    
-    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo 主题butterfly如何让你的博客拥有星空背景和流星特效</title>
-    <link href="http://blog.4t.pw/posts/9ee2cd59.html"/>
-    <id>http://blog.4t.pw/posts/9ee2cd59.html</id>
-    <published>2023-02-07T13:17:18.754Z</published>
-    <updated>2022-11-26T12:51:22.000Z</updated>
-    
-    
-    <summary type="html">hexo 星空背景和流星特效</summary>
+    <summary type="html">黑客帝国背景js特效</summary>
     
     
     
-    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    <category term="js" scheme="http://blog.4t.pw/categories/js/"/>
     
     
     <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
@@ -64,308 +39,21 @@
     
     <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
     
-    <category term="hexo特效" scheme="http://blog.4t.pw/tags/hexo%E7%89%B9%E6%95%88/"/>
-    
   </entry>
   
   <entry>
-    <title>美女</title>
-    <link href="http://blog.4t.pw/posts/36c34535.html"/>
-    <id>http://blog.4t.pw/posts/36c34535.html</id>
-    <published>2023-02-07T13:17:18.754Z</published>
-    <updated>2023-01-30T05:51:24.000Z</updated>
+    <title>随机文章和随机友联</title>
+    <link href="http://blog.4t.pw/posts/dd4278bd.html"/>
+    <id>http://blog.4t.pw/posts/dd4278bd.html</id>
+    <published>2023-02-13T10:36:02.443Z</published>
+    <updated>2023-02-11T09:51:26.848Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div bg-lazy&gt;
-&lt;div class=&quot;fj-gallery&quot;&gt;&lt;p&gt;&lt;img</summary>
-        
-      
+    <summary type="html">随机文章和随机友联</summary>
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>巴尔斯圣山</title>
-    <link href="http://blog.4t.pw/posts/77c29717.html"/>
-    <id>http://blog.4t.pw/posts/77c29717.html</id>
-    <published>2023-02-07T13:17:18.754Z</published>
-    <updated>2023-02-02T17:04:52.000Z</updated>
-    
-    
-    <summary type="html">家族旅游12号人上雪山</summary>
-    
-    
-    
-    <category term="旅游" scheme="http://blog.4t.pw/categories/%E6%97%85%E6%B8%B8/"/>
-    
-    
-    <category term="旅游" scheme="http://blog.4t.pw/tags/%E6%97%85%E6%B8%B8/"/>
-    
-    <category term="自驾游" scheme="http://blog.4t.pw/tags/%E8%87%AA%E9%A9%BE%E6%B8%B8/"/>
-    
-    <category term="雪山" scheme="http://blog.4t.pw/tags/%E9%9B%AA%E5%B1%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo 主题butterfly首页字体黑夜霓虹灯效果</title>
-    <link href="http://blog.4t.pw/posts/64bbd6f1.html"/>
-    <id>http://blog.4t.pw/posts/64bbd6f1.html</id>
-    <published>2023-02-07T13:17:18.754Z</published>
-    <updated>2023-01-23T07:22:32.000Z</updated>
-    
-    
-    <summary type="html">hexo 首页字体黑夜霓虹灯效果</summary>
-    
-    
-    
-    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
-    
-    
-    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
-    
-    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
-    
-    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
-    
-    <category term="hexo特效" scheme="http://blog.4t.pw/tags/hexo%E7%89%B9%E6%95%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo 主题butterfly鼠标小点追拖影追踪</title>
-    <link href="http://blog.4t.pw/posts/6d528881.html"/>
-    <id>http://blog.4t.pw/posts/6d528881.html</id>
-    <published>2023-02-07T13:17:18.754Z</published>
-    <updated>2023-02-03T03:52:22.000Z</updated>
-    
-    
-    <summary type="html">hexo 添加一个跟着鼠标走的小球球</summary>
-    
-    
-    
-    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
-    
-    
-    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
-    
-    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
-    
-    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
-    
-    <category term="css美化" scheme="http://blog.4t.pw/tags/css%E7%BE%8E%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>10种鼠标指针跟随动画特效 - 代码库</title>
-    <link href="http://blog.4t.pw/posts/437270be.html"/>
-    <id>http://blog.4t.pw/posts/437270be.html</id>
-    <published>2023-02-07T13:17:18.754Z</published>
-    <updated>2023-02-03T04:01:08.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div class=&quot;dmyxcss&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/dmyx/js/codemirror/lib/codemirror_all.min.css&quot; /&gt;&lt;script</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>5分钟搭一个hexo博客</title>
-    <link href="http://blog.4t.pw/posts/b9dc5266.html"/>
-    <id>http://blog.4t.pw/posts/b9dc5266.html</id>
-    <published>2023-02-07T13:17:18.754Z</published>
-    <updated>2022-11-24T09:22:00.000Z</updated>
-    
-    
-    <summary type="html">搭建hexo博客快速入门教程</summary>
-    
-    
-    
-    <category term="基础" scheme="http://blog.4t.pw/categories/%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
-    
-    <category term="基础教程" scheme="http://blog.4t.pw/tags/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>代码运行测试</title>
-    <link href="http://blog.4t.pw/posts/9daba996.html"/>
-    <id>http://blog.4t.pw/posts/9daba996.html</id>
-    <published>2023-02-07T13:17:18.738Z</published>
-    <updated>2023-02-01T09:29:20.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div class=&quot;dmyxcss&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/dmyx/js/codemirror/lib/codemirror_all.min.css&quot; /&gt;&lt;script</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客 | Hexo竟然可以展示PDF</title>
-    <link href="http://blog.4t.pw/posts/b2fdb571.html"/>
-    <id>http://blog.4t.pw/posts/b2fdb571.html</id>
-    <published>2023-02-07T13:17:18.738Z</published>
-    <updated>2022-12-17T07:19:22.000Z</updated>
-    
-    
-    <summary type="html">hexo功能加强，增加pdf在线阅读功能</summary>
-    
-    
-    
-    <category term="hexo插件" scheme="http://blog.4t.pw/categories/hexo%E6%8F%92%E4%BB%B6/"/>
-    
-    
-    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
-    
-    <category term="pdf" scheme="http://blog.4t.pw/tags/pdf/"/>
-    
-    <category term="插件" scheme="http://blog.4t.pw/tags/%E6%8F%92%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HexoMAC代码框样式美化</title>
-    <link href="http://blog.4t.pw/posts/2c9505a3.html"/>
-    <id>http://blog.4t.pw/posts/2c9505a3.html</id>
-    <published>2023-02-07T13:17:18.738Z</published>
-    <updated>2022-12-17T07:13:18.000Z</updated>
-    
-    
-    <summary type="html">代码框样式美化HexoMAC代码框样式美化</summary>
-    
-    
-    
-    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
-    
-    
-    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
-    
-    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
-    
-    <category term="css" scheme="http://blog.4t.pw/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客 | 插件推荐</title>
-    <link href="http://blog.4t.pw/posts/dae98a7e.html"/>
-    <id>http://blog.4t.pw/posts/dae98a7e.html</id>
-    <published>2023-02-07T13:17:18.738Z</published>
-    <updated>2022-12-17T07:22:50.000Z</updated>
-    
-    
-    <summary type="html">Hexo插件汇总收集了一些常用插件</summary>
-    
-    
-    
-    <category term="hexo插件" scheme="http://blog.4t.pw/categories/hexo%E6%8F%92%E4%BB%B6/"/>
-    
-    
-    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
-    
-    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
-    
-    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
-    
-    <category term="插件" scheme="http://blog.4t.pw/tags/%E6%8F%92%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jsdelivr cdn 缓存清理</title>
-    <link href="http://blog.4t.pw/posts/3a4575d7.html"/>
-    <id>http://blog.4t.pw/posts/3a4575d7.html</id>
-    <published>2023-02-07T13:17:18.738Z</published>
-    <updated>2022-12-17T07:13:18.000Z</updated>
-    
-    
-    <summary type="html">jsdelivr缓存清楚教程</summary>
-    
-    
-    
-    <category term="cdn" scheme="http://blog.4t.pw/categories/cdn/"/>
-    
-    
-    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
-    
-    <category term="cdn" scheme="http://blog.4t.pw/tags/cdn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>butterfly版权栏养个鱼</title>
-    <link href="http://blog.4t.pw/posts/263068a8.html"/>
-    <id>http://blog.4t.pw/posts/263068a8.html</id>
-    <published>2023-02-07T13:17:18.738Z</published>
-    <updated>2023-02-03T03:20:38.000Z</updated>
-    
-    
-    <summary type="html">hexo Butterfly版权栏改成鱼池</summary>
-    
-    
-    
-    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
-    
-    
-    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
-    
-    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
-    
-    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>友情链接顶部轮播滑动好友列表</title>
-    <link href="http://blog.4t.pw/posts/1cf8aaef.html"/>
-    <id>http://blog.4t.pw/posts/1cf8aaef.html</id>
-    <published>2023-02-07T13:17:18.738Z</published>
-    <updated>2023-02-03T08:29:44.000Z</updated>
-    
-    
-    <summary type="html">顶部加一个滚动好友列表</summary>
-    
-    
-    
-    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    <category term="js" scheme="http://blog.4t.pw/categories/js/"/>
     
     
     <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
@@ -382,7 +70,7 @@
     <title>生成随机颜色</title>
     <link href="http://blog.4t.pw/posts/471d1a4f.html"/>
     <id>http://blog.4t.pw/posts/471d1a4f.html</id>
-    <published>2022-12-08T06:35:42.137Z</published>
+    <published>2023-02-13T10:36:02.441Z</published>
     <updated>2023-02-11T09:53:17.303Z</updated>
     
     
@@ -404,10 +92,35 @@
   </entry>
   
   <entry>
+    <title>hexo背景切换弹窗</title>
+    <link href="http://blog.4t.pw/posts/f732724c.html"/>
+    <id>http://blog.4t.pw/posts/f732724c.html</id>
+    <published>2023-02-13T10:36:02.438Z</published>
+    <updated>2023-02-11T09:11:45.639Z</updated>
+    
+    
+    <summary type="html">描切换主题背景弹窗</summary>
+    
+    
+    
+    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
     <title>目前可用cdn整理</title>
     <link href="http://blog.4t.pw/posts/82e8df50.html"/>
     <id>http://blog.4t.pw/posts/82e8df50.html</id>
-    <published>2022-11-28T03:55:28.442Z</published>
+    <published>2023-02-13T10:36:02.436Z</published>
     <updated>2023-02-11T09:26:43.763Z</updated>
     
     
@@ -429,10 +142,85 @@
   </entry>
   
   <entry>
+    <title>旋转小人</title>
+    <link href="http://blog.4t.pw/posts/6a36f4d.html"/>
+    <id>http://blog.4t.pw/posts/6a36f4d.html</id>
+    <published>2023-02-13T10:36:02.435Z</published>
+    <updated>2023-02-11T09:55:16.220Z</updated>
+    
+    
+    <summary type="html">hexo旋转小人</summary>
+    
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>打字机效果 | 使用type.js模拟打字输入回退效果</title>
+    <link href="http://blog.4t.pw/posts/4d1a13a3.html"/>
+    <id>http://blog.4t.pw/posts/4d1a13a3.html</id>
+    <published>2023-02-13T10:36:02.434Z</published>
+    <updated>2023-02-11T09:15:43.507Z</updated>
+    
+    
+    <summary type="html">打字机效果 | 使用type.js模拟打字输入回退效果</summary>
+    
+    
+    
+    <category term="类别" scheme="http://blog.4t.pw/categories/%E7%B1%BB%E5%88%AB/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>彩色友链</title>
+    <link href="http://blog.4t.pw/posts/8f2073b6.html"/>
+    <id>http://blog.4t.pw/posts/8f2073b6.html</id>
+    <published>2023-02-13T10:36:02.432Z</published>
+    <updated>2023-02-10T14:10:00.307Z</updated>
+    
+    
+    <summary type="html">彩色友链</summary>
+    
+    
+    
+    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
     <title>分类页样式</title>
     <link href="http://blog.4t.pw/posts/a4a8f401.html"/>
     <id>http://blog.4t.pw/posts/a4a8f401.html</id>
-    <published>2022-11-27T05:00:01.210Z</published>
+    <published>2023-02-13T10:36:02.430Z</published>
     <updated>2023-02-11T09:16:34.890Z</updated>
     
     
@@ -454,10 +242,60 @@
   </entry>
   
   <entry>
+    <title>使用hexo快速搭建个人博客</title>
+    <link href="http://blog.4t.pw/posts/8ad9784a.html"/>
+    <id>http://blog.4t.pw/posts/8ad9784a.html</id>
+    <published>2023-02-13T10:36:02.429Z</published>
+    <updated>2023-02-10T14:10:00.307Z</updated>
+    
+    
+    <summary type="html">描述 Butterfly安裝文檔-快速開始</summary>
+    
+    
+    
+    <category term="类别" scheme="http://blog.4t.pw/categories/%E7%B1%BB%E5%88%AB/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图标、动态图标。一些零碎教程</title>
+    <link href="http://blog.4t.pw/posts/469812fd.html"/>
+    <id>http://blog.4t.pw/posts/469812fd.html</id>
+    <published>2023-02-13T10:36:02.427Z</published>
+    <updated>2023-02-11T09:33:56.223Z</updated>
+    
+    
+    <summary type="html">网页运行时间、全站变黑白、鼠标点击特效</summary>
+    
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
     <title>twikoo评论区设置气泡</title>
     <link href="http://blog.4t.pw/posts/b68d2583.html"/>
     <id>http://blog.4t.pw/posts/b68d2583.html</id>
-    <published>2022-11-27T04:58:02.899Z</published>
+    <published>2023-02-13T10:36:02.425Z</published>
     <updated>2023-02-11T09:10:13.894Z</updated>
     
     
@@ -479,14 +317,189 @@
   </entry>
   
   <entry>
-    <title>Hexo侧边栏添加微博热搜</title>
-    <link href="http://blog.4t.pw/posts/2da3e376.html"/>
-    <id>http://blog.4t.pw/posts/2da3e376.html</id>
-    <published>2022-11-26T09:03:06.221Z</published>
-    <updated>2023-02-10T14:22:29.552Z</updated>
+    <title>Pjax适配</title>
+    <link href="http://blog.4t.pw/posts/e42627b9.html"/>
+    <id>http://blog.4t.pw/posts/e42627b9.html</id>
+    <published>2023-02-13T10:36:02.424Z</published>
+    <updated>2023-02-11T09:08:46.198Z</updated>
     
     
-    <summary type="html">Hexo侧边栏添加微博热搜</summary>
+    <summary type="html">pjax报错解决方案</summary>
+    
+    
+    
+    <category term="技术" scheme="http://blog.4t.pw/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo鼠标样式修改</title>
+    <link href="http://blog.4t.pw/posts/133ef613.html"/>
+    <id>http://blog.4t.pw/posts/133ef613.html</id>
+    <published>2023-02-13T10:36:02.422Z</published>
+    <updated>2023-02-10T14:24:26.229Z</updated>
+    
+    
+    <summary type="html">Hexo鼠标样式修改</summary>
+    
+    
+    
+    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo页脚美化</title>
+    <link href="http://blog.4t.pw/posts/28ae4987.html"/>
+    <id>http://blog.4t.pw/posts/28ae4987.html</id>
+    <published>2023-02-13T10:36:02.420Z</published>
+    <updated>2023-02-10T14:35:53.053Z</updated>
+    
+    
+    <summary type="html">给页脚添加运行时间</summary>
+    
+    
+    
+    <category term="类别" scheme="http://blog.4t.pw/categories/%E7%B1%BB%E5%88%AB/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo添加雪花动态效果背景</title>
+    <link href="http://blog.4t.pw/posts/bae4b9c5.html"/>
+    <id>http://blog.4t.pw/posts/bae4b9c5.html</id>
+    <published>2023-02-13T10:36:02.419Z</published>
+    <updated>2023-02-10T14:27:49.695Z</updated>
+    
+    
+    <summary type="html">Hexo添加雪花动态效果背景</summary>
+    
+    
+    
+    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo添加樱花动态效果背景</title>
+    <link href="http://blog.4t.pw/posts/54fc0e4.html"/>
+    <id>http://blog.4t.pw/posts/54fc0e4.html</id>
+    <published>2023-02-13T10:36:02.417Z</published>
+    <updated>2023-02-10T14:31:54.882Z</updated>
+    
+    
+    <summary type="html">Hexo添加樱花雪花秋叶动态效果背景</summary>
+    
+    
+    
+    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo添加当前访客信息</title>
+    <link href="http://blog.4t.pw/posts/b1aa92a7.html"/>
+    <id>http://blog.4t.pw/posts/b1aa92a7.html</id>
+    <published>2023-02-13T10:36:02.416Z</published>
+    <updated>2023-02-10T14:25:54.051Z</updated>
+    
+    
+    <summary type="html">Hexo添加当前访客信息</summary>
+    
+    
+    
+    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo小标题旋转风车设置</title>
+    <link href="http://blog.4t.pw/posts/2e45cf0c.html"/>
+    <id>http://blog.4t.pw/posts/2e45cf0c.html</id>
+    <published>2023-02-13T10:36:02.414Z</published>
+    <updated>2023-02-10T14:33:24.132Z</updated>
+    
+    
+    <summary type="html">Hexo小标题旋转风车设置</summary>
+    
+    
+    
+    <category term="魔改" scheme="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/"/>
+    
+    
+    <category term="教程" scheme="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://blog.4t.pw/tags/Hexo/"/>
+    
+    <category term="主題" scheme="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+    <category term="butterfly" scheme="http://blog.4t.pw/tags/butterfly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo增添上升气泡效果</title>
+    <link href="http://blog.4t.pw/posts/19b21015.html"/>
+    <id>http://blog.4t.pw/posts/19b21015.html</id>
+    <published>2023-02-13T10:36:02.413Z</published>
+    <updated>2023-02-10T14:44:40.006Z</updated>
+    
+    
+    <summary type="html">Hexo增添上升气泡效果</summary>
     
     
     

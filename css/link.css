@@ -32,6 +32,17 @@
   .tags-group-icon img {
     width: 60%;
     margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 66px;
+    font-weight: 700;
+    box-shadow: var(--recent-post-bgcolor);
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    border: 4px solid var(--heo-zhuti);
   }
   .tags-group-icon-pair .tags-group-icon:nth-child(even) {
     margin-top: 1rem;
@@ -97,3 +108,5 @@ button {
 .flink .author-content-item {
     background: rgb(37 37 42 / 0%) !important;
 }
+.flink .img-alt{
+  display: none}
