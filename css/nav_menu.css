@@ -555,3 +555,33 @@ center#name-container {
     font-weight: bold;
     cursor: pointer;
 }
+.div-card3 .about-statistic2::after,
+.todayCard::after,
+.card-wrap>.card::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: rgba(255,255,255,.5);
+  content: '';
+  -webkit-transition: -webkit-transform .3s;
+  -moz-transition: -moz-transform .3s;
+  -o-transition: -o-transform .3s;
+  -ms-transition: -ms-transform .3s;
+  transition: transform .3s;
+  -webkit-transform: scale3d(2,1,1) rotate(60deg) translate3d(10%,-110%,0);
+  -moz-transform: scale3d(2,1,1) rotate(60deg) translate3d(10%,-110%,0);
+  -o-transform: scale3d(2,1,1) rotate(60deg) translate3d(10%,-110%,0);
+  -ms-transform: scale3d(2,1,1) rotate(60deg) translate3d(10%,-110%,0);
+  transform: scale3d(2,1,1) rotate(60deg) translate3d(10%,-110%,0);
+}
+.div-card3 .about-statistic2:hover::after,
+.todayCard:hover::after,
+.card-wrap>.card:hover::after {
+  -webkit-transform: scale3d(2,1,1) rotate(60deg) translate3d(0,160%,0);
+  -moz-transform: scale3d(2,1,1) rotate(60deg) translate3d(0,160%,0);
+  -o-transform: scale3d(2,1,1) rotate(60deg) translate3d(0,160%,0);
+  -ms-transform: scale3d(2,1,1) rotate(60deg) translate3d(0,160%,0);
+  transform: scale3d(2,1,1) rotate(60deg) translate3d(0,160%,0);
+}
