@@ -3814,7 +3814,7 @@ define('model/baidu',[], function () {
 
 define('model/suning',[], function () {
     return {
-        url: "http://review.suning.com/imageload/uploadImg.do",
+        url: "https://review.suning.com/imageload/uploadImg.do",
         method: "post",
         headers: {
             'Authorization': "",
