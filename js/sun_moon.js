@@ -93,9 +93,9 @@ function createWinbox() {
     <div id="article-container" style="padding:10px;">
 
     <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:#5fcdff;display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
-    <div class="bgbox"><button onclick="javascript:loadScript('https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js');" style="background:#fc8cff;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"></i> 樱花飘落</button>
-    <button onclick="javascript:loadScript('/js/xh1.js');" style="background:#3cf4ff;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"></i> 雪花飘落</button>
-    <button onclick="javascript:loadScript('/js/xh2.js');" style="background:#ff6224;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"></i> 秋叶飘落</button>
+    <div class="bgbox"><button onclick="javascript:loadScript('https://cdn.hlcssc.com/cdn/js/xh/xh3.js');" style="background:#fc8cff;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"></i> 樱花飘落</button>
+    <button onclick="javascript:loadScript('https://cdn.hlcssc.com/cdn/js/xh/xh1.js');" style="background:#3cf4ff;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"></i> 雪花飘落</button>
+    <button onclick="javascript:loadScript('https://cdn.hlcssc.com/cdn/js/xh/xh2.js');" style="background:#ff6224;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"></i> 秋叶飘落</button>
     </div>
     <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>
     <div class="bgbox">
