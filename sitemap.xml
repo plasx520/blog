@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.4t.pw/posts/55acfeb0.html</loc>
+    <loc>http://blog.4t.pw/posts/3dcc79ea.html</loc>
     
     <lastmod>2023-03-02</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/posts/3dcc79ea.html</loc>
+    <loc>http://blog.4t.pw/posts/55acfeb0.html</loc>
     
     <lastmod>2023-03-02</lastmod>
     
@@ -434,15 +434,6 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/posts/6ad51b4.html</loc>
-    
-    <lastmod>2023-02-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.4t.pw/posts/4073eda.html</loc>
     
     <lastmod>2023-02-04</lastmod>
@@ -452,7 +443,7 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/posts/507c070f.html</loc>
+    <loc>http://blog.4t.pw/posts/6ad51b4.html</loc>
     
     <lastmod>2023-02-04</lastmod>
     
@@ -462,6 +453,15 @@
   
   <url>
     <loc>http://blog.4t.pw/posts/ceeb73f.html</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.4t.pw/posts/507c070f.html</loc>
     
     <lastmod>2023-02-04</lastmod>
     
@@ -722,7 +722,7 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/about/index.html</loc>
+    <loc>http://blog.4t.pw/categories/index.html</loc>
     
     <lastmod>2022-11-24</lastmod>
     
@@ -731,7 +731,7 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/categories/index.html</loc>
+    <loc>http://blog.4t.pw/about/index.html</loc>
     
     <lastmod>2022-11-24</lastmod>
     
@@ -948,14 +948,14 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/</loc>
+    <loc>http://blog.4t.pw/tags/demo/</loc>
     <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/tags/demo/</loc>
+    <loc>http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/</loc>
     <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1069,14 +1069,14 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/categories/%E7%B1%BB%E5%88%AB/</loc>
+    <loc>http://blog.4t.pw/categories/css/</loc>
     <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/categories/css/</loc>
+    <loc>http://blog.4t.pw/categories/%E7%B1%BB%E5%88%AB/</loc>
     <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
