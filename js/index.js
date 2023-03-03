@@ -2,6 +2,7 @@
 whenDOMReady()
 function whenDOMReady() {
   if (typeof pjaxqj === 'function') {pjaxqj();}
+  if (typeof pjaxxc === 'function') {pjaxxc();}
 }
 document.addEventListener("pjax:complete", whenDOMReady) // pjax加载完成（切换页面）后再执行一次
 document.addEventListener("DOMContentLoaded",whenDOMReady);//第一次

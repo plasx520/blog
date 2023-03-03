@@ -1,6 +1,5 @@
-if(1){
+function pjaxxc() {
   Vue.config.devtools = true;
-
   Vue.component('card', {
     template: `
       <div class="card-wrap"
