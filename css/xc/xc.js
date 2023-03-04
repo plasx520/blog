@@ -1,4 +1,4 @@
-function pjaxxc() {
+if (1) {
   Vue.config.devtools = true;
   Vue.component('card', {
     template: `

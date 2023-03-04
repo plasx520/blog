@@ -15,3 +15,13 @@ var swiper = new Swiper("#cyber-swiper-container", {
       disableOnInteraction: true, // 操作以后停止自动播放
     },
   });
+var swiper = new Swiper ('#noticeList', {
+  spaceBetween: 30,
+  centeredSlides: true,
+  direction: 'vertical', // 垂直切换选项
+  loop: true, // 循环模式选项
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+})
