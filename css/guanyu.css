@@ -31,16 +31,18 @@
   
   #about-page .author-box {
     position: relative;
+    display: flex;
+    align-items: center;
+    margin: 80px 0 16px 0;
+    justify-content: center;
   }
   #about-page .author-box .author-img {
-    margin: auto;
-    border-radius: 50%;
+    margin: 0 30px;
     overflow: hidden;
     width: 180px;
     height: 180px;
   }
   #about-page .author-box .author-img img {
-    border-radius: 50%;
     overflow: hidden;
     width: 180px;
     height: 180px;
@@ -55,7 +57,7 @@
     border: 6px solid var(--recent-post-bgcolor);
     top: 50%;
     left: 50%;
-    transform: translate(35px, 45px);
+    transform: translate(-21px, -21px);
   }
   
   .author-content {
@@ -936,4 +938,66 @@ p.p.center {
 }
 .ggl {
     display: none;
+}
+#about-page .author-tag-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#about-page .author-tag-left .author-tag:first-child, #about-page .author-tag-left .author-tag:last-child {
+  margin-right: -16px;
+}
+#about-page .author-tag {
+  transform: translate(0,  -4px);
+  padding: 1px 8px;
+  background: var(--heo-card-bg);
+  border: var(--style-border-always);
+  border-radius: 40px;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: var(--heo-shadow-lightblack);
+  animation: 6s ease-in-out 0s infinite normal none running floating;
+}
+
+#about-page .author-tag:nth-child(1) {
+  animation-delay: 0s;
+}
+
+#about-page .author-tag:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+#about-page .author-tag:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+#about-page .author-tag:nth-child(4) {
+  animation-delay: 1.8s;
+}
+
+#about-page .author-tag {
+  transform: translate(0,  -4px);
+  padding: 1px 8px;
+  background: var(--heo-card-bg);
+  border: var(--style-border-always);
+  border-radius: 40px;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: var(--heo-shadow-lightblack);
+  animation: 6s ease-in-out 0s infinite normal none running floating;
+}
+#about-page .author-tag-right .author-tag:first-child, #about-page .author-tag-right .author-tag:last-child {
+  margin-left: -16px;
+}
+#about-page .author-tag-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@keyframes floating {
+  0% { transform: translate(0,  -4px); }
+  50%  { transform: translate(0, 4px); }
+  100%   { transform: translate(0, -4px); }   
 }
