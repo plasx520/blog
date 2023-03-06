@@ -849,7 +849,7 @@ center#name-container {
 #nav-music .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
   height: 100%;
   opacity: 0.1;
-  background-color: var(--anzhiyu-white) !important;
+  background-color: var(--heo-theme) !important;
   animation: lightBar 5s ease infinite;
   animation-play-state: paused;
 }

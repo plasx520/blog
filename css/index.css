@@ -3481,7 +3481,11 @@ h1.page-title + .tag-cloud-list {
     display: none;
   }
   html.hide-aside .layout > div:first-child {
-    width: 80%;
+    width: 100%;
+  }
+  html.hide-aside .recent-post-san {
+    width: calc(100% / 3 - 20px);
+    min-width: calc(100% / 3 - 20px);
   }
 }
 .page .sticky_layout {
@@ -6375,10 +6379,10 @@ strong {
   color: var(--heo-theme) !important;
 }
 .news span {
-  text-align: right;
+  text-align: left;
   font-size: 14px;
-  color: #c45a5a;
-  width: 10%;
+  color: #ea4a4a;
+  width: 120px;
 }
 .news>.fa-link:before {
   color: var(--heo-theme) !important;
@@ -7070,7 +7074,7 @@ h6:before {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   height: auto;
-  width: 55%;
+  width: 56.5%;
   padding: 0px;
 }
 .home_top1 {
@@ -7477,7 +7481,6 @@ img.footer_mini_logo {
   display: -ms-flexbox;
   display: box;
   display: flex;
-  height: 1300px;
   -webkit-box-lines: multiple;
   -moz-box-lines: multiple;
   -o-box-lines: multiple;
@@ -7493,7 +7496,6 @@ img.footer_mini_logo {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding: 0px 0px 20px;
 }
 span.recent-post-top-text {
   position: absolute;
@@ -7558,6 +7560,7 @@ span.recent-post-top-text {
   -ms-transition: 0.3s;
   transition: 0.3s;
   position: relative;
+  margin-bottom: 1.5rem;
 }
 .recent-post-san:hover {
   -webkit-transform: scale(1.01);
@@ -7713,7 +7716,19 @@ svg use {
   -o-transition: 0.5s all;
   -ms-transition: 0.5s all;
   transition: 0.5s all;
-  width: 6000px;
+  width: 500%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
 }
 .down-list .tpl-tr-wai {
   height: 435px;
@@ -7723,20 +7738,16 @@ svg use {
 .down-list .list-top {
   margin-top: 20px;
   float: left;
-  width: 1000px;
-}
-.down-list .list-top {
+  width: calc(100% / 5 - 2px);
   margin-right: 0;
 }
 .down-list .list-top ul {
-  width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 .down-list .list-top li {
   border-radius: 6px;
   display: block;
-  width: calc(90% / 3 - 15px);
+  width: calc(90% / 3 - 10px);
   border: 1px solid rgba(137,137,137,0.412);
   padding: 20px 15px;
   margin: 0 9px 9px 0;
