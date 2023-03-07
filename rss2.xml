@@ -15,8 +15,35 @@
     <atom:link href="http://blog.4t.pw/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>UI设计、静态博客、个人博客、互联网干货分享、学习笔记记录。你可以在这里面找到很多关于UI设计相关的工具教程、思维技巧。还可以找到一些开发的小技巧。</description>
-    <pubDate>Mon, 06 Mar 2023 11:19:02 GMT</pubDate>
+    <pubDate>Tue, 07 Mar 2023 09:19:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>hexo butterfly彩色的友情链接</title>
+      <link>http://blog.4t.pw/posts/3161a535.html</link>
+      <guid>http://blog.4t.pw/posts/3161a535.html</guid>
+      <pubDate>Tue, 07 Mar 2023 09:01:58 GMT</pubDate>
+      
+      <description>彩色的友情链接结合体</description>
+      
+      
+      
+      
+      <category domain="http://blog.4t.pw/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
+      
+      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
+      
+      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
+      
+      
+      <comments>http://blog.4t.pw/posts/3161a535.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>hexo butterfly用视频做背景</title>
@@ -522,33 +549,6 @@
       
       
       <comments>http://blog.4t.pw/posts/bae4b9c5.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Hexo添加樱花动态效果背景</title>
-      <link>http://blog.4t.pw/posts/54fc0e4.html</link>
-      <guid>http://blog.4t.pw/posts/54fc0e4.html</guid>
-      <pubDate>Mon, 13 Feb 2023 10:36:02 GMT</pubDate>
-      
-      <description>Hexo添加樱花雪花秋叶动态效果背景</description>
-      
-      
-      
-      
-      <category domain="http://blog.4t.pw/categories/%E9%AD%94%E6%94%B9/">魔改</category>
-      
-      
-      <category domain="http://blog.4t.pw/tags/%E6%95%99%E7%A8%8B/">教程</category>
-      
-      <category domain="http://blog.4t.pw/tags/Hexo/">Hexo</category>
-      
-      <category domain="http://blog.4t.pw/tags/%E4%B8%BB%E9%A1%8C/">主題</category>
-      
-      <category domain="http://blog.4t.pw/tags/butterfly/">butterfly</category>
-      
-      
-      <comments>http://blog.4t.pw/posts/54fc0e4.html#disqus_thread</comments>
       
     </item>
     
