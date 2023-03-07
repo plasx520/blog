@@ -2332,8 +2332,8 @@ figure.highlight pre .javascript .function {
   float: left;
   overflow: hidden;
   margin: 15px 7px;
-  width: calc(100% / 5 - 15px);
-  height: 90px;
+  width: calc(100% / 4 - 15px);
+  height: 110px;
   border-radius: 8px;
   line-height: 17px;
   background-color: rgba(0,185,199,0.18);
@@ -2390,10 +2390,10 @@ figure.highlight pre .javascript .function {
 #article-container .flink .flink-list > .flink-list-item a .flink-item-icon {
   float: left;
   overflow: hidden;
-  margin: 15px 10px;
-  width: 60px;
-  height: 60px;
-  border-radius: 35px;
+  margin: 18px 14px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
   -webkit-transition: width 0.3s ease-out;
   -moz-transition: width 0.3s ease-out;
   -o-transition: width 0.3s ease-out;
@@ -2428,6 +2428,28 @@ figure.highlight pre .javascript .function {
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 1.5em;
+}
+#article-container .flink .pblink .flink-item-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(35%, 35%);
+  -moz-transform: translate(35%, 35%);
+  -o-transform: translate(35%, 35%);
+  -ms-transform: translate(35%, 35%);
+  transform: translate(35%, 35%);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+  width: 140px;
+  height: 140px;
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  border-radius: 9999px;
+  overflow: hidden;
 }
 :root {
   --recent-post-bgcolor: rgba(255,255,255,0.9);
@@ -7769,10 +7791,29 @@ svg use {
 }
 .down-list .list-top li .fr {
   width: 155px;
+  height: 88px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
 }
 .down-list .list-top li .fr .tit h-5 {
   width: 155px;
-  height: 50px;
+  height: 35px;
   font-size: 14px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
