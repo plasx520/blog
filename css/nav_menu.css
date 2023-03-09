@@ -1,6 +1,7 @@
 #nav a:hover {
   background: var(--heo-theme) !important;
   transition: 0.3s;
+  border-radius: 50px;
 }
 
 #nav-totop:hover .totopbtn i {
@@ -83,7 +84,7 @@ div#menus {
   padding: 2px 16px;
 }
 #nav .menus_items .menus_item .menus_item_child li:hover a {
-  color: white !important;
+  color: var(--heo-white) !important;
 }
 
 #nav .menus_items .menus_item .menus_item_child li {
@@ -150,6 +151,8 @@ ul.menus_item_child {
   padding: 6px 4px;
   box-sizing: content-box;
   line-height: 35px;
+  border-radius: 50px;
+  border: 1px solid var(--heo-theme);
 }
 #nav .menus_items .menus_item:hover {
   padding: 0 5px 27px 5px !important;

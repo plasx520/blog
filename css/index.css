@@ -4932,7 +4932,7 @@ h1.page-title + .tag-cloud-list {
   padding: 0;
   width: max-content;
   border-radius: 5px;
-  background-color: var(--sidebar-bg);
+  background-color: var(--heo-card-bg);
   -webkit-box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
   box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
   -webkit-animation: sub_menus 0.3s 0.1s ease both;
@@ -4952,9 +4952,6 @@ h1.page-title + .tag-cloud-list {
 #nav .menus_items .menus_item .menus_item_child li {
   list-style: none;
 }
-#nav .menus_items .menus_item .menus_item_child li:hover {
-  background: var(--text-bg-hover);
-}
 #nav .menus_items .menus_item .menus_item_child li:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -4967,7 +4964,7 @@ h1.page-title + .tag-cloud-list {
   display: inline-block;
   padding: 8px 16px;
   width: 100%;
-  color: var(--font-color) !important;
+  color: var(--heo-fontcolor) !important;
   text-shadow: none !important;
 }
 #nav.hide-menu #toggle-menu {
@@ -7932,9 +7929,6 @@ h-5>a {
 }
 #recent-posts .category-bar-item a {
   padding: 0.3rem 0.5rem !important;
-}
-#nav a:hover {
-  background: var(--heo-theme) !important;
 }
 .back-home-button:hover {
   background: var(--heo-theme) !important;
