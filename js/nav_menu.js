@@ -28,8 +28,11 @@ function percent() {
       if (result > 65) {
         document.getElementById("page-name").innerText = "最新文章".split(" | 怕冷爱上雪")[0];
       }
-      if (result > 98) {
+      if (result > 95) {
         document.getElementById("page-name").innerText = "版权栏".split(" | 怕冷爱上雪")[0];
+      }
+      if (result > 98) {
+        document.getElementById("percent").innerText = "🤶";
       }
     }
 }
