@@ -327,7 +327,8 @@ details:not(.tk-admin-config-group) summary:hover::marker {
 	  box-shadow: 0 2px 16px -3px rgba(0, 0, 0, .15)
   }
   .tags-group-icon img {
-	  width: 60%
+	  width: 60%;
+      height: 60%;
   }
   @keyframes rowup {
 	  from {
