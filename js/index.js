@@ -6,7 +6,6 @@ function whenDOMReady() {
 }
 document.addEventListener("pjax:complete", whenDOMReady) // pjax加载完成（切换页面）后再执行一次
 document.addEventListener("DOMContentLoaded",whenDOMReady);//第一次
-
 /*首页下载板块更新悬浮效果*/
 $(".down-index .type a").hover(function (e) {
 $(".down-index .type .hover").removeClass("hover");
@@ -25,7 +24,6 @@ var index = $(".down-list .type .hover").index();
 var x = $(".down-list").width() * index + parseInt($(".down-list").css("margin-right")) * index;
 $(".down-list .tpl-tr").css("transform", "translateX(-" + x + "px)");
 });
-
 //首页大卡片恢复显示
 $(".div-card3").hover(function () {
 }, function () {
@@ -33,7 +31,6 @@ hoverOnCommentBarrage = false;
 document.getElementById("todayCard").classList.remove('hide');
 document.getElementById('todayCard').style.zIndex = 1;
 });
-
 function buttonClick() {
 if (document.getElementById("todayCard")) {
   document.getElementById("todayCard").classList.add('hide');
@@ -78,17 +75,14 @@ var anzhiyu = {
       navMusicEl.classList.add("stretch");
     }
   },
-
   //音乐上一曲
   musicSkipBack: function () {
     document.querySelector("#nav-music meting-js").aplayer.skipBack();
   },
-
   //音乐下一曲
   musicSkipForward: function () {
     document.querySelector("#nav-music meting-js").aplayer.skipForward();
   },
-
   //获取音乐中的名称
   musicGetName: function () {
     var x = $(".aplayer-title");
@@ -99,7 +93,6 @@ var anzhiyu = {
     return arr[0];
   },
 };
-
 // 音乐绑定事件
 function musicBindEvent() {
   document.querySelector("#nav-music .aplayer-music").addEventListener("click", function () {
@@ -109,3 +102,106 @@ function musicBindEvent() {
     anzhiyu.musicToggle(false);
   });
 }
+// SOCIAL PANEL JS
+if(1){
+const floating_btn = document.querySelector('#mydivheader');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
+}
+// 让DIV元素可拖动：
+dragElement(document.getElementById("mydiv"));
+function dragElement(elmnt) {
+// 初始化变量
+var pos1 = pos2 = pos3 = pos4 =0;
+// 在header上添加鼠标按下的事件监听器
+elmnt.querySelector("#mydivheader").onmousedown = dragMouseDown;
+function dragMouseDown(e) {
+    // 获取鼠标在开始时的位置
+    e = e || window.event; // 兼容IE
+    e.preventDefault(); // 阻止默认行为
+    pos3 = e.clientX; // 水平位置
+    pos4 = e.clientY; // 垂直位置
+    // 在文档上添加鼠标移动和松开的事件监听器
+    document.onmousemove = elementDrag; 
+    document.onmouseup = closeDragElement; 
+}
+function elementDrag(e) {
+    // 计算新的光标位置
+    e = e || window.event; // 兼容IE
+    e.preventDefault(); // 阻止默认行为
+    pos1 = pos3 - e.clientX; // 水平差值
+    pos2 = pos4 - e.clientY; // 垂直差值
+    pos3 = e.clientX; // 新水平位置
+    pos4 = e.clientY; // 新垂直位置
+   // 设置新元素位置 
+   elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+   elmnt.style.left= (elmnt.offsetLeft -pos1) + "px";
+}
+function closeDragElement() {
+   // 当鼠标按钮松开时，移除事件监听器 
+   document.onmouseup= null;
+   document.onmousemove= null;
+}
+}
+// 帧率
+function pjaxqj(){
+if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {
+	var rAF = function () {
+		return (
+			window.requestAnimationFrame ||
+			window.webkitRequestAnimationFrame ||
+			function (callback) {
+				window.setTimeout(callback, 1000 / 60);
+			}
+		);
+	}();
+	var frame = 0;
+	var allFrameCount = 0;
+	var lastTime = Date.now();
+	var lastFameTime = Date.now();
+	var loop = function () {
+		var now = Date.now();
+		var fs = (now - lastFameTime);
+		var fps = Math.round(1000 / fs);
+		lastFameTime = now;
+		// 不置 0，在动画的开头及结尾记录此值的差值算出 FPS
+		allFrameCount++;
+		frame++;
+		if (now > 1000 + lastTime) {
+      var fps = Math.round((frame * 1000) / (now - lastTime));
+			if (fps <= 5) {
+				var kd = `🤢`
+        var kd2 = `一秒一帧🤢`
+			} else if (fps <= 15) {
+				var kd = `😖`
+        var kd2 = `非常难受😖`
+			} else if (fps <= 25) {
+				var kd = `😨`
+        var kd2 = `较低帧率😨`
+			} else if (fps < 35) {
+				var kd = `🙄`
+        var kd2 = `不太流畅🙄`
+			} else if (fps <= 45) {
+				var kd = `😁`
+        var kd2 = `还不错哦😁`
+			} else {
+				var kd = `🤣`
+        var kd2 = `十分流畅🤣`
+			}
+			document.getElementById("mydivheader").innerHTML = `${kd}`;
+      document.getElementById("divwhy").innerHTML = `FPS:${fps} ${kd2}`;
+			frame = 0;
+			lastTime = now;
+		};
+		rAF(loop);
+	}
+	loop();
+  } else {
+	document.getElementById("mydivheader").style = "display:none!important"
+}  }
