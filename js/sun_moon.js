@@ -18,7 +18,6 @@ function switchNightMode() {
           document.getElementById("sun").style.opacity = "0";
           document.getElementById("moon").style.opacity = "1";
       }, 1000);
-
       activateDarkMode()
       saveToLocal.set('theme', 'dark', 2)
       document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')
@@ -55,7 +54,6 @@ function loadData(name, time) {
     return 0;
 }
 // 上面两个函数如果你有其他需要存取数据的功能，也可以直接使用
-
 // 读取背景
 try {
     let data = loadData('blogbg', 1440)
@@ -73,46 +71,43 @@ function changeBg(s, flag) {
     } else bg.style.backgroundImage = s
     if (!flag) { saveData('blogbg', s) }
 }
-
 // 以下为2.0新增内容
-
 // 创建窗口
-var winbox = ''
-
+var winbox = "";
 function createWinbox() {
-    let div = document.createElement('div')
-    document.body.appendChild(div)
-    winbox = WinBox({
-        id: 'changeBgBox',
-        index: 999,
-        title: "切换背景",
-        x: "center",
-        y: "center",
-        minwidth: '300px',
-        height: "60%",
-        background: 'var(--leonus-blue)',
-        onmaximize: () => { div.innerHTML = `<style>body::-webkit-scrollbar {display: none;}div#changeBgBox {width: 100% !important;}</style>` },
-        onrestore: () => { div.innerHTML = '' }
-    });
-    winResize();
-    window.addEventListener('resize', winResize)
-
+  let div = document.createElement("div");
+  document.body.appendChild(div);
+  winbox = WinBox({
+    id: "meihuaBox",
+    index: 99,
+    title: "美化设置",
+    x: "left",
+    y: "center",
+    minwidth: "300px",
+    height: "60%",
+    background: 'var(--theme-color)',
+    onmaximize: () => {
+      div.innerHTML = `<style>body::-webkit-scrollbar {display: none;} div#meihuaBox {width: 100% !important;}</style>`;
+    },
+    onrestore: () => {
+      div.innerHTML = "";
+    },
+  });
+  winResize();
+  window.addEventListener("resize", winResize);
     // 每一类我放了一个演示，直接往下复制粘贴 a标签 就可以，需要注意的是 函数里面的链接 冒号前面需要添加反斜杠\进行转义
     winbox.body.innerHTML = `
     <div id="article-container" style="padding:10px;">
-
     <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:#5fcdff;display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
     <div class="bgbox">
     <button onclick="javascript:loadScript('https://cdn.hlcssc.com/cdn/js/xh/xh3.js');" style="background:#fc8cff;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"></i> 樱花飘落</button>
     <button onclick="javascript:loadScript('https://cdn.hlcssc.com/cdn/js/xh/xh1.js');" style="background:#3cf4ff;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"></i> 雪花飘落</button>
     <button onclick="javascript:loadScript('https://cdn.hlcssc.com/cdn/js/xh/xh2.js');" style="background:#ff6224;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"></i> 秋叶飘落</button>
     </div>
-    
     <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>
     <div class="bgbox">
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.xjh.me/random_img.php?return=302)" class="pimgbox" onclick="changeBg('url(https\://img.xjh.me/random_img.php?return=302)')"></a>
     </div>
-    
     <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>随机二次元壁纸</h2>
     <div class="bgbox">
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://www.dmoe.cc/random.php)" class="imgbox" onclick="changeBg('url(https\://www.dmoe.cc/random.php)')"></a>
@@ -127,17 +122,13 @@ function createWinbox() {
 	<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.btstu.cn/sjbz/api.php)" class="imgbox" onclick="changeBg('url(https\://api.btstu.cn/sjbz/api.php)')"></a>
 	<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.ixiaowai.cn/gqapi/gqapi.php)" class="imgbox" onclick="changeBg('url(https\://api.ixiaowai.cn/gqapi/gqapi.php)')"></a>
     </div>
-    
-    
     <h2 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h2>
     <div class="bgbox">
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
 	<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(90deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%)" onclick="changeBg('linear-gradient(90deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%)')"></a>
 	<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #005f58, #00205a)" onclick="changeBg('linear-gradient(to right, #005f58, #00205a)')"></a>
 	<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #38ff00, #00dfff)" onclick="changeBg('linear-gradient(to right, #38ff00, #00dfff)')"></a>
-	
     </div>
-    
     <h2 id="纯色"><a href="#纯色" class="headerlink" title="纯色"></a>纯色</h2>
     <div class="bgbox">
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #7D9D9C" onclick="changeBg('#7D9D9C')"></a>
@@ -147,22 +138,37 @@ function createWinbox() {
     </div>
 `;
 }
-
-// 适应窗口大小
-function winResize() {
-    var offsetWid = document.documentElement.clientWidth;
-    if (offsetWid <= 768) {
+// 恢复默认背景
+function resetBg() {
+    localStorage.removeItem('blogbg');
+    reload();
+  }
+  // 恢复默认设置并刷新页面
+  function reset() {
+    clearItem();
+    reload();
+  }
+  // 适应窗口大小
+  function winResize() {
+    try {
+      var offsetWid = document.documentElement.clientWidth;
+      if (offsetWid <= 768) {
         winbox.resize(offsetWid * 0.95 + "px", "90%").move("center", "center");
-    } else {
+      } else {
         winbox.resize(offsetWid * 0.6 + "px", "70%").move("center", "center");
+      }
+    } catch (err) {
+      // console.log("Pjax毒瘤抽风运行winResize方法🙄🙄🙄");
     }
-}
-
-// 切换状态，窗口已创建则控制窗口显示和隐藏，没窗口则创建窗口
-function toggleWinbox() {
-    if (document.querySelector('#changeBgBox')) winbox.toggleClass('hide');
-    else createWinbox();
-}
+  }
+  // 切换状态，窗口已创建则控制窗口显示和隐藏，没窗口则创建窗口
+  function toggleWinbox() {
+    if (document.querySelector("#meihuaBox")) {
+      winbox.toggleClass("hide");
+    } else {
+      createWinbox();
+    };
+  }
 // 按钮加载雪花
 function loadScript(url){ 
   //查找带有“canvas_sakura”ID的<canvas>标记
@@ -201,4 +207,3 @@ function loadScript(url){
   }
   document.body.appendChild(script);
 }
-

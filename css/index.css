@@ -7766,7 +7766,7 @@ svg use {
 .down-list .list-top li {
   border-radius: 6px;
   display: block;
-  width: calc(90% / 3 - 10px);
+  width: calc(100% / 3 - 41px);
   border: 1px solid rgba(137,137,137,0.412);
   padding: 20px 15px;
   margin: 0 9px 9px 0;
@@ -7912,7 +7912,7 @@ h-5>a {
 }
 @media screen and (max-width: 1300px) {
   .down-list .list-top ul {
-    width: 91%;
+    width: auto;
   }
 }
 #rightside>div>button,
@@ -9293,7 +9293,12 @@ span.mathjax-overflow {
     width: 100%;
   }
   .down-list .list-top {
-    width: 1080px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1300px) and (max-width: 1100px) {
+  .down-list {
+    display: none !important;
   }
 }
 :root {
