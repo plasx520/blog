@@ -476,3 +476,60 @@ details:not(.tk-admin-config-group) summary:hover::marker {
       transform: translateX(0);
     }
   }
+
+
+  .alfa {
+	background-image: url(https://cdn.hlcssc.com/img/indeximg/xtimg.webp); 
+	width: 100%;
+	height: 260px;
+	border-radius: 12px;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	}
+	
+	.bravo {
+	background-image: url(https://cdn.hlcssc.com/img/indeximg/dtimg.webp); 
+	height: 260px;
+	resize: horizontal; 
+	position: absolute; 
+	top: 0; left: 0; 
+	min-width: 0;
+	max-width: 100%; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+	}
+	.bravo:before {
+	content: '↔';
+	background: rgba(0,0,0,.7);
+	font-size: 18px; 
+	color: white; 
+	top: 0; right: 0px;
+	height: 100%;
+	line-height: 260px;  
+	position: absolute; 
+	}
+	
+	.charly{  
+	resize: horizontal; 
+	opacity: 0; 
+	position: relative; 
+	top: -20px;
+	left: 0px; 
+	margin-right: 0px;  
+	width: 0px;
+    height: 15px; 
+	max-width: 100%; 
+	min-width: 15px; 
+	outline: 0 solid transparent; 
+	cursor: move;
+	cursor: all-scroll;
+	transform: scaley(35);
+	transform-origin: center center;
+	animation: delta 5s 1 normal ease-in-out 1s;
+	}
+	@keyframes delta {
+	30% {width: 500px}
+	60% {width: 150px}
+	80% {width: 250px}
+	}
