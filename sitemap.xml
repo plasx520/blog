@@ -1065,14 +1065,14 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/</loc>
+    <loc>http://blog.4t.pw/tags/demo/</loc>
     <lastmod>2023-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/tags/demo/</loc>
+    <loc>http://blog.4t.pw/tags/%E9%AD%94%E6%94%B9/</loc>
     <lastmod>2023-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1121,6 +1121,13 @@
   </url>
   
   <url>
+    <loc>http://blog.4t.pw/tags/cdn/</loc>
+    <lastmod>2023-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.4t.pw/tags/pdf/</loc>
     <lastmod>2023-03-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -1135,7 +1142,7 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/tags/cdn/</loc>
+    <loc>http://blog.4t.pw/tags/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1206,13 +1213,6 @@
   
   <url>
     <loc>http://blog.4t.pw/tags/%E5%9B%BE%E7%89%87/</loc>
-    <lastmod>2023-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.4t.pw/tags/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1298,13 +1298,6 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/categories/hexo%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2023-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.4t.pw/categories/cdn/</loc>
     <lastmod>2023-03-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -1312,7 +1305,7 @@
   </url>
   
   <url>
-    <loc>http://blog.4t.pw/categories/%E7%BB%BF%E8%89%B2%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>http://blog.4t.pw/categories/hexo%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2023-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1320,6 +1313,13 @@
   
   <url>
     <loc>http://blog.4t.pw/categories/%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2023-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.4t.pw/categories/%E7%BB%BF%E8%89%B2%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2023-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

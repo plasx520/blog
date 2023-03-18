@@ -3013,7 +3013,10 @@ figure.highlight pre .javascript .function {
   }
 }
 @media screen and (max-width: 1200px) {
-  .aside-content {
+  .div-pingbi {
+    display: none;
+  }
+  .aside-content #newYear {
     display: none;
   }
   .layout > div:first-child {
