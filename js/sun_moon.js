@@ -179,31 +179,19 @@ function loadScript(url){
     // Remove the tags
     canvas.remove();
     script.remove();
-        // The tags do not exist, do something else
-        var script = document.createElement("script");
-        script.setAttribute('id', 'luoye');
-        script.type = "text/javascript"; 
-        script.src = url;
-        if (script.readyState){//IE 
-           script.onreadystatechange = function(){ 
-              if (script.readyState ==  "loaded" || script.readyState == "complete"){ 
-                 script.onreadystatechange = null;
-              } 
-           }; 
-        }
-  } else {
-    // The tags do not exist, do something else
-    var script = document.createElement("script");
-    script.setAttribute('id', 'luoye');
-    script.type = "text/javascript"; 
-    script.src = url;
-    if (script.readyState){//IE 
-       script.onreadystatechange = function(){ 
-          if (script.readyState ==  "loaded" || script.readyState == "complete"){ 
-             script.onreadystatechange = null;
-          } 
-       }; 
-    }
+  }
+  // The tags do not exist, do something else
+  var script = document.createElement("script");
+  script.setAttribute('id', 'luoye');
+  script.type = "text/javascript"; 
+  script.src = url;
+  if (script.readyState){//IE 
+     script.onreadystatechange = function(){ 
+        if (script.readyState ==  "loaded" || script.readyState == "complete"){ 
+           script.onreadystatechange = null;
+        } 
+     }; 
   }
   document.body.appendChild(script);
 }
+
