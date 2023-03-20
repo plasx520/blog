@@ -2895,7 +2895,6 @@
           {
             "name": "redirect",
             "urls": [
-              "proxy://do=live&type=txt&ext=aHR0cHM6Ly9pbWcuNHQucHcvbXl0dl8yLnR4dA==",
               "proxy://do=live&type=txt&ext=aHR0cHM6Ly9pbWcuNHQucHcvemhpYm8udHh0"
             ]
           }
