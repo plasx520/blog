@@ -8,14 +8,6 @@
   #page:has(#about-page) .page-title {
     display: none;
   }
-  #web_bg {
-    /* 背景图像的地址（url括号里）  */
-    background: url(https://cdn.hlcssc.com/img/zhaopian/202303041531872.webp);
-    /* 背景图像不重复 */
-    background-repeat: no-repeat;
-    /* 背景图像大小 */
-    background-size: cover;
-  }
   .page:has(#about-page) #footer-wrap {
     opacity: 1;
     overflow: visible;
@@ -23,12 +15,6 @@
     min-height: 16px;
     color: #666;
   }
-  
-  #web_bg ~ .page:has(#about-page) {
-    background: rgb(209 231 241 / 83%);
-    backdrop-filter: saturate(130%) blur(3px);
-  }
-  
   #about-page .author-box {
     position: relative;
     display: flex;
@@ -51,13 +37,14 @@
   #about-page .author-box .image-dot {
     width: 45px;
     height: 45px;
-    background: #6bdf8f;
+    background: #2989af;
     position: absolute;
     border-radius: 50%;
-    border: 6px solid var(--recent-post-bgcolor);
+    border: 8px solid #cccccc;
     top: 50%;
     left: 50%;
     transform: translate(-21px, -21px);
+    z-index: 1;
   }
   
   .author-content {

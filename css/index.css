@@ -2676,7 +2676,7 @@ figure.highlight pre .javascript .function {
     transition: var(--recent-post-transition);
   }
   .recent-posts .recent-post-item .recent-post-content:hover .recent-post-cover {
-    width: 10%;
+    width: 0%;
     -webkit-transition: var(--recent-post-transition);
     -moz-transition: var(--recent-post-transition);
     -o-transition: var(--recent-post-transition);
@@ -2730,7 +2730,7 @@ figure.highlight pre .javascript .function {
   }
   .recent-posts .recent-post-item .recent-post-content .recent-post-info {
     height: 200px;
-    width: calc(60% - 80px);
+    width: calc(70% - 80px);
   }
   .recent-posts .recent-post-item .recent-post-content .recent-post-info .article-title {
     margin: 0px 40px;
@@ -5592,6 +5592,7 @@ h1.page-title + .tag-cloud-list {
   transition: 0.1s;
   height: 150px;
   color: #e7e7e7;
+  overflow: hidden;
 }
 .article-sort-item-a {
   position: absolute;
@@ -5685,8 +5686,8 @@ h1.page-title + .tag-cloud-list {
 }
 .article-sort-item:hover:not(.year) {
   background-color: var(--heo-zhuti);
-  -webkit-box-shadow: 0 0 10px #1688c9;
-  box-shadow: 0 0 10px #1688c9;
+  -webkit-box-shadow: 0 0 6px var(--heo-zhuti);
+  box-shadow: 0 0 6px var(--heo-zhuti);
 }
 .article-sort-item-info:hover {
   text-shadow: 0px 0px 5px rgba(0,0,0,0.855);

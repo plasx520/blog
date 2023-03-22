@@ -151,7 +151,12 @@ function waterfall(a) {
         document.getElementById("comment-tips") && document.getElementById("comment-tips").classList.add("show");
     },
   };
-  
+  function pjaxqj() {
+    if (document.querySelector("#nav-music meting-js").aplayer && !document.querySelector("#nav-music meting-js").aplayer.audio.paused) {
+      anzhiyu.musicToggle();
+    } 
+   }
   anzhiyu.changeTimeInEssay();
   anzhiyu.reflashEssayWaterFall();
-  
+
+
