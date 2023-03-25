@@ -1081,4 +1081,51 @@ center#name-container {
   font-size: 35px;
   }
 
- 
+ /* 翻页 */
+ #pagination a.extend.next .pagination_tips_next {
+  margin-left: -32px;
+  transition: 0.3s;
+  opacity: 0;
+}
+#pagination a.extend.prev .pagination_tips_prev {
+  margin-right: -32px;
+  transition: 0.3s;
+  opacity: 0;
+}
+#pagination a.extend.prev:hover .pagination_tips_prev {
+  margin-right: 0px;
+  opacity: 1;
+}
+#pagination a.extend.next:hover .pagination_tips_next {
+  margin-left: 0px;
+  opacity: 1;
+}
+#pagination a.extend.next, #pagination a.extend.prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  position: absolute;
+}
+#pagination .pagination {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#pagination .pagination a.extend.prev {
+  left: -5px;
+}
+#pagination .pagination a.extend.next {
+  right: -5px;
+}
+#archive a.extend.next, #archive a.extend.prev, #archive .page-number{
+  box-shadow: 0px 0px 2px 1.5px var(--heo-theme);
+  border-radius: 8px;
+  background: var(--card-bg);
+}
+#archive .pagination a.extend.prev {
+  left: 25px;
+}
+#archive .pagination a.extend.next {
+  right: 25px;
+}
