@@ -6453,7 +6453,7 @@ hr:before {
   position: relative;
   display: inline-block;
   padding: 0 1rem;
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 3 - 26px);
   font-weight: 700;
   margin: 1%;
   border-radius: 8px;
