@@ -1129,3 +1129,45 @@ center#name-container {
 #archive .pagination a.extend.next {
   right: 25px;
 }
+/* mac侧边栏样式 */
+#aside-content .item-headline {
+  color: var(--heo-theme);
+  text-transform: uppercase;
+  margin-top: -11px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+#aside-content .item-headline:hover:after {
+  width: 80px;
+}
+#aside-content .item-headline:after {
+  content: "";
+  background-color: #666666;
+  left: 0;
+  width: 66px;
+  height: 2px;
+  bottom: -1px;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#aside-content .item-headline:before {
+  display: inline-block;
+  z-index: 1;
+  content: " ";
+  position: absolute;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #f92900!important;
+  width: 12px;
+  height: 12px;
+  -webkit-box-shadow: 18px 0 #fbc606, 36px 0 #448ef6;
+  box-shadow: 18px 0 #fbc606, 36px 0 #448ef6;
+  float: right;
+  right: 40px;
+  top: 12px;
+  border-color: transparent;
+}

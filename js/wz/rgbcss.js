@@ -1,68 +1,18 @@
-document.write("<p>");
-document.write("<script type=\"text\/javascript\">");
-document.write("farbbibliothek = new Array();");
-document.write("farbbibliothek[0] = new Array(\"#FF0000\",\"#FF1100\",\"#FF2200\",\"#FF3300\",\"#FF4400\",\"#FF5500\",\"#FF6600\",\"#FF7700\",\"#FF8800\",\"#FF9900\",\"#FFaa00\",\"#FFbb00\",\"#FFcc00\",\"#FFdd00\",\"#FFee00\",\"#FFff00\",\"#FFee00\",\"#FFdd00\",\"#FFcc00\",\"#FFbb00\",\"#FFaa00\",\"#FF9900\",\"#FF8800\",\"#FF7700\",\"#FF6600\",\"#FF5500\",\"#FF4400\",\"#FF3300\",\"#FF2200\",\"#FF1100\"); ");
-document.write("farbbibliothek[1] = new Array(\"#00FF00\",\"#000000\",\"#00FF00\",\"#00FF00\"); ");
-document.write("farbbibliothek[2] = new Array(\"#00FF00\",\"#FF0000\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\",\"#00FF00\");  ");
-document.write("farbbibliothek[3] = new Array(\"#FF0000\",\"#FF4000\",\"#FF8000\",\"#FFC000\",\"#FFFF00\",\"#C0FF00\",\"#80FF00\",\"#40FF00\",\"#00FF00\",\"#00FF40\",\"#00FF80\",\"#00FFC0\",\"#00FFFF\",\"#00C0FF\",\"#0080FF\",\"#0040FF\",\"#0000FF\",\"#4000FF\",\"#8000FF\",\"#C000FF\",\"#FF00FF\",\"#FF00C0\",\"#FF0080\",\"#FF0040\"); ");
-document.write("farbbibliothek[4] = new Array(\"#FF0000\",\"#EE0000\",\"#DD0000\",\"#CC0000\",\"#BB0000\",\"#AA0000\",\"#990000\",\"#880000\",\"#770000\",\"#660000\",\"#550000\",\"#440000\",\"#330000\",\"#220000\",\"#110000\",\"#000000\",\"#110000\",\"#220000\",\"#330000\",\"#440000\",\"#550000\",\"#660000\",\"#770000\",\"#880000\",\"#990000\",\"#AA0000\",\"#BB0000\",\"#CC0000\",\"#DD0000\",\"#EE0000\"); ");
-document.write("farbbibliothek[5] = new Array(\"#000000\",\"#000000\",\"#000000\",\"#FFFFFF\",\"#FFFFFF\",\"#FFFFFF\"); ");
-document.write("farbbibliothek[6] = new Array(\"#0000FF\",\"#FFFF00\"); ");
-document.write("farben = farbbibliothek[1];");
-document.write("function farbschrift()");
-document.write("{");
-document.write("    for(var i=0 ; i<Buchstabe.length; i++)");
-document.write("    {");
-document.write("        document.getElementById(\"a\"+i).style.color=farben[i];");
-document.write("    }");
-document.write("  farbverlauf();");
-document.write("}");
-document.write("function string2array(text)");
-document.write("{");
-document.write("    Buchstabe = new Array();");
-document.write("    while(farben.length<text.length)");
-document.write("    {");
-document.write("      farben = farben.concat(farben);");
-document.write("    }");
-document.write("    k=0;");
-document.write("    while(k<=text.length)");
-document.write("    {");
-document.write("      Buchstabe[k] = text.charAt(k);");
-document.write("      k++;");
-document.write("    }");
-document.write("}");
-document.write("function divserzeugen()");
-document.write("{");
-document.write("    for(var i=0 ; i<Buchstabe.length; i++)");
-document.write("    {");
-document.write("        document.write(\"<span id='a\"+i+\"' class='a\"+i+\"'>\"+Buchstabe[i] + \"<\/span>\");");
-document.write("    }");
-document.write("    farbschrift();");
-document.write("}");
-document.write("var a=1;");
-document.write("function farbverlauf()");
-document.write("{");
-document.write("    for(var i=0 ; i<farben.length; i++)");
-document.write("    {");
-document.write("      farben[i-1]=farben[i];");
-document.write("    }");
-document.write("    farben[farben.length-1]=farben[-1];");
-document.write("    setTimeout(\"farbschrift()\",60);");
-document.write("}");
-document.write("var farbsatz=1;");
-document.write("function farbtauscher()");
-document.write("{");
-document.write("    farben = farbbibliothek[farbsatz];");
-document.write("    while(farben.length<text.length) ");
-document.write("    {");
-document.write("      farben = farben.concat(farben);");
-document.write("    }");
-document.write("    farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001));");
-document.write("}");
-document.write("setInterval(\"farbtauscher()\",5000);");
-document.write("text= \"≡=→│引领热门巅峰 _ 怕冷无所不能│←=≡\";");
-document.write("string2array(text);");
-document.write("divserzeugen();");
-document.write("\/\/document.write(text); ");
-document.write("<\/script>");
-document.write("<\/p>");
+// Define the color library
+farbbibliothek = new Array();
+farbbibliothek[0] = new Array("#FF0000", "#FF1100", "#FF2200", "#FF3300", "#FF4400", "#FF5500", "#FF6600", "#FF7700", "#FF8800", "#FF9900", "#FFaa00", "#FFbb00", "#FFcc00", "#FFdd00", "#FFee00", "#FFff00", "#FFee00", "#FFdd00", "#FFcc00", "#FFbb00", "#FFaa00", "#FF9900", "#FF8800", "#FF7700", "#FF6600", "#FF5500", "#FF4400", "#FF3300", "#FF2200", "#FF1100");
+farbbibliothek[1] = new Array("#00FF00", "#000000", "#00FF00", "#00FF00");
+farbbibliothek[2] = new Array("#00FF00", "#FF0000", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00"); 
+farbbibliothek[3] = new Array("#FF0000", "#FF4000", "#FF8000", "#FFC000", "#FFFF00", "#C0FF00", "#80FF00", "#40FF00", "#00FF00", "#00FF40", "#00FF80", "#00FFC0", "#00FFFF", "#00C0FF", "#0080FF", "#0040FF", "#0000FF", "#4000FF", "#8000FF", "#C000FF", "#FF00FF", "#FF00C0", "#FF0080", "#FF0040");
+farbbibliothek[4] = new Array("#FF0000", "#EE0000", "#DD0000", "#CC0000", "#BB0000", "#AA0000", "#990000", "#880000", "#770000", "#660000", "#550000", "#440000", "#330000", "#220000", "#110000", "#000000", "#110000", "#220000", "#330000", "#440000", "#550000", "#660000", "#770000", "#880000", "#990000", "#AA0000", "#BB0000", "#CC0000", "#DD0000", "#EE0000"); 
+farbbibliothek[5] = new Array("#000000", "#000000", "#000000", "#FFFFFF", "#FFFFFF", "#FFFFFF");
+farbbibliothek[6] = new Array("#0000FF", "#FFFF00");
+
+// Select the colors to use
+farben = farbbibliothek[1];
+
+// Select the element to change
+var siteTitle = document.getElementById("site-title");
+
+// Change the content of the element with the selected colors
+siteTitle.innerHTML = "<span style='color:" + farben[0] + ";'>" + "怕" + "</span>" + "<span style='color:" + farben[1] + ";'>" + "冷" + "</span>" + "<span style='color:" + farben[2] + ";'>" + "爱" + "</span>" + "<span style='color:" + farben[3] + ";'>" + "上" + "</span>" + "<span style='color:" + farben[2] + ";'>" + "雪" + "</span>";

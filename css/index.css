@@ -3430,7 +3430,6 @@ h1.page-title + .tag-cloud-list {
   margin-top: 0;
 }
 #aside-content .card-more-btn {
-  float: right;
   color: inherit;
 }
 #aside-content .card-more-btn:hover {
