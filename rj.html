@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软件管家</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            padding: 20px 0;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333;
+        }
+        .category-list {
+            list-style: none;
+        }
+        .category-item {
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .category-item:hover, .category-item.active {
+            background-color: #333;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .search-bar {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        .search-input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #2d2d2d;
+            color: #e0e0e0;
+        }
+        .search-input::placeholder {
+            color: #888;
+        }
+        .search-button {
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .search-button:hover {
+            background-color: #0d8bf2;
+        }
+        .software-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .software-card {
+            background-color: #1e1e1e;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            padding: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .software-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .software-card::before {
+            content: attr(data-icon);
+            position: absolute;
+            right: -15px;
+            bottom: -15px;
+            font-size: 100px;
+            opacity: 0.1;
+            z-index: -1;
+            transform: rotate(-10deg);
+            color: var(--icon-color, #444);
+            filter: blur(2px);
+        }
+        .software-name {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #e0e0e0;
+            /* 添加文本溢出处理 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 500;
+        }
+        /* 添加软件名称悬停时显示完整名称的提示 */
+        .software-name:hover {
+            white-space: normal;
+            overflow: visible;
+            word-break: break-word;
+        }
+        /* 添加软件描述区域 */
+        .software-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #1c461c7d;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: auto; /* 将按钮推到卡片底部 */
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #3d8b407b;
+        }
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .tag {
+            background-color: #2d2d2d;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: #aaa;
+        }
+        .header {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            border-bottom: 1px solid #333;
+        }
+        .no-results {
+            text-align: center;
+            padding: 30px;
+            font-size: 18px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>软件管家</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>软件分类</h2>
+            <ul class="category-list" id="categoryList">
+                <!-- 分类将通过JavaScript动态加载 -->
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="search-bar">
+                <input type="text" class="search-input" id="searchInput" placeholder="搜索软件...">
+                <button class="search-button" id="searchButton">搜索</button>
+            </div>
+            <div class="software-grid" id="softwareGrid">
+                <!-- 软件卡片将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 全局变量存储JSON数据
+        let softwareData = null;
+        let currentCategory = null;
+        
+        // 加载JSON数据
+        async function loadData() {
+            try {
+                const response = await fetch('ruanjian.json');
+                softwareData = await response.json();
+                
+                // 初始化分类列表
+                initCategories();
+                
+                // 默认显示所有软件
+                displaySoftware();
+            } catch (error) {
+                console.error('加载数据失败:', error);
+                document.getElementById('softwareGrid').innerHTML = '<div class="no-results">加载数据失败，请稍后再试</div>';
+            }
+        }
+        
+        // 初始化分类列表
+        function initCategories() {
+            const categoryList = document.getElementById('categoryList');
+            categoryList.innerHTML = '<li class="category-item active" data-category="all">全部软件</li>';
+            
+            if (softwareData && softwareData.fenlei && softwareData.fenlei.length > 0) {
+                const categories = softwareData.fenlei[0];
+                
+                for (const category in categories) {
+                    if (category !== '1') { // 排除测试分类
+                        const li = document.createElement('li');
+                        li.className = 'category-item';
+                        li.setAttribute('data-category', category);
+                        li.textContent = category;
+                        categoryList.appendChild(li);
+                    }
+                }
+            }
+            
+            // 添加分类点击事件
+            const categoryItems = document.querySelectorAll('.category-item');
+            categoryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    categoryItems.forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    currentCategory = this.getAttribute('data-category');
+                    displaySoftware();
+                });
+            });
+        }
+        
+        // 显示软件列表
+        function displaySoftware(searchTerm = '') {
+            const softwareGrid = document.getElementById('softwareGrid');
+            softwareGrid.innerHTML = '';
+            
+            if (!softwareData || !softwareData.dizhi || softwareData.dizhi.length === 0) {
+                softwareGrid.innerHTML = '<div class="no-results">没有找到软件数据</div>';
+                return;
+            }
+            
+            const softwareList = softwareData.dizhi[0];
+            let hasResults = false;
+            
+            for (const name in softwareList) {
+                // 排除测试数据
+                if (name === '22222222222' || name === '11111111111111111' || name === '2') {
+                    continue;
+                }
+                
+                // 搜索过滤
+                if (searchTerm && !name.toLowerCase().includes(searchTerm.toLowerCase())) {
+                    continue;
+                }
+                
+                // 分类过滤
+                if (currentCategory && currentCategory !== 'all') {
+                    const categoryTags = softwareData.fenlei[0][currentCategory];
+                    let matchesCategory = false;
+                    
+                    for (const tag of categoryTags) {
+                        if (name.includes(tag)) {
+                            matchesCategory = true;
+                            break;
+                        }
+                    }
+                    
+                    if (!matchesCategory) {
+                        continue;
+                    }
+                }
+                
+                hasResults = true;
+                
+                // 创建软件卡片
+                const card = document.createElement('div');
+                card.className = 'software-card';
+                
+                // 添加随机图标和颜色
+                const icons = ['📱', '💻', '🖥️', '🎮', '🎬', '📷', '🔍', '📊', '🛠️', '🔒', '📁', '🎨', '🎵', '📝', '⚙️'];
+                const randomIcon = icons[Math.floor(Math.random() * icons.length)];
+                card.setAttribute('data-icon', randomIcon);
+                
+                // 生成随机颜色
+                const hue = Math.floor(Math.random() * 360);
+                const saturation = Math.floor(Math.random() * 30) + 20; // 20-50%
+                const lightness = Math.floor(Math.random() * 20) + 30; // 30-50%
+                card.style.setProperty('--icon-color', `hsl(${hue}, ${saturation}%, ${lightness}%)`);
+                
+                const infoDiv = document.createElement('div');
+                infoDiv.className = 'software-info';
+                
+                const nameElem = document.createElement('div');
+                nameElem.className = 'software-name';
+                nameElem.textContent = name;
+                nameElem.title = name; // 添加title属性，鼠标悬停时显示完整名称
+                
+                // 添加标签
+                const tagList = document.createElement('div');
+                tagList.className = 'tag-list';
+                
+                // 查找匹配的标签
+                for (const category in softwareData.fenlei[0]) {
+                    if (category !== '1') {
+                        const tags = softwareData.fenlei[0][category];
+                        for (const tag of tags) {
+                            if (name.includes(tag)) {
+                                const tagElem = document.createElement('span');
+                                tagElem.className = 'tag';
+                                tagElem.textContent = tag;
+                                tagList.appendChild(tagElem);
+                            }
+                        }
+                    }
+                }
+                
+                const downloadLink = document.createElement('a');
+                downloadLink.className = 'download-button';
+                downloadLink.href = softwareList[name];
+                downloadLink.textContent = '下载';
+                downloadLink.target = '_blank';
+                
+                infoDiv.appendChild(nameElem);
+                infoDiv.appendChild(tagList);
+                card.appendChild(infoDiv);
+                card.appendChild(downloadLink);
+                softwareGrid.appendChild(card);
+            }
+            
+            if (!hasResults) {
+                softwareGrid.innerHTML = '<div class="no-results">没有找到匹配的软件</div>';
+            }
+        }
+        
+        // 搜索功能
+        function setupSearch() {
+            const searchButton = document.getElementById('searchButton');
+            const searchInput = document.getElementById('searchInput');
+            
+            // 保留原有的按钮点击和回车键搜索功能
+            searchButton.addEventListener('click', function() {
+                const searchTerm = searchInput.value.trim();
+                displaySoftware(searchTerm);
+            });
+            
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    const searchTerm = searchInput.value.trim();
+                    displaySoftware(searchTerm);
+                }
+            });
+            
+            // 添加实时搜索功能 - 在输入时就开始筛选
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.trim();
+                displaySoftware(searchTerm);
+            });
+        }
+        
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            loadData();
+            setupSearch();
+        });
+    </script>
+</body>
+</html>
