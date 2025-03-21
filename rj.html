@@ -14,121 +14,311 @@
         body {
             background-color: #121212;
             color: #e0e0e0;
+            transition: background-color 0.3s ease;
         }
         .container {
             display: flex;
             min-height: 100vh;
+            height: 100%; /* 添加这一行 */
+            width: 100%; /* 添加这一行 */
         }
         .sidebar {
-            width: 200px;
+            width: 220px;
             background-color: #1e1e1e;
             color: #e0e0e0;
             padding: 20px 0;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        
+        /* 修改main-content样式 */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            transition: all 0.3s ease;
+            min-height: calc(100vh - 80px); /* 添加这一行，减去header高度 */
+            width: 100%; /* 添加这一行 */
+            display: flex; /* 添加这一行，使用flex布局 */
+            flex-direction: column; /* 修改为纵向排列 */
+        }
+        
+        /* 添加内容容器样式，用于并排放置软件网格和公告栏 */
+        .content-container {
+            display: flex;
+            width: 100%;
+        }
+        
+        /* 修改software-grid样式，设置宽度为80% */
+        .software-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            animation: fadeIn 0.5s ease-out;
+            width: 80%; /* 添加这一行，设置宽度为80% */
+        }
+        
+        /* 添加公告栏样式 */
+        .announcement-board {
+            width: 30%;
+            margin-left: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            padding: 20px;
+            height: fit-content;
+            border: 1px solid #333;
+            position: sticky;
+            top: 100px;
+        }
+        
+        .announcement-title {
+            font-size: 18px;
+            color: #2196F3;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333;
+            text-align: center;
+        }
+        
+        .announcement-content {
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .announcement-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #333;
+        }
+        
+        .announcement-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .announcement-date {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        /* 响应式设计优化 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .search-bar {
+                flex-direction: column;
+            }
+            .search-button {
+                margin-left: 0;
+                margin-top: 10px;
+                width: 100%;
+            }
+            .content-container {
+                flex-direction: column; /* 在移动设备上改为纵向排列 */
+            }
+            .software-grid {
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+                width: 100%; /* 在移动设备上占满宽度 */
+            }
+            .announcement-board {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+        
+        /* 确保body和html占满整个视口 */
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* 防止水平滚动条 */
         }
         .sidebar h2 {
             text-align: center;
             margin-bottom: 20px;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
             border-bottom: 1px solid #333;
+            font-size: 1.4rem;
+            color: #2196F3;
+            letter-spacing: 1px;
         }
         .category-list {
             list-style: none;
         }
         .category-item {
-            padding: 10px 20px;
+            padding: 12px 20px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
+            border-left: 3px solid transparent;
+            margin-bottom: 5px;
         }
-        .category-item:hover, .category-item.active {
+        .category-item:hover {
             background-color: #333;
+            border-left: 3px solid #2196F3;
+            padding-left: 25px;
+        }
+        .category-item.active {
+            background-color: #333;
+            border-left: 3px solid #2196F3;
+            font-weight: bold;
+            color: #2196F3;
         }
         .main-content {
             flex: 1;
             padding: 20px;
+            transition: all 0.3s ease;
         }
         .search-bar {
             background-color: #1e1e1e;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .search-bar:focus-within {
+            box-shadow: 0 4px 20px rgba(33, 150, 243, 0.3);
         }
         .search-input {
-            width: 80%;
-            padding: 10px;
+            width: 95%;
+            padding: 12px 15px;
             border: 1px solid #333;
-            border-radius: 4px;
+            border-radius: 6px;
             font-size: 16px;
             background-color: #2d2d2d;
             color: #e0e0e0;
+            transition: all 0.3s;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: #2196F3;
+            box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
         }
         .search-input::placeholder {
             color: #888;
         }
         .search-button {
-            padding: 10px 20px;
+            padding: 12px 25px;
             background-color: #2196F3;
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
             margin-left: 10px;
+            transition: all 0.3s;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(33, 150, 243, 0.3);
         }
         .search-button:hover {
             background-color: #0d8bf2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(33, 150, 243, 0.4);
+        }
+        .search-button:active {
+            transform: translateY(0);
         }
         .software-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            animation: fadeIn 0.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         .software-card {
             background-color: #1e1e1e;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            padding: 15px;
-            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            padding: 20px;
+            transition: all 0.3s;
             display: flex;
             flex-direction: column;
             height: 100%;
             position: relative;
             overflow: hidden;
             z-index: 1;
+            border: 1px solid #333;
+            background-image: var(--bg-image);
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
         }
         .software-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            border-color: #2196F3;
+        }
+        /* 添加卡片内容背景，确保文字可读性 */
+        .software-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(30, 30, 30, 0.85) 0%, rgba(30, 30, 30, 0.75) 100%);
+            z-index: -1;
+            transition: all 0.3s;
+        }
+        .software-card:hover::after {
+            background: linear-gradient(135deg, rgba(30, 30, 30, 0.75) 0%, rgba(33, 150, 243, 0.2) 100%);
         }
         .software-card::before {
             content: attr(data-icon);
             position: absolute;
             right: -15px;
             bottom: -15px;
-            font-size: 100px;
-            opacity: 0.1;
+            font-size: 120px;
+            opacity: 0.08;
             z-index: -1;
             transform: rotate(-10deg);
             color: var(--icon-color, #444);
             filter: blur(2px);
+            transition: all 0.5s ease;
+        }
+        .software-card:hover::before {
+            opacity: 0.12;
+            transform: rotate(-5deg) scale(1.1);
         }
         .software-name {
-            font-size: 18px;
-            margin-bottom: 10px;
+            font-size: 20px;
+            margin-bottom: 15px;
             color: #e0e0e0;
-            /* 添加文本溢出处理 */
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            font-weight: 500;
+            font-weight: 600;
+            transition: all 0.3s;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #333;
         }
-        /* 添加软件名称悬停时显示完整名称的提示 */
+        .software-card:hover .software-name {
+            color: #2196F3;
+        }
         .software-name:hover {
             white-space: normal;
             overflow: visible;
             word-break: break-word;
         }
-        /* 添加软件描述区域 */
         .software-info {
             flex: 1;
             display: flex;
@@ -136,45 +326,188 @@
         }
         .download-button {
             display: inline-block;
-            padding: 8px 15px;
-            background-color: #1c461c7d;
+            padding: 10px 20px;
+            background-color: rgba(28, 70, 28, 0.5);
             color: white;
             text-decoration: none;
-            border-radius: 4px;
-            margin-top: auto; /* 将按钮推到卡片底部 */
+            border-radius: 6px;
+            margin-top: 15px;
             text-align: center;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
+            font-weight: 500;
+            border: 1px solid rgba(61, 139, 64, 0.3);
         }
         .download-button:hover {
-            background-color: #3d8b407b;
+            background-color: rgba(61, 139, 64, 0.7);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(61, 139, 64, 0.3);
+        }
+        .download-button:active {
+            transform: translateY(0);
         }
         .tag-list {
             display: flex;
             flex-wrap: wrap;
-            margin-top: 10px;
+            margin-top: 15px;
         }
         .tag {
             background-color: #2d2d2d;
-            padding: 4px 8px;
-            border-radius: 3px;
+            padding: 5px 10px;
+            border-radius: 20px;
             font-size: 12px;
-            margin-right: 5px;
-            margin-bottom: 5px;
+            margin-right: 8px;
+            margin-bottom: 8px;
             color: #aaa;
+            transition: all 0.3s;
+            border: 1px solid #444;
+        }
+        .tag:hover {
+            background-color: #2196F3;
+            color: white;
+            border-color: #2196F3;
         }
         .header {
-            background-color: #1e1e1e;
+            background-color: #1a1a1a;
             color: white;
-            padding: 15px 20px;
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
             border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header h1 {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            color: #2196F3;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: relative;
+            display: inline-block;
+        }
+        .header h1::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: #2196F3;
+            border-radius: 3px;
         }
         .no-results {
             text-align: center;
-            padding: 30px;
+            padding: 50px;
             font-size: 18px;
             color: #888;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            animation: fadeIn 0.5s ease-out;
+        }
+        /* 添加加载动画 */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #333;
+            border-top: 5px solid #2196F3;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        /* 响应式设计优化 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .search-bar {
+                flex-direction: column;
+            }
+            .search-button {
+                margin-left: 0;
+                margin-top: 10px;
+                width: 100%;
+            }
+            .content-container {
+                flex-direction: column; /* 在移动设备上改为纵向排列 */
+            }
+            .software-grid {
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+                width: 100%; /* 在移动设备上占满宽度 */
+            }
+            .announcement-board {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+        /* 添加滚动条美化 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #444;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2196F3;
+        }
+        /* 添加卡片悬停效果 */
+        .software-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent 0%, rgba(33, 150, 243, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: -1;
+        }
+        .software-card:hover::after {
+            opacity: 1;
+        }
+        
+        /* 添加右下角美女背景 */
+        .bg-decoration {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 40%;  /* 从300px增加到400px */
+            height: 40%; /* 从400px增加到600px */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            z-index: -1;
+            opacity: 0.7;  /* 从0.6增加到0.7，使图片更明显 */
+            transition: opacity 0.5s ease, transform 0.3s ease;
+            pointer-events: none;
+        }
+        .bg-decoration:hover {
+            opacity: 0.9;  /* 从0.8增加到0.9 */
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -194,8 +527,33 @@
                 <input type="text" class="search-input" id="searchInput" placeholder="搜索软件...">
                 <button class="search-button" id="searchButton">搜索</button>
             </div>
-            <div class="software-grid" id="softwareGrid">
-                <!-- 软件卡片将通过JavaScript动态加载 -->
+            
+            <div class="content-container">
+                <div class="software-grid" id="softwareGrid">
+                    <!-- 软件卡片将通过JavaScript动态加载 -->
+                    <div class="loading">
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+                
+                <!-- 添加公告栏 -->
+                <div class="announcement-board">
+                    <h3 class="announcement-title">网站公告</h3>
+                    <div class="announcement-content" id="announcementContent">
+                        <div class="announcement-item">
+                            <div>欢迎使用软件管家，这里提供各种优质软件下载！</div>
+                            <div class="announcement-date">2023-11-01</div>
+                        </div>
+                        <div class="announcement-item">
+                            <div>新增多款设计类软件，欢迎下载使用！</div>
+                            <div class="announcement-date">2023-10-25</div>
+                        </div>
+                        <div class="announcement-item">
+                            <div>网站进行了界面优化，提升用户体验</div>
+                            <div class="announcement-date">2023-10-15</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -208,6 +566,9 @@
         // 加载JSON数据
         async function loadData() {
             try {
+                // 显示加载动画
+                document.getElementById('softwareGrid').innerHTML = '<div class="loading"><div class="loading-spinner"></div></div>';
+                
                 const response = await fetch('ruanjian.json');
                 softwareData = await response.json();
                 
@@ -247,6 +608,12 @@
                 item.addEventListener('click', function() {
                     categoryItems.forEach(i => i.classList.remove('active'));
                     this.classList.add('active');
+                    
+                    // 添加点击动画效果
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 100);
                     
                     currentCategory = this.getAttribute('data-category');
                     displaySoftware();
@@ -311,6 +678,31 @@
                 const saturation = Math.floor(Math.random() * 30) + 20; // 20-50%
                 const lightness = Math.floor(Math.random() * 20) + 30; // 30-50%
                 card.style.setProperty('--icon-color', `hsl(${hue}, ${saturation}%, ${lightness}%)`);
+                
+                // 添加随机背景图片
+                const backgrounds = [
+                    'url("img2/240104032004.jpg")',
+                    'url("img2/240105082003.jpg")',
+                    'url("img2/240105084004.jpg")',
+                    'url("img2/240105091003.jpg")',
+                    'url("img2/240105092003.jpg")',
+                    'url("img2/240105102004.jpg")',
+                    'url("img2/240630221107.jpg")',
+                    'url("img2/240720175844.jpg")',
+                    'url("img2/240725171419.jpg")',
+                    'url("img2/240728181332.jpg")',
+                    'url("img2/250221200236.jpg")',
+                    'url("img2/250311180641.jpg")',
+                    'url("img2/250312194030.jpg")',
+                    'url("img2/250314195708.jpg")',
+                    'url("img2/250317023415.jpg")',
+                    'url("img2/250317174040.jpg")',
+                    'url("img2/250318194240.jpg")',
+                    'url("img2/250319030717.jpg")',
+                    'url("img2/250320040435.jpg")'
+                ];
+                const randomBg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+                card.style.setProperty('--bg-image', randomBg);
                 
                 const infoDiv = document.createElement('div');
                 infoDiv.className = 'software-info';
@@ -386,7 +778,86 @@
         document.addEventListener('DOMContentLoaded', function() {
             loadData();
             setupSearch();
+            setRandomBgDecoration(); // 添加随机背景装饰
         });
+        
+        // 设置随机美女背景
+        function setRandomBgDecoration() {
+            // 创建背景元素
+            const bgDecoration = document.createElement('div');
+            bgDecoration.className = 'bg-decoration';
+            
+            // 随机美女PNG图片数组
+            const bgImages = [
+                'img/131021-girl-anime-aesthetic-png-file-hd.png',
+                'img/131431-pastel-girl-anime-free-transparent-image-hq.png',
+                'img/131476-pastel-girl-anime-download-free-image.png',
+                'img/26509-9-fate-stay-clipart.png',
+                'img/6-2-anime-high-quality-png.png',
+                'img/半身人物1.png',
+                'img/半身人物10.png',
+                'img/半身人物11.png',
+                'img/半身人物12.png',
+                'img/半身人物13.png',
+                'img/半身人物2.png',
+                'img/半身人物3.png',
+                'img/半身人物4.png',
+                'img/半身人物5.png',
+                'img/半身人物6.png',
+                'img/半身人物7.png',
+                'img/半身人物8.png',
+                'img/半身人物9.png',
+                'img/带光环人物1.png',
+                'img/带光环人物10.png',
+                'img/带光环人物11.png',
+                'img/带光环人物12.png',
+                'img/带光环人物13.png',
+                'img/带光环人物14.png',
+                'img/带光环人物15.png',
+                'img/带光环人物2.png',
+                'img/带光环人物3.png',
+                'img/带光环人物4.png',
+                'img/带光环人物5.png',
+                'img/带光环人物6.png',
+                'img/带光环人物7.png',
+                'img/带光环人物8.png',
+                'img/带光环人物9.png',
+                'img/全身人物1.png',
+                'img/全身人物2.png',
+                'img/全身人物3.png',
+                'img/全身人物4.png',
+                'img/全身人物5.png',
+                'img/全身人物6.png',
+                'img/全身人物7.png'
+            ];
+            
+            // 随机选择一张图片
+            const randomBgImage = bgImages[Math.floor(Math.random() * bgImages.length)];
+            bgDecoration.style.backgroundImage = `url('${randomBgImage}')`;
+            
+            // 添加到页面
+            document.body.appendChild(bgDecoration);
+            
+            // 添加鼠标悬停效果
+            bgDecoration.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            bgDecoration.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+            });
+            
+            // 每隔一段时间更换图片
+            setInterval(() => {
+                const newRandomBgImage = bgImages[Math.floor(Math.random() * bgImages.length)];
+                bgDecoration.style.opacity = '0';
+                
+                setTimeout(() => {
+                    bgDecoration.style.backgroundImage = `url('${newRandomBgImage}')`;
+                    bgDecoration.style.opacity = '0.7';  // 保持与CSS中设置的一致
+                }, 500);
+            }, 5000); // 每30秒更换一次
+        }
     </script>
 </body>
 </html>
