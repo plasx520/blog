@@ -1,13 +1,60 @@
 {
     "fenlei": [
         {
-            "系统工具": ["卸载", "清除", "系统", "gho", "iso", "驱动"],
-            "下载工具": ["下载", "aria2", "IDM", "Internet Download Manager"],
-            "媒体工具": ["M3U8", "直播", "图片", "查看器", "播放", "视频", "音频"],
-            "办公软件": ["Typora", "Office", "文档", "wps", "pdf", "ppt", "excel"],
-            "222": ["adobe", "常用", "设计", "PS", "AI", "CDR", "CAD"],
-            "3333": ["Typora", "Office", "文档", "wps", "pdf", "ppt", "excel"],
-            "设计软件": ["adobe", "常用", "设计", "PS", "AI", "CDR", "CAD"]
+            "常用地址": [
+                "官方",
+                "网站"
+            ],
+            "系统工具": [
+                "卸载",
+                "清除",
+                "系统",
+                "gho",
+                "iso",
+                "驱动"
+            ],
+            "下载工具": [
+                "下载",
+                "aria2",
+                "IDM",
+                "Internet Download Manager"
+            ],
+            "媒体工具": [
+                "M3U8",
+                "直播",
+                "图片",
+                "查看器",
+                "播放",
+                "视频",
+                "音频"
+            ],
+            "办公软件": [
+                "Typora",
+                "Office",
+                "文档",
+                "wps",
+                "pdf",
+                "ppt",
+                "excel"
+            ],
+            "3333": [
+                "Typora",
+                "Office",
+                "文档",
+                "wps",
+                "pdf",
+                "ppt",
+                "excel"
+            ],
+            "设计软件": [
+                "adobe",
+                "常用",
+                "设计",
+                "PS",
+                "AI",
+                "CDR",
+                "CAD"
+            ]
         }
     ],
     "dizhi": [
@@ -32,7 +79,10 @@
             "M3U8.zip": "https://drfs.ctcontents.com/file/14237530/820370070/be622a/%E8%BD%AF%E4%BB%B6/M3U8.zip",
             "Typora.zip": "https://drfs.ctcontents.com/file/14237530/820370077/e8bd88/%E8%BD%AF%E4%BB%B6/Typora.zip",
             "图片查看器.zip": "https://drfs.ctcontents.com/file/14237530/820370059/e7235e/%E8%BD%AF%E4%BB%B6/%E5%9B%BE%E7%89%87%E6%9F%A5%E7%9C%8B%E5%99%A8.zip",
-            "直播下载.zip": "https://drfs.ctcontents.com/file/14237530/820370078/5b8883/%E8%BD%AF%E4%BB%B6/%E7%9B%B4%E6%92%AD%E4%B8%8B%E8%BD%BD.zip"
+            "直播下载.zip": "https://drfs.ctcontents.com/file/14237530/820370078/5b8883/%E8%BD%AF%E4%BB%B6/%E7%9B%B4%E6%92%AD%E4%B8%8B%E8%BD%BD.zip",
+            "ToDesk官方": "https://www.todesk.com/download.html",
+            "向日葵官方": "https://sunlogin.oray.com/download/",
+            "360驱动官方": "https://dm.weishi.360.cn/home.html"
         }
     ]
 }
